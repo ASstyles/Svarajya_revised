@@ -1,0 +1,4 @@
+id,name,public,file_size_limit,allowed_mime_types,created_at,updated_at
+profile-photos,profile-photos,true,2097152,"[""image/jpeg"",""image/png"",""image/jpg"",""image/webp""]",2026-04-23 11:28:53.51829+00,2026-04-23 11:28:53.51829+00
+identity,identity,true,2097152,"[""image/jpeg"",""image/png"",""application/pdf""]",2026-04-29 12:16:15.439676+00,2026-04-29 12:16:15.439676+00
+education,education,true,2097152,"[""image/jpeg"",""image/png"",""application/pdf""]",2026-04-29 12:17:33.762998+00,2026-04-29 12:17:33.762998+00

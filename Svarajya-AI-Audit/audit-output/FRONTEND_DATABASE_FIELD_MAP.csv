@@ -1,0 +1,24 @@
+Frontend Page,Frontend Field Label,Frontend Variable Casing,Database Table Name,Database Column Name,Mapping Status,Remarks / Risk
+Onboarding DOB,Date of Birth,dob,users,dateOfBirth,Renamed,Frontend dob state converted to Date object on submit
+Onboarding Family,Family Members,familyMembers,family_members,"name, relation",Renamed,Maps to array of items saved to family_members table
+Family Form,Full Name,name,family_members,name,Exact Match,None
+Family Form,Email Domain restriction,email,family_members,email,Renamed,Frontend regex restricts to @gmail.com (Bug 8)
+Education Form,Institution Name,institution / institute,education,institute,Renamed,"Frontend uses institution, API maps to institute (Prisma)"
+Education Form,Education Loan Toggle,hasLoan,education,linkedLoanId,Renamed,Maps boolean hasLoan to string EDUCATION_LOAN_ACTIVE (Bug 12 cache issues)
+Education Form,Certificate ID,certificateId,education,certificateUrl,Renamed,Linked to Supabase document_meta via certificateId/cloudId
+Portal Form,Portal Name,name,credential_records,name,Exact Match,None
+Portal Form,Password Encrypted,password,credential_records,password,Exact Match,"Encrypted client-side, Reveal password (Bug 16) is broken"
+Portal Form,Registration Date,registrationDate,credential_records,createdAt,Renamed,Future date accepted (Bug 17)
+Insurance Form,Sum Assured,sumAssured,insurance_policies,sumAssured,Exact Match,Rupee pre-fill 0 issue (Bug 18)
+Insurance Form,Premium Amount,premiumAmount,insurance_policies,premiumAmount,Renamed,Prisma has premium; fields mismatching
+Insurance Form,Next Due Date,nextDueDate,insurance_policies,nextDueDate,Exact Match,Past dates accepted without check (Bug 19)
+Bank Account,Mark Primary Toggle,isPrimary,bank_accounts,isPrimary,Exact Match,Multiple accounts accepted as primary (Bug 22)
+Loan Form,Start Date,startDate,loan_accounts,startDate,Exact Match,Future dates accepted (Bug 23)
+Loan Form,End Date,endDate,loan_accounts,N/A,Missing,"Displayed as N/A in view page, missing in form inputs (Bug 26)"
+Expense Form,Expense Date,date,expense_entries,date,Exact Match,Future dates allowed (Bug 27)
+Expense Form,Recurring Frequency,frequency,expense_entries,frequency,Renamed,Omitted in store payload as recurringFrequency vs frequency (Bug 28)
+Subscription Form,Last Used Date,lastUsedDate,subscriptions,lastUsedDate,Exact Match,Future dates allowed (Bug 29)
+Subscription Form,Next Renewal Date,nextRenewalDate,subscriptions,nextRenewalDate,Exact Match,Past dates allowed (Bug 29)
+Will Form,Last Review Date,lastReviewDate,succession_wills,updatedAt,Renamed,Future dates allowed (Bug 30)
+Executor Form,Executor Contact,executorContact,succession_wills,executorPhone,Renamed,Accepts > 10 digits without validation (Bug 38)
+Emergency Form,Primary Phone,primaryPhone,succession_emergency,primaryPhone,Exact Match,Accepts alphabets without validation (Bug 39)

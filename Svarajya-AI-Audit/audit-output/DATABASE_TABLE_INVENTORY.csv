@@ -1,0 +1,75 @@
+Table Name,Columns Count,Primary Key Column,Foreign Key Columns,Associated Module,RLS Enabled
+activity_events,6,id,userId,SYSTEM/GAMIFICATION,false
+admin_audit_logs,10,id,adminUserId,ADMIN,false
+admin_sessions,9,id,adminUserId,ADMIN,false
+admin_users,22,id,None,ADMIN,false
+asset_inventory,11,id,userId,UNKNOWN,false
+balance_history,5,id,bankAccountId,KHATE (Bank Hub),false
+bank_accounts,17,id,userId,KHATE (Bank Hub),false
+broadcasts,17,id,createdBy,UNKNOWN,false
+budget_plans,8,id,userId,VYAYA (Expenses),false
+calculation_parameter_history,8,id,"changedBy, parameterId",UNKNOWN,false
+calculation_parameters,9,id,None,UNKNOWN,false
+cash_wallets,7,id,userId,KHATE (Bank Hub),false
+cohorts,12,id,None,UNKNOWN,false
+consent_records,9,id,userId,AUTH/USER,false
+contact_messages,7,id,None,SUPPORT/FEEDBACK,false
+credential_records,18,id,userId,DWAAR (Credentials),false
+daily_analytics,12,id,None,UNKNOWN,false
+data_access_logs,8,id,"adminUserId, userId",ADMIN,false
+din_records,15,id,userId,KAR (Tax),false
+document_meta,19,id,userId,PEHCHAAN (Identity Vault),false
+education,10,id,"familyMemberId, userId",FOUNDATION (Education),false
+email_verification_codes,6,id,userId,AUTH/USER,false
+expense_categories,6,id,userId,VYAYA (Expenses),false
+expense_entries,13,id,userId,VYAYA (Expenses),false
+family_members,12,id,userId,FOUNDATION (Mitra/Family),false
+faqs,13,id,None,SUPPORT/FEEDBACK,false
+feature_flags,14,id,"createdBy, dependsOnFlagId",UNKNOWN,false
+field_mappings,7,id,None,SYSTEM/GAMIFICATION,false
+game_runs,9,id,userId,SYSTEM/GAMIFICATION,false
+gamification_state,10,id,userId,SYSTEM/GAMIFICATION,false
+goals,11,id,userId,LAKSHYA (Goals),false
+gst_records,16,id,userId,KAR (Tax),false
+identity_links,7,id,"identityId, userId",PEHCHAAN (Identity Vault),false
+identity_records,14,id,userId,PEHCHAAN (Identity Vault),false
+iks_assets,10,id,None,SYSTEM/GAMIFICATION,false
+income_streams,21,id,"creditedAccountId, familyMemberId, userId",KOSH (Income),false
+insurance_coverage,3,id,"memberId, policyId",RAKSHA (Insurance),false
+insurance_policies,17,id,userId,RAKSHA (Insurance),false
+investment_holdings,12,id,"linkedGoalId, userId",BEEJ (Investments),false
+loan_accounts,18,id,userId,RIN (Loans),false
+module_access_permissions,6,id,adminUserId,ADMIN,false
+modules,14,id,updatedBy,SYSTEM/GAMIFICATION,false
+monthly_analytics,9,id,None,UNKNOWN,false
+nominee_mapping,10,id,"nomineeId, userId",MITRA (Nominees & Will),false
+notification_templates,11,id,None,DOOT (Reminders),false
+notifications,13,id,"templateId, userId",DOOT (Reminders),false
+property_assets,19,id,userId,BHOOMI (Property),false
+questions,17,id,"createdBy, fieldMappingId, submoduleId",SYSTEM/GAMIFICATION,false
+quiz_answers,6,id,"questionId, userId",SYSTEM/GAMIFICATION,false
+rajya_scores,16,id,userId,SYSTEM/GAMIFICATION,false
+reminders,12,id,userId,DOOT (Reminders),false
+scheduled_reports,10,id,createdBy,UNKNOWN,false
+submodules,15,id,moduleId,SYSTEM/GAMIFICATION,false
+subscription_analytics,10,id,userId,UNKNOWN,false
+subscriptions,22,id,userId,LEAKAGE (Subscriptions),false
+succession_emergency,10,id,userId,MITRA (Nominees & Will),false
+succession_nominees,10,id,"nomineeId, userId",MITRA (Nominees & Will),false
+succession_wills,14,id,userId,MITRA (Nominees & Will),false
+support_tickets,16,id,"assignedTo, userId",SUPPORT/FEEDBACK,false
+system_parameters,10,id,updatedBy,UNKNOWN,false
+system_settings,5,id,None,UNKNOWN,false
+tax_records,16,id,userId,KAR (Tax),false
+ticket_responses,7,id,ticketId,SUPPORT/FEEDBACK,false
+tutorial_analytics,7,id,tutorialId,SYSTEM/GAMIFICATION,false
+tutorial_completions,6,id,"tutorialId, userId",SYSTEM/GAMIFICATION,false
+tutorials,22,id,"createdBy, submoduleId",SYSTEM/GAMIFICATION,false
+user_chapter_progress,10,id,"submoduleId, userId",SYSTEM/GAMIFICATION,false
+user_cohorts,5,id,"cohortId, userId",UNKNOWN,false
+user_feedback,9,id,userId,SUPPORT/FEEDBACK,false
+user_module_progress,6,id,"moduleId, userId",SYSTEM/GAMIFICATION,false
+user_sessions,10,id,userId,AUTH/USER,false
+users,33,id,None,AUTH/USER,false
+weekly_analytics,10,id,None,UNKNOWN,false
+will_status,10,id,userId,MITRA (Nominees & Will),false

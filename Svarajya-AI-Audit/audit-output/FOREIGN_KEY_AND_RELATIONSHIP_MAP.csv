@@ -1,0 +1,83 @@
+Constraint Name,Source Table,Source Column,Destination Table,Destination Column,Affected Modules
+activity_events_userId_fkey,activity_events,userId,users,id,SYSTEM/GAMIFICATION -> AUTH/USER
+admin_audit_logs_adminUserId_fkey,admin_audit_logs,adminUserId,admin_users,id,ADMIN -> ADMIN
+admin_sessions_adminUserId_fkey,admin_sessions,adminUserId,admin_users,id,ADMIN -> ADMIN
+asset_inventory_userId_fkey,asset_inventory,userId,users,id,UNKNOWN -> AUTH/USER
+balance_history_bankAccountId_fkey,balance_history,bankAccountId,bank_accounts,id,KHATE (Bank Hub) -> KHATE (Bank Hub)
+bank_accounts_userId_fkey,bank_accounts,userId,users,id,KHATE (Bank Hub) -> AUTH/USER
+broadcasts_createdBy_fkey,broadcasts,createdBy,admin_users,id,UNKNOWN -> ADMIN
+budget_plans_userId_fkey,budget_plans,userId,users,id,VYAYA (Expenses) -> AUTH/USER
+calculation_parameter_history_changedBy_fkey,calculation_parameter_history,changedBy,admin_users,id,UNKNOWN -> ADMIN
+calculation_parameter_history_parameterId_fkey,calculation_parameter_history,parameterId,calculation_parameters,id,UNKNOWN -> UNKNOWN
+cash_wallets_userId_fkey,cash_wallets,userId,users,id,KHATE (Bank Hub) -> AUTH/USER
+consent_records_userId_fkey,consent_records,userId,users,id,AUTH/USER -> AUTH/USER
+credential_records_userId_fkey,credential_records,userId,users,id,DWAAR (Credentials) -> AUTH/USER
+data_access_logs_adminUserId_fkey,data_access_logs,adminUserId,admin_users,id,ADMIN -> ADMIN
+data_access_logs_userId_fkey,data_access_logs,userId,users,id,ADMIN -> AUTH/USER
+din_records_userId_fkey,din_records,userId,users,id,KAR (Tax) -> AUTH/USER
+document_meta_userId_fkey,document_meta,userId,users,id,PEHCHAAN (Identity Vault) -> AUTH/USER
+education_familyMemberId_fkey,education,familyMemberId,family_members,id,FOUNDATION (Education) -> FOUNDATION (Mitra/Family)
+education_userId_fkey,education,userId,users,id,FOUNDATION (Education) -> AUTH/USER
+email_verification_codes_userId_fkey,email_verification_codes,userId,users,id,AUTH/USER -> AUTH/USER
+expense_categories_userId_fkey,expense_categories,userId,users,id,VYAYA (Expenses) -> AUTH/USER
+expense_entries_userId_fkey,expense_entries,userId,users,id,VYAYA (Expenses) -> AUTH/USER
+family_members_userId_fkey,family_members,userId,users,id,FOUNDATION (Mitra/Family) -> AUTH/USER
+feature_flags_createdBy_fkey,feature_flags,createdBy,admin_users,id,UNKNOWN -> ADMIN
+feature_flags_dependsOnFlagId_fkey,feature_flags,dependsOnFlagId,feature_flags,id,UNKNOWN -> UNKNOWN
+game_runs_userId_fkey,game_runs,userId,users,id,SYSTEM/GAMIFICATION -> AUTH/USER
+gamification_state_userId_fkey,gamification_state,userId,users,id,SYSTEM/GAMIFICATION -> AUTH/USER
+goals_userId_fkey,goals,userId,users,id,LAKSHYA (Goals) -> AUTH/USER
+gst_records_userId_fkey,gst_records,userId,users,id,KAR (Tax) -> AUTH/USER
+identity_links_identityId_fkey,identity_links,identityId,identity_records,id,PEHCHAAN (Identity Vault) -> PEHCHAAN (Identity Vault)
+identity_links_userId_fkey,identity_links,userId,users,id,PEHCHAAN (Identity Vault) -> AUTH/USER
+identity_records_userId_fkey,identity_records,userId,users,id,PEHCHAAN (Identity Vault) -> AUTH/USER
+income_streams_creditedAccountId_fkey,income_streams,creditedAccountId,bank_accounts,id,KOSH (Income) -> KHATE (Bank Hub)
+income_streams_familyMemberId_fkey,income_streams,familyMemberId,family_members,id,KOSH (Income) -> FOUNDATION (Mitra/Family)
+income_streams_userId_fkey,income_streams,userId,users,id,KOSH (Income) -> AUTH/USER
+insurance_coverage_memberId_fkey,insurance_coverage,memberId,family_members,id,RAKSHA (Insurance) -> FOUNDATION (Mitra/Family)
+insurance_coverage_policyId_fkey,insurance_coverage,policyId,insurance_policies,id,RAKSHA (Insurance) -> RAKSHA (Insurance)
+insurance_policies_userId_fkey,insurance_policies,userId,users,id,RAKSHA (Insurance) -> AUTH/USER
+investment_holdings_linkedGoalId_fkey,investment_holdings,linkedGoalId,goals,id,BEEJ (Investments) -> LAKSHYA (Goals)
+investment_holdings_userId_fkey,investment_holdings,userId,users,id,BEEJ (Investments) -> AUTH/USER
+loan_accounts_userId_fkey,loan_accounts,userId,users,id,RIN (Loans) -> AUTH/USER
+module_access_permissions_adminUserId_fkey,module_access_permissions,adminUserId,admin_users,id,ADMIN -> ADMIN
+modules_updatedBy_fkey,modules,updatedBy,admin_users,id,SYSTEM/GAMIFICATION -> ADMIN
+nominee_mapping_nomineeId_fkey,nominee_mapping,nomineeId,family_members,id,MITRA (Nominees & Will) -> FOUNDATION (Mitra/Family)
+nominee_mapping_userId_fkey,nominee_mapping,userId,users,id,MITRA (Nominees & Will) -> AUTH/USER
+notifications_templateId_fkey,notifications,templateId,notification_templates,id,DOOT (Reminders) -> DOOT (Reminders)
+notifications_userId_fkey,notifications,userId,users,id,DOOT (Reminders) -> AUTH/USER
+property_assets_userId_fkey,property_assets,userId,users,id,BHOOMI (Property) -> AUTH/USER
+questions_createdBy_fkey,questions,createdBy,admin_users,id,SYSTEM/GAMIFICATION -> ADMIN
+questions_fieldMappingId_fkey,questions,fieldMappingId,field_mappings,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+questions_submoduleId_fkey,questions,submoduleId,submodules,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+quiz_answers_questionId_fkey,quiz_answers,questionId,questions,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+quiz_answers_userId_fkey,quiz_answers,userId,users,id,SYSTEM/GAMIFICATION -> AUTH/USER
+rajya_scores_userId_fkey,rajya_scores,userId,users,id,SYSTEM/GAMIFICATION -> AUTH/USER
+reminders_userId_fkey,reminders,userId,users,id,DOOT (Reminders) -> AUTH/USER
+scheduled_reports_createdBy_fkey,scheduled_reports,createdBy,admin_users,id,UNKNOWN -> ADMIN
+submodules_moduleId_fkey,submodules,moduleId,modules,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+subscription_analytics_userId_fkey,subscription_analytics,userId,users,id,UNKNOWN -> AUTH/USER
+subscriptions_userId_fkey,subscriptions,userId,users,id,LEAKAGE (Subscriptions) -> AUTH/USER
+succession_emergency_userId_fkey,succession_emergency,userId,users,id,MITRA (Nominees & Will) -> AUTH/USER
+succession_nominees_nomineeId_fkey,succession_nominees,nomineeId,family_members,id,MITRA (Nominees & Will) -> FOUNDATION (Mitra/Family)
+succession_nominees_userId_fkey,succession_nominees,userId,users,id,MITRA (Nominees & Will) -> AUTH/USER
+succession_wills_userId_fkey,succession_wills,userId,users,id,MITRA (Nominees & Will) -> AUTH/USER
+support_tickets_assignedTo_fkey,support_tickets,assignedTo,admin_users,id,SUPPORT/FEEDBACK -> ADMIN
+support_tickets_userId_fkey,support_tickets,userId,users,id,SUPPORT/FEEDBACK -> AUTH/USER
+system_parameters_updatedBy_fkey,system_parameters,updatedBy,admin_users,id,UNKNOWN -> ADMIN
+tax_records_userId_fkey,tax_records,userId,users,id,KAR (Tax) -> AUTH/USER
+ticket_responses_ticketId_fkey,ticket_responses,ticketId,support_tickets,id,SUPPORT/FEEDBACK -> SUPPORT/FEEDBACK
+tutorial_analytics_tutorialId_fkey,tutorial_analytics,tutorialId,tutorials,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+tutorial_completions_tutorialId_fkey,tutorial_completions,tutorialId,tutorials,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+tutorial_completions_userId_fkey,tutorial_completions,userId,users,id,SYSTEM/GAMIFICATION -> AUTH/USER
+tutorials_createdBy_fkey,tutorials,createdBy,admin_users,id,SYSTEM/GAMIFICATION -> ADMIN
+tutorials_submoduleId_fkey,tutorials,submoduleId,submodules,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+user_chapter_progress_submoduleId_fkey,user_chapter_progress,submoduleId,submodules,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+user_chapter_progress_userId_fkey,user_chapter_progress,userId,users,id,SYSTEM/GAMIFICATION -> AUTH/USER
+user_cohorts_cohortId_fkey,user_cohorts,cohortId,cohorts,id,UNKNOWN -> UNKNOWN
+user_cohorts_userId_fkey,user_cohorts,userId,users,id,UNKNOWN -> AUTH/USER
+user_feedback_userId_fkey,user_feedback,userId,users,id,SUPPORT/FEEDBACK -> AUTH/USER
+user_module_progress_moduleId_fkey,user_module_progress,moduleId,modules,id,SYSTEM/GAMIFICATION -> SYSTEM/GAMIFICATION
+user_module_progress_userId_fkey,user_module_progress,userId,users,id,SYSTEM/GAMIFICATION -> AUTH/USER
+user_sessions_userId_fkey,user_sessions,userId,users,id,AUTH/USER -> AUTH/USER
+will_status_userId_fkey,will_status,userId,users,id,MITRA (Nominees & Will) -> AUTH/USER

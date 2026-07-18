@@ -1,0 +1,27 @@
+Module,File Path,"Table, function or bucket",Fields read,Fields written,Filters used,Error handling,Possible risk
+AUTH,src/app/(auth)/reset-password/page.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+AUTH,src/app/(auth)/start/page.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+AUTH,src/app/(auth)/verify-email/VerifyEmailClient.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+FOUNDATION,src/app/(dashboard)/foundation/page.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+FOUNDATION,src/app/(dashboard)/foundation/page.tsx,Supabase Storage,Download/Link,Upload/Delete,N/A,Yes,High (Storage File Permission / Orphan risks)
+LANDING,src/app/(landing)/forget-password/page.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+ONBOARDING,src/app/(onboarding)/onboarding/firstwin/page.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+AUTH,src/app/api/auth/google-status/route.ts,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+AUTH,src/app/api/auth/google/route.ts,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+AUTH,src/app/api/auth/link-google/route.ts,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/app/api/google-drive/download/route.ts,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/app/api/google-drive/upload/route.ts,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/app/api/google-drive/view/route.ts,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/app/api/profile/route.ts,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+AUTH,src/components/auth/OAuthFragmentHandler.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/components/layouts/BottomNav.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/components/layouts/DesktopSidebar.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/components/providers/AuthProvider.tsx,Supabase Auth,Session/User,Sign in/out,N/A,No,Low
+SHARED,src/components/shared/AuthSync.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/components/shared/GlobalTopRightMenu.tsx,Supabase Auth,Session/User,Sign in/out,N/A,No,Low
+SHARED,src/components/shared/UserAvatar.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+SHARED,src/components/ui/GlobalTopRightMenu.tsx,Supabase Auth,Session/User,Sign in/out,N/A,No,Low
+GRANTHAGAAR,src/components/vault/FileUploader.tsx,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+GRANTHAGAAR,src/components/vault/FileUploader.tsx,Supabase Storage,Download/Link,Upload/Delete,N/A,Yes,High (Storage File Permission / Orphan risks)
+SHARED,src/lib/middleware/auth.middleware.ts,Supabase Auth,Session/User,Sign in/out,N/A,Yes,Low
+AUTH,src/lib/supabase/middleware.ts,Supabase Auth,Session/User,Sign in/out,N/A,No,Low

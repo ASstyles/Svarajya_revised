@@ -1,0 +1,433 @@
+File Path,Component or Function Name,Module Association,Confidence Level
+.gitignore,N/A,SHARED,Confirmed
+.vscode/settings.json,N/A,SHARED,Confirmed
+README.md,N/A,SHARED,Confirmed
+ROUTES.md,N/A,SHARED,Confirmed
+eslint.config.mjs,N/A,SHARED,Confirmed
+migration.sql,N/A,SHARED,Confirmed
+next.config.ts,nextConfig,SHARED,Confirmed
+package-lock.json,N/A,SHARED,Confirmed
+package.json,N/A,SHARED,Confirmed
+postcss.config.mjs,N/A,SHARED,Confirmed
+prisma/migrations/20260417144149_/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260417163008_add_contact_message_table/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260424090438_add_admin_tracking_enhancements/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260511055134_sync_schema/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260514120042_add_module_access_permissions/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260515091437_add_insurance_meta_fields/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260515140031_add_income_metadata_fields/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260515141546_add_bank_metadata_fields/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260516042833_add_cash_wallet_relation/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260516043547_add_income_family_member/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260516045455_add_income_last_reviewed_at/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260516073231_make_account_number_optional/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260516073732_add_idle_threshold_to_cash_wallet/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260516081150_add_balance_history/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260516091251_add_created_at_to_history/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260521220315_unified_documents/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260530120000_add_email_verification_codes/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260604121625_income_bankaccount_relation/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260606055633_expense_bankaccount_relation/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/20260629040809_subscription_model_added/migration.sql,N/A,SHARED,Confirmed
+prisma/migrations/migration_lock.toml,N/A,SHARED,Confirmed
+prisma/schema.prisma,N/A,SHARED,Confirmed
+public/file.svg,N/A,SHARED,Confirmed
+public/globe.svg,N/A,SHARED,Confirmed
+public/next.svg,N/A,SHARED,Confirmed
+public/scroll.png,N/A,SHARED,Confirmed
+public/vercel.svg,N/A,SHARED,Confirmed
+public/window.svg,N/A,SHARED,Confirmed
+public/চৌপাড়.png,N/A,SHARED,Confirmed
+public/চৌপাড়.png,N/A,SHARED,Confirmed
+public/রাজমুদ্রা.png,N/A,SHARED,Confirmed
+qqq,N/A,SHARED,Confirmed
+route_refactor.py,N/A,SHARED,Confirmed
+scratch/migrate-existing-docs.ts,N/A,SHARED,Confirmed
+scratch_delete_notifs.ts,N/A,SHARED,Confirmed
+src/app/(auth)/callback/route.ts,GET,AUTH,Strong evidence
+src/app/(auth)/intro-cinematic/page.tsx,IntroOnboarding,AUTH,Strong evidence
+src/app/(auth)/layout.tsx,AuthLayout,AUTH,Strong evidence
+src/app/(auth)/reset-password/page.tsx,ResetPasswordPage,AUTH,Strong evidence
+src/app/(auth)/start/page.tsx,AuthGateway,AUTH,Strong evidence
+src/app/(auth)/verify-email/VerifyEmailClient.tsx,VerifyEmailClient,AUTH,Strong evidence
+src/app/(auth)/verify-email/page.tsx,"Page, dynamic",AUTH,Strong evidence
+src/app/(dashboard)/beej/page.tsx,BeejPage,BEEJ,Strong evidence
+src/app/(dashboard)/bhoomi/[id]/edit/page.tsx,EditBhoomiPropertyPage,BHOOMI,Strong evidence
+src/app/(dashboard)/bhoomi/add/page.tsx,AddBhoomiPropertyPage,BHOOMI,Strong evidence
+src/app/(dashboard)/bhoomi/page.tsx,BhoomiPage,BHOOMI,Strong evidence
+src/app/(dashboard)/doot/page.tsx,NotificationsPage,DOOT,Strong evidence
+src/app/(dashboard)/dwaar/portals/access/page.tsx,AccessOverviewPage,DWAAR,Strong evidence
+src/app/(dashboard)/dwaar/portals/add/page.tsx,AddPortalPage,DWAAR,Strong evidence
+src/app/(dashboard)/dwaar/portals/page.tsx,KeyChamberHub,DWAAR,Strong evidence
+src/app/(dashboard)/dwaar/portals/portal/[id]/page.tsx,PortalDetailPage,DWAAR,Strong evidence
+src/app/(dashboard)/foundation/education/[id]/edit/page.tsx,EditEducation,FOUNDATION,Strong evidence
+src/app/(dashboard)/foundation/education/page.tsx,EducationPage,FOUNDATION,Strong evidence
+src/app/(dashboard)/foundation/family/page.tsx,Submodule1B,FOUNDATION,Strong evidence
+src/app/(dashboard)/foundation/page.tsx,FoundationHub,FOUNDATION,Strong evidence
+src/app/(dashboard)/granthagaar/page.tsx,VaultPage,GRANTHAGAAR,Strong evidence
+src/app/(dashboard)/kar/din/[id]/edit/page.tsx,EditDinPage,KAR,Strong evidence
+src/app/(dashboard)/kar/din/new/page.tsx,NewDinPage,KAR,Strong evidence
+src/app/(dashboard)/kar/din/page.tsx,DinPage,KAR,Strong evidence
+src/app/(dashboard)/kar/gst/[id]/edit/page.tsx,EditGstPage,KAR,Strong evidence
+src/app/(dashboard)/kar/gst/new/page.tsx,NewGstPage,KAR,Strong evidence
+src/app/(dashboard)/kar/gst/page.tsx,GstPage,KAR,Strong evidence
+src/app/(dashboard)/kar/itr/[id]/edit/page.tsx,EditItrPage,KAR,Strong evidence
+src/app/(dashboard)/kar/itr/new/page.tsx,NewItrPage,KAR,Strong evidence
+src/app/(dashboard)/kar/itr/page.tsx,ItrPage,KAR,Strong evidence
+src/app/(dashboard)/kar/page.tsx,KarPage,KAR,Strong evidence
+src/app/(dashboard)/khate/accounts/[id]/edit/page.tsx,EditBankAccount,KHATE,Strong evidence
+src/app/(dashboard)/khate/accounts/add/page.tsx,AddBankAccount,KHATE,Strong evidence
+src/app/(dashboard)/khate/accounts/cash/page.tsx,CashWalletPage,KHATE,Strong evidence
+src/app/(dashboard)/khate/accounts/flow/page.tsx,CashFlowEngine,KHATE,Strong evidence
+src/app/(dashboard)/khate/accounts/idle/page.tsx,IdleMoneyEngine,KHATE,Strong evidence
+src/app/(dashboard)/khate/accounts/page.tsx,BankHub,KHATE,Strong evidence
+src/app/(dashboard)/khate/cash-flow/page.tsx,CashFlowEngine,KHATE,Strong evidence
+src/app/(dashboard)/khate/cash/page.tsx,CashWalletPage,KHATE,Strong evidence
+src/app/(dashboard)/khate/idle-detection/page.tsx,IdleMoneyEngine,KHATE,Strong evidence
+src/app/(dashboard)/kosh/add/page.tsx,AddIncomePage,KOSH,Strong evidence
+src/app/(dashboard)/kosh/analytics/page.tsx,AnalyticsPage,KOSH,Strong evidence
+src/app/(dashboard)/kosh/dependency/page.tsx,DisposablePage,KOSH,Strong evidence
+src/app/(dashboard)/kosh/disposable/page.tsx,DisposablePage,KOSH,Strong evidence
+src/app/(dashboard)/kosh/income/[id]/edit/page.tsx,EditIncomePage,KOSH,Strong evidence
+src/app/(dashboard)/kosh/income/page.tsx,IncomeRegistryPage,KOSH,Strong evidence
+src/app/(dashboard)/kosh/page.tsx,KoshHub,KOSH,Strong evidence
+src/app/(dashboard)/kosh/record/[id]/page.tsx,RecordDetailPage,KOSH,Strong evidence
+src/app/(dashboard)/kosh/sources/add/page.tsx,AddIncomePage,KOSH,Strong evidence
+src/app/(dashboard)/kosh/sources/page.tsx,KoshHub,KOSH,Strong evidence
+src/app/(dashboard)/lakshya/page.tsx,LakshyaPage,LAKSHYA,Strong evidence
+src/app/(dashboard)/layout.tsx,DashboardGroupLayout,SHARED,Confirmed
+src/app/(dashboard)/leakage/page.tsx,LeakageModulePage,LEAKAGE,Strong evidence
+src/app/(dashboard)/leakage/subscriptions/page.tsx,SubscriptionsPage,LEAKAGE,Strong evidence
+src/app/(dashboard)/mantri/page.tsx,MantriPage,MANTRI,Strong evidence
+src/app/(dashboard)/mitra/assets/page.tsx,AssetNomineeDashboard,MITRA,Strong evidence
+src/app/(dashboard)/mitra/page.tsx,MitraModule,MITRA,Strong evidence
+src/app/(dashboard)/mitra/will/page.tsx,WillManagementPage,MITRA,Strong evidence
+src/app/(dashboard)/notifications/page.tsx,NotificationsPage,SHARED,Confirmed
+src/app/(dashboard)/pehchaan/mapping/add/page.tsx,LinkWizard,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/mapping/page.tsx,LinksListPage,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/records/[id]/edit/page.tsx,EditDocument,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/records/add/page.tsx,AddDocument,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/records/doc/[id]/page.tsx,DocDetail,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/records/links/add/page.tsx,LinkWizard,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/records/links/page.tsx,LinksListPage,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/records/page.tsx,IdentityHub,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/records/renewals/page.tsx,Renewals,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/records/settings/page.tsx,VaultSettings,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/settings/page.tsx,VaultSettings,PEHCHAAN,Strong evidence
+src/app/(dashboard)/pehchaan/validity/page.tsx,Renewals,PEHCHAAN,Strong evidence
+src/app/(dashboard)/raj-mantri/page.tsx,RajMantriPage,RAJ_MANTRI,Strong evidence
+src/app/(dashboard)/rajya/page.tsx,Dashboard,SHARED,Confirmed
+src/app/(dashboard)/raksha/page.tsx,RakshaModule,RAKSHA,Strong evidence
+src/app/(dashboard)/raksha/policies/[id]/edit/page.tsx,EditPolicyPage,RAKSHA,Strong evidence
+src/app/(dashboard)/raksha/policies/[id]/page.tsx,PolicyDetailPage,RAKSHA,Strong evidence
+src/app/(dashboard)/raksha/policies/add/page.tsx,AddPolicyPage,RAKSHA,Strong evidence
+src/app/(dashboard)/raksha/policies/page.tsx,InsuranceListPage,RAKSHA,Strong evidence
+src/app/(dashboard)/rin/loans/[id]/edit/page.tsx,EditLoanPage,RIN,Strong evidence
+src/app/(dashboard)/rin/loans/[id]/page.tsx,LoanDetailPage,RIN,Strong evidence
+src/app/(dashboard)/rin/loans/add/page.tsx,AddLoanPage,RIN,Strong evidence
+src/app/(dashboard)/rin/loans/page.tsx,LoanListPage,RIN,Strong evidence
+src/app/(dashboard)/rin/page.tsx,RinDashboard,RIN,Strong evidence
+src/app/(dashboard)/sampatti/page.tsx,SampattiPage,SAMPATTI,Strong evidence
+src/app/(dashboard)/subscriptions/page.tsx,SubscriptionsModulePage,LEAKAGE,Strong evidence
+src/app/(dashboard)/succession/emergency/page.tsx,EmergencyPage,MITRA,Strong evidence
+src/app/(dashboard)/succession/nominees/page.tsx,NomineesPage,MITRA,Strong evidence
+src/app/(dashboard)/succession/page.tsx,SuccessionIndex,MITRA,Strong evidence
+src/app/(dashboard)/succession/scan/page.tsx,ScanPage,MITRA,Strong evidence
+src/app/(dashboard)/succession/tutorial/page.tsx,SuccessionTutorial,MITRA,Strong evidence
+src/app/(dashboard)/succession/will/page.tsx,WillPage,MITRA,Strong evidence
+src/app/(dashboard)/suchak/page.tsx,Dashboard,SUCHAK,Strong evidence
+src/app/(dashboard)/suraksha/page.tsx,SurakshaPage,SURAKSHA,Strong evidence
+src/app/(dashboard)/vault/page.tsx,VaultPage,SHARED,Confirmed
+src/app/(dashboard)/vyaya/add/page.tsx,AddExpensePage,VYAYA,Strong evidence
+src/app/(dashboard)/vyaya/analytics/page.tsx,VyayaAnalyticsPage,VYAYA,Strong evidence
+src/app/(dashboard)/vyaya/budget/page.tsx,BudgetPage,VYAYA,Strong evidence
+src/app/(dashboard)/vyaya/categories/page.tsx,CategoriesPage,VYAYA,Strong evidence
+src/app/(dashboard)/vyaya/entry/add/page.tsx,AddExpensePage,VYAYA,Strong evidence
+src/app/(dashboard)/vyaya/entry/page.tsx,VyayaHub,VYAYA,Strong evidence
+src/app/(dashboard)/vyaya/page.tsx,VyayaHub,VYAYA,Strong evidence
+src/app/(dashboard)/vyaya/subscriptions/add/page.tsx,AddSubscriptionPage,VYAYA,Strong evidence
+src/app/(dashboard)/vyaya/subscriptions/page.tsx,SubscriptionsPage,VYAYA,Strong evidence
+src/app/(landing)/about/page.tsx,"AboutPage, metadata",LANDING,Strong evidence
+src/app/(landing)/blog/page.tsx,"BlogPage, metadata",LANDING,Strong evidence
+src/app/(landing)/careers/page.tsx,"CareersPage, metadata",LANDING,Strong evidence
+src/app/(landing)/contact/page.tsx,ContactPage,LANDING,Strong evidence
+src/app/(landing)/customers-reviews/page.tsx,"CustomersReviewsPage, metadata",LANDING,Strong evidence
+src/app/(landing)/features/page.tsx,FeaturesPage,LANDING,Strong evidence
+src/app/(landing)/forget-password/page.tsx,ForgotPasswordPage,LANDING,Strong evidence
+src/app/(landing)/layout.tsx,LandingLayout,LANDING,Strong evidence
+src/app/(landing)/login/page.tsx,LoginRedirect,LANDING,Strong evidence
+src/app/(landing)/map/page.tsx,MapPage,LANDING,Strong evidence
+src/app/(landing)/page.tsx,LandingPage,LANDING,Strong evidence
+src/app/(landing)/partner-with-us/page.tsx,"PartnerWithUsPage, metadata",LANDING,Strong evidence
+src/app/(landing)/pricing/page.tsx,"PricingPage, metadata",LANDING,Strong evidence
+src/app/(landing)/privacy/page.tsx,"PrivacyPage, metadata",LANDING,Strong evidence
+src/app/(landing)/register/page.tsx,RegisterRedirect,LANDING,Strong evidence
+src/app/(landing)/roadmap/page.tsx,RoadmapPage,LANDING,Strong evidence
+src/app/(landing)/security/page.tsx,"SecurityPage, metadata",LANDING,Strong evidence
+src/app/(landing)/terms/page.tsx,"TermsPage, metadata",LANDING,Strong evidence
+src/app/(onboarding)/layout.tsx,OnboardingLayout,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/contact-info/page.tsx,ContactStep,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/dob/page.tsx,DOBStep,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/family/page.tsx,TrustDeclaration,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/firstwin/page.tsx,FirstWin,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/intro/page.tsx,RajyaNirmaanIntro,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/layout.tsx,OnboardingLayout,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/name/page.tsx,NameStep,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/occupation/page.tsx,OccupationStep,ONBOARDING,Strong evidence
+src/app/(onboarding)/onboarding/status/page.tsx,StatusStep,ONBOARDING,Strong evidence
+src/app/api/auth/create-user/route.ts,POST,AUTH,Strong evidence
+src/app/api/auth/google-callback/route.ts,GET,AUTH,Strong evidence
+src/app/api/auth/google-status/route.ts,GET,AUTH,Strong evidence
+src/app/api/auth/google/route.ts,GET,AUTH,Strong evidence
+src/app/api/auth/link-google/route.ts,GET,AUTH,Strong evidence
+src/app/api/auth/send-confirmation/route.ts,POST,AUTH,Strong evidence
+src/app/api/auth/send-otp/route.ts,POST,AUTH,Strong evidence
+src/app/api/auth/send-reset/route.ts,POST,AUTH,Strong evidence
+src/app/api/auth/send-welcome/route.ts,POST,AUTH,Strong evidence
+src/app/api/auth/unlink-google/route.ts,POST,AUTH,Strong evidence
+src/app/api/auth/verify-otp/route.ts,POST,AUTH,Strong evidence
+src/app/api/auth/webhook/route.ts,POST,AUTH,Strong evidence
+src/app/api/bank/[id]/route.ts,"GET, PUT, DELETE",KHATE,Strong evidence
+src/app/api/bank/route.ts,"GET, POST",KHATE,Strong evidence
+src/app/api/bhoomi/properties/[id]/route.ts,"PUT, DELETE",BHOOMI,Strong evidence
+src/app/api/bhoomi/properties/route.ts,"GET, POST",BHOOMI,Strong evidence
+src/app/api/budget/route.ts,"GET, POST",SHARED,Confirmed
+src/app/api/check-phone/route.ts,GET,SHARED,Confirmed
+src/app/api/check-user/route.ts,GET,SHARED,Confirmed
+src/app/api/contact/route.ts,"postHandler, getHandler",LANDING,Strong evidence
+src/app/api/credentials/[id]/route.ts,DELETE,DWAAR,Strong evidence
+src/app/api/credentials/route.ts,"GET, POST",DWAAR,Strong evidence
+src/app/api/din/records/[id]/route.ts,"GET, PUT, DELETE",KAR,Strong evidence
+src/app/api/din/records/route.ts,"GET, POST",KAR,Strong evidence
+src/app/api/documents/route.ts,"GET, POST",GRANTHAGAAR,Strong evidence
+src/app/api/education/[id]/route.ts,"DELETE, GET, PUT",FOUNDATION,Strong evidence
+src/app/api/education/route.ts,"GET, POST, DELETE",FOUNDATION,Strong evidence
+src/app/api/expense-categories/route.ts,"GET, POST",VYAYA,Strong evidence
+src/app/api/expenses/[id]/route.ts,"PUT, DELETE",VYAYA,Strong evidence
+src/app/api/expenses/route.ts,"GET, POST",VYAYA,Strong evidence
+src/app/api/family/route.ts,"dynamic, GET, POST, PATCH, DELETE",FOUNDATION,Strong evidence
+src/app/api/google-drive/download/route.ts,GET,SHARED,Confirmed
+src/app/api/google-drive/upload/route.ts,POST,SHARED,Confirmed
+src/app/api/google-drive/view/route.ts,GET,SHARED,Confirmed
+src/app/api/gst/records/[id]/route.ts,"GET, PUT, DELETE",KAR,Strong evidence
+src/app/api/gst/records/route.ts,"GET, POST",KAR,Strong evidence
+src/app/api/identity/[id]/route.ts,"GET, PUT",PEHCHAAN,Strong evidence
+src/app/api/identity/links/route.ts,"GET, POST, DELETE",PEHCHAAN,Strong evidence
+src/app/api/identity/reminders/route.ts,"GET, POST",PEHCHAAN,Strong evidence
+src/app/api/identity/route.ts,"GET, POST",PEHCHAAN,Strong evidence
+src/app/api/identity/settings/route.ts,"GET, POST",PEHCHAAN,Strong evidence
+src/app/api/income/[id]/route.ts,"GET, PUT, DELETE",KOSH,Strong evidence
+src/app/api/income/route.ts,"GET, POST",KOSH,Strong evidence
+src/app/api/insurance/[id]/route.ts,"GET, PUT, DELETE",RAKSHA,Strong evidence
+src/app/api/insurance/route.ts,"GET, POST",RAKSHA,Strong evidence
+src/app/api/kar/din/route.ts,"GET, POST",KAR,Strong evidence
+src/app/api/kar/gst/route.ts,"GET, POST",KAR,Strong evidence
+src/app/api/kar/insights/route.ts,GET,KAR,Strong evidence
+src/app/api/kar/summary/route.ts,GET,KAR,Strong evidence
+src/app/api/kar/tax/route.ts,"GET, POST",KAR,Strong evidence
+src/app/api/loans/[id]/route.ts,"GET, PUT, DELETE",RIN,Strong evidence
+src/app/api/loans/route.ts,"GET, POST",RIN,Strong evidence
+src/app/api/nominee/[id]/route.ts,DELETE,MITRA,Strong evidence
+src/app/api/nominee/assets/route.ts,GET,MITRA,Strong evidence
+src/app/api/nominee/route.ts,"GET, POST",MITRA,Strong evidence
+src/app/api/notifications/[id]/route.ts,"PUT, DELETE",SHARED,Confirmed
+src/app/api/notifications/read-all/route.ts,PUT,SHARED,Confirmed
+src/app/api/notifications/route.ts,"GET, POST",SHARED,Confirmed
+src/app/api/profile/route.ts,"GET, POST",SHARED,Confirmed
+src/app/api/reminders/route.ts,"GET, POST",DOOT,Strong evidence
+src/app/api/subscriptions/[id]/route.ts,"PUT, DELETE",LEAKAGE,Strong evidence
+src/app/api/subscriptions/route.ts,"GET, POST",LEAKAGE,Strong evidence
+src/app/api/succession/assets/route.ts,GET,MITRA,Strong evidence
+src/app/api/succession/emergency/route.ts,"GET, POST",MITRA,Strong evidence
+src/app/api/succession/nominees/[id]/route.ts,"PUT, DELETE",MITRA,Strong evidence
+src/app/api/succession/nominees/route.ts,"GET, POST",MITRA,Strong evidence
+src/app/api/succession/will/route.ts,"GET, POST",MITRA,Strong evidence
+src/app/api/tax/records/[id]/route.ts,"GET, PUT, DELETE",KAR,Strong evidence
+src/app/api/tax/records/route.ts,"GET, POST",KAR,Strong evidence
+src/app/api/user/route.ts,DELETE,SHARED,Confirmed
+src/app/api/will/route.ts,"GET, POST",MITRA,Strong evidence
+src/app/auth/google/success/page.tsx,Page,AUTH,Strong evidence
+src/app/favicon.ico,N/A,SHARED,Confirmed
+src/app/globals.css,N/A,SHARED,Confirmed
+src/app/landing.css,N/A,SHARED,Confirmed
+src/app/layout.tsx,"RootLayout, metadata, viewport",SHARED,Confirmed
+src/app/not-found.tsx,NotFound,SHARED,Confirmed
+src/components/auth/OAuthFragmentHandler.tsx,OAuthFragmentHandler,AUTH,Strong evidence
+src/components/cards/DependencyBadge.tsx,DependencyBadge,SHARED,Confirmed
+src/components/cards/DocCard.tsx,DocCard,SHARED,Confirmed
+src/components/cards/IncomeCard.tsx,IncomeCard,SHARED,Confirmed
+src/components/cards/IncomeTypeChips.tsx,IncomeTypeChips,SHARED,Confirmed
+src/components/cards/KeyStabilityMeter.tsx,KeyStabilityMeter,SHARED,Confirmed
+src/components/cards/MasterPassphraseModal.tsx,MasterPassphraseModal,SHARED,Confirmed
+src/components/cards/PortalCard.tsx,PortalCard,SHARED,Confirmed
+src/components/cards/SealStrengthRing.tsx,SealStrengthRing,SHARED,Confirmed
+src/components/cards/TreasuryMaturityBar.tsx,TreasuryMaturityBar,SHARED,Confirmed
+src/components/cards/TreasurySummaryCard.tsx,TreasurySummaryCard,SHARED,Confirmed
+src/components/credentials/KeyStabilityMeter.tsx,KeyStabilityMeter,DWAAR,Strong evidence
+src/components/credentials/MasterPassphraseModal.tsx,MasterPassphraseModal,DWAAR,Strong evidence
+src/components/credentials/PortalCard.tsx,PortalCard,DWAAR,Strong evidence
+src/components/games/ChaturangaBoard.tsx,ChaturangaBoard,SHARED,Confirmed
+src/components/games/FamilyTreeForge.tsx,"FamilyMember, FamilyTreeGame",SHARED,Confirmed
+src/components/games/MandalaLinkBoard.tsx,"IdentityData, MandalaIdentityGame",SHARED,Confirmed
+src/components/games/MicroLearningWrapper.tsx,MicroLearningWrapper,SHARED,Confirmed
+src/components/games/NumberInputGame.tsx,NumberInputGame,SHARED,Confirmed
+src/components/games/ScrollIndexing.tsx,"EducationTile, ScrollAssemblyGame",SHARED,Confirmed
+src/components/games/SelectGridGame.tsx,SelectGridGame,SHARED,Confirmed
+src/components/identity/DocCard.tsx,DocCard,PEHCHAAN,Strong evidence
+src/components/identity/SealStrengthRing.tsx,SealStrengthRing,PEHCHAAN,Strong evidence
+src/components/landing/.gitkeep,N/A,LANDING,Strong evidence
+src/components/landing/ConsentModal.tsx,ConsentModal,LANDING,Strong evidence
+src/components/landing/Footer.tsx,Footer,LANDING,Strong evidence
+src/components/landing/LoadingSkeleton.tsx,"LoadingSkeleton, CardSkeleton, ZoneCardSkeleton, MapSkeleton, EmptyState, OfflineNotice",LANDING,Strong evidence
+src/components/landing/Navbar.tsx,Navbar,LANDING,Strong evidence
+src/components/landing/RoyalSealModal.tsx,RoyalSealModal,LANDING,Strong evidence
+src/components/landing/ZoneCard.tsx,ZoneCard,LANDING,Strong evidence
+src/components/landing/ZoneFloatingGrid.tsx,ZoneFloatingGrid,LANDING,Strong evidence
+src/components/landing/modals/ConsentModal.tsx,ConsentModal,LANDING,Strong evidence
+src/components/landing/modals/LoadingSkeleton.tsx,"LoadingSkeleton, CardSkeleton, ZoneCardSkeleton, MapSkeleton, EmptyState",LANDING,Strong evidence
+src/components/landing/modals/RoyalSealModal.tsx,RoyalSealModal,LANDING,Strong evidence
+src/components/landing/ui/Badge.tsx,"Badge, BadgeUnlockModal",LANDING,Strong evidence
+src/components/landing/ui/Button.tsx,Button,LANDING,Strong evidence
+src/components/landing/ui/Card.tsx,Card,LANDING,Strong evidence
+src/components/landing/ui/ProgressRing.tsx,ProgressRing,LANDING,Strong evidence
+src/components/landing/utils/cn.ts,cn,LANDING,Strong evidence
+src/components/landing/utils/navigationHistory.ts,"APPS, LANDING_PAGE, WEB_PAGES, pushNavigationHistory, getNavigationHistory, getLastUrl, getPreviousUrl, clearNavigationHistory, navigateTo, navigateBack",LANDING,Strong evidence
+src/components/landing/zones/ZoneCard.tsx,ZoneCard,LANDING,Strong evidence
+src/components/layouts/BottomNav.tsx,BottomNav,SHARED,Confirmed
+src/components/layouts/DashboardLayout.tsx,DashboardLayout,SHARED,Confirmed
+src/components/layouts/DesktopRightPanel.tsx,DesktopRightPanel,SHARED,Confirmed
+src/components/layouts/DesktopSidebar.tsx,DesktopSidebar,SHARED,Confirmed
+src/components/module1/FamilyTreeGame.tsx,"FamilyMember, FamilyTreeGame",FOUNDATION,Strong evidence
+src/components/module1/MandalaIdentityGame.tsx,"IdentityData, MandalaIdentityGame",FOUNDATION,Strong evidence
+src/components/module1/ScrollAssemblyGame.tsx,"EducationTile, ScrollAssemblyGame",FOUNDATION,Strong evidence
+src/components/module/MicroLearningWrapper.tsx,MicroLearningWrapper,SHARED,Confirmed
+src/components/module/NumberInputGame.tsx,NumberInputGame,SHARED,Confirmed
+src/components/module/SelectGridGame.tsx,SelectGridGame,SHARED,Confirmed
+src/components/providers/AuthProvider.tsx,"AuthProvider, useAuth",SHARED,Confirmed
+src/components/providers/ThemeProvider.tsx,ThemeProvider,SHARED,Confirmed
+src/components/providers/ToastProvider.tsx,"ToastProvider, useToast",SHARED,Confirmed
+src/components/rajya/DependencyBadge.tsx,DependencyBadge,SUCHAK,Strong evidence
+src/components/shared/AlertToast.tsx,AlertToast,SHARED,Confirmed
+src/components/shared/AuthSync.tsx,AuthSync,SHARED,Confirmed
+src/components/shared/GlobalTopRightMenu.tsx,GlobalTopRightMenu,SHARED,Confirmed
+src/components/shared/NumberInputRupee.tsx,NumberInputRupee,SHARED,Confirmed
+src/components/shared/PageGuide.tsx,PageGuide,SHARED,Confirmed
+src/components/shared/UserAvatar.tsx,UserAvatar,SHARED,Confirmed
+src/components/treasury/ChaturangaBoard.tsx,ChaturangaBoard,KOSH,Strong evidence
+src/components/treasury/DependencyBadge.tsx,DependencyBadge,KOSH,Strong evidence
+src/components/treasury/IncomeCard.tsx,IncomeCard,KOSH,Strong evidence
+src/components/treasury/IncomeTypeChips.tsx,IncomeTypeChips,KOSH,Strong evidence
+src/components/treasury/NumberInputRupee.tsx,NumberInputRupee,KOSH,Strong evidence
+src/components/treasury/TreasuryMaturityBar.tsx,TreasuryMaturityBar,KOSH,Strong evidence
+src/components/treasury/TreasurySummaryCard.tsx,TreasurySummaryCard,KOSH,Strong evidence
+src/components/tutorials/TutorialCard.tsx,VideoTutorialPlaceholder,SHARED,Confirmed
+src/components/tutorials/YouTubeTutorial.tsx,"YouTubeTutorial, TutorialSection",SHARED,Confirmed
+src/components/ui/AlertToast.tsx,AlertToast,SHARED,Confirmed
+src/components/ui/AuthSync.tsx,N/A,SHARED,Confirmed
+src/components/ui/ConfirmModal.tsx,ConfirmModal,SHARED,Confirmed
+src/components/ui/GlobalTopRightMenu.tsx,GlobalTopRightMenu,SHARED,Confirmed
+src/components/ui/PageGuide.tsx,PageGuide,SHARED,Confirmed
+src/components/ui/UserAvatar.tsx,UserAvatar,SHARED,Confirmed
+src/components/ui/VideoTutorialPlaceholder.tsx,VideoTutorialPlaceholder,SHARED,Confirmed
+src/components/ui/YouTubeTutorial.tsx,"YouTubeTutorial, TutorialSection",SHARED,Confirmed
+src/components/vault/FileUploader.tsx,FileUploader,GRANTHAGAAR,Strong evidence
+src/config/chapters.config.ts,"ChapterConfig, CHAPTERS, getChapterById, getChaptersByModule",SHARED,Confirmed
+src/config/modules.config.ts,"ModuleConfig, MODULES, MODULE_ORDER",SHARED,Confirmed
+src/config/rajya.config.ts,"RajyaZone, RAJYA_ZONES, RAJYA_SCORE_LABELS, getRajyaScoreLabel",SHARED,Confirmed
+src/config/tutorials.config.ts,"TutorialItem, TUTORIALS, getTutorialById",SHARED,Confirmed
+src/context/landing/.gitkeep,N/A,LANDING,Strong evidence
+src/context/landing/AppContext.tsx,"AppProvider, useApp",LANDING,Strong evidence
+src/context/landing/LanguageContext.tsx,"LanguageProvider, useLanguage",LANDING,Strong evidence
+src/lib/bankApi.ts,"BankFlowMetrics, BankHealthMetrics, BankSummary, fetchBankSummary, saveBankAccount, saveCashWallet, saveLiquiditySettings, checkDuplicateAccounts, maskAccountNumber",SHARED,Confirmed
+src/lib/bankStore.ts,"AccountType, AccountStatus, BalanceUpdateSource, EncryptedSecret, BankAccount, CashWallet, LiquiditySettings, BankStore",KHATE,Confirmed
+src/lib/cloudDriveSync.ts,CloudDriveSync,SHARED,Confirmed
+src/lib/contactValidation.ts,"normalizeIndianMobile, validateIndianMobile, validateControlledEmail",SHARED,Confirmed
+src/lib/credentialStore.ts,"PortalCategory, TaxSubcategory, UtilitySubcategory, DematSubcategory, TwoFAType, PasswordStorageMode, TwoFAStatus, EncryptedSecret, PortalRecord, PORTAL_CATEGORIES, CATEGORY_TUTORIALS, TAX_SUBCATEGORIES, UTILITY_SUBCATEGORIES, DEMAT_SUBCATEGORIES, INDIAN_BANKS, CrossModuleDeps, CredentialStore",DWAAR,Confirmed
+src/lib/crypto.ts,"deriveKey, encryptString, decryptString, verifyPassphrase",SHARED,Confirmed
+src/lib/documentValidation.ts,"ValidationLevel, ValidationResult, DocumentValidator",GRANTHAGAAR,Strong evidence
+src/lib/email-templates/EmailWrapper.tsx,EmailWrapper,SHARED,Confirmed
+src/lib/email-templates/confirmation-email.tsx,ConfirmationEmail,SHARED,Confirmed
+src/lib/email-templates/html-templates.ts,"getEmailWrapperHtml, getConfirmationEmailHtml, getResetPasswordEmailHtml, getEmergencyOtpEmailHtml",SHARED,Confirmed
+src/lib/email-templates/reset-password-email.tsx,ResetPasswordEmail,SHARED,Confirmed
+src/lib/engines/calculationEngine.ts,"FinancialSnapshot, RajyaCalculations, calculateNetWorth, calculateDebtBurden, calculateEmergencyMonths, calculateSavingsRate, calculateInsuranceAdequacy, calculateRajyaStabilityIndex, runAllCalculations",SHARED,Confirmed
+src/lib/engines/gamificationEngine.ts,"BadgeId, Badge, GamificationState, BADGES, LEVEL_THRESHOLDS, getLevelFromPoints, awardBadge, calculateTotalPoints, isChapterUnlocked, calculateModuleProgress",SHARED,Confirmed
+src/lib/engines/localVaultEngine.ts,LocalVaultEngine,SHARED,Confirmed
+src/lib/engines/quizEngine.ts,"QuestionType, MCQQuestion, NumericQuestion, MappingQuestion, SealQuestion, QuizQuestion, QuizResult, QuizSummary, validateMCQ, validateNumeric, validateMapping, validateSeal, summarizeQuiz",SHARED,Confirmed
+src/lib/engines/reminderEngine.ts,"ReminderType, ReminderFrequency, Reminder, ReminderTrigger, getNextTriggerDate, shouldFireToday, getUpcomingReminders, getOverdueReminders, createDocExpiryReminder, formatReminderDueText",SHARED,Confirmed
+src/lib/expenseStore.ts,"PaymentMode, ExpenseFrequency, PAYMENT_MODES, ExpenseCategoryDef, PRESET_CATEGORIES, ExpenseEntry, Subscription, ExpenseStore",VYAYA,Confirmed
+src/lib/firebase/firebase.ts,N/A,SHARED,Confirmed
+src/lib/googleAuth.ts,getValidGoogleAccessToken,SHARED,Confirmed
+src/lib/googleDriveUtils.ts,"DriveCategory, moveGoogleDriveFile, syncDocumentMemberAssociation",SHARED,Confirmed
+src/lib/hooks/useAuth.ts,N/A,SHARED,Confirmed
+src/lib/hooks/useCalculations.ts,"useCalculations, useStabilityIndex, useEmptySnapshot",SHARED,Confirmed
+src/lib/identityStore.ts,"DocType, ContactPoint, IdentityDoc, LinkMapping, RenewalReminder, isLinkableDoc, calcSealStrength, IdentityStore",PEHCHAAN,Confirmed
+src/lib/incomeStore.ts,"IncomeType, Frequency, RiskLevel, RecordStatus, IncomeRecord, INCOME_TYPES, FREQUENCIES, TreasuryMilestone, formatRupee, IncomeStore",KOSH,Confirmed
+src/lib/landing/cn.ts,cn,SHARED,Confirmed
+src/lib/landing/navigationHistory.ts,"APPS, LANDING_PAGE, WEB_PAGES, pushNavigationHistory, getNavigationHistory, getLastUrl, getPreviousUrl, clearNavigationHistory, navigateTo, navigateBack",SHARED,Confirmed
+src/lib/localVaultEngine.ts,LocalVaultEngine,SHARED,Confirmed
+src/lib/middleware/auth.middleware.ts,"AuthContext, withAuth, getAuthContext",SHARED,Confirmed
+src/lib/middleware/error.middleware.ts,"withErrorHandler, composeMiddleware",SHARED,Confirmed
+src/lib/middleware/standardResponse.ts,"ApiSuccessResponse, ApiErrorResponse, ApiResponse, ErrorCodes, StatusCodes, successResponse, errorResponse, handlePrismaError",SHARED,Confirmed
+src/lib/middleware/validation.middleware.ts,withValidation,SHARED,Confirmed
+src/lib/onboardingStore.ts,"OnboardingData, OnboardingStore, deriveLifePhase",FOUNDATION,Confirmed
+src/lib/prisma.ts,prisma,SHARED,Confirmed
+src/lib/services/bankService.ts,"CreateBankAccountInput, UpdateBankAccountInput, bankService",KHATE,Confirmed
+src/lib/services/baseService.ts,N/A,SHARED,Confirmed
+src/lib/services/bhoomiService.ts,"CreateBhoomiPropertyInput, UpdateBhoomiPropertyInput, bhoomiService",BHOOMI,Confirmed
+src/lib/services/budgetService.ts,"CreateBudgetPlanInput, UpdateBudgetPlanInput, budgetService",VYAYA,Confirmed
+src/lib/services/credentialService.ts,"CreateCredentialRecordInput, UpdateCredentialRecordInput, credentialService",DWAAR,Confirmed
+src/lib/services/dinService.ts,"CreateDinRecordInput, UpdateDinRecordInput, dinService",KAR,Confirmed
+src/lib/services/documentService.ts,"VaultFolder, VaultFile, Vault",GRANTHAGAAR,Confirmed
+src/lib/services/educationService.ts,"CreateEducationInput, UpdateEducationInput, educationService",FOUNDATION,Confirmed
+src/lib/services/expenseCategoryService.ts,"CreateExpenseCategoryInput, expenseCategoryService",VYAYA,Confirmed
+src/lib/services/expenseService.ts,"CreateExpenseEntryInput, UpdateExpenseEntryInput, expenseService",VYAYA,Confirmed
+src/lib/services/familyService.ts,"CreateFamilyMemberInput, UpdateFamilyMemberInput, familyService",FOUNDATION,Confirmed
+src/lib/services/gstService.ts,"CreateGstRecordInput, UpdateGstRecordInput, gstService",KAR,Confirmed
+src/lib/services/identityService.ts,"CreateIdentityRecordInput, UpdateIdentityRecordInput, identityService",PEHCHAAN,Confirmed
+src/lib/services/incomeService.ts,"CreateIncomeStreamInput, UpdateIncomeStreamInput, incomeService",KOSH,Confirmed
+src/lib/services/insuranceService.ts,"InsurancePolicyWithCoverage, CreateInsurancePolicyInput, UpdateInsurancePolicyInput, InsuranceService, insuranceService",RAKSHA,Confirmed
+src/lib/services/loanService.ts,"CreateLoanAccountInput, UpdateLoanAccountInput, loanService",RIN,Confirmed
+src/lib/services/nomineeService.ts,"CreateNomineeMappingInput, UpdateNomineeMappingInput, nomineeService",MITRA,Confirmed
+src/lib/services/notificationService.ts,"CreateNotificationInput, UpdateNotificationInput, notificationService",SHARED,Confirmed
+src/lib/services/reminderService.ts,"CreateReminderInput, UpdateReminderInput, ReminderService, reminderService",DOOT,Confirmed
+src/lib/services/subscriptionAnalyticsService.ts,getSubscriptionAnalyticsForUser,LEAKAGE,Confirmed
+src/lib/services/subscriptionService.ts,"CreateSubscriptionInput, UpdateSubscriptionInput, subscriptionService",LEAKAGE,Confirmed
+src/lib/services/taxService.ts,"CreateTaxRecordInput, UpdateTaxRecordInput, taxService",KAR,Confirmed
+src/lib/services/userService.ts,"CreateUserInput, UpdateUserInput, userService",SHARED,Confirmed
+src/lib/services/willService.ts,"CreateWillStatusInput, UpdateWillStatusInput, willService",MITRA,Confirmed
+src/lib/stores/bankStore.ts,"AccountType, AccountStatus, BalanceUpdateSource, EncryptedSecret, BankAccount, CashWallet, LiquiditySettings, BankStore",KHATE,Confirmed
+src/lib/stores/credentialStore.ts,"PortalCategory, TaxSubcategory, UtilitySubcategory, DematSubcategory, TwoFAType, PasswordStorageMode, TwoFAStatus, AccessLevel, EmergencyRule, EncryptedSecret, PortalRecord, AccessMapping, PORTAL_CATEGORIES, CATEGORY_TUTORIALS, TAX_SUBCATEGORIES, UTILITY_SUBCATEGORIES, DEMAT_SUBCATEGORIES, INDIAN_BANKS, CrossModuleDeps, CredentialStore",DWAAR,Confirmed
+src/lib/stores/expenseStore.ts,"PaymentMode, ExpenseFrequency, PAYMENT_MODES, ExpenseCategoryDef, PRESET_CATEGORIES, ExpenseEntry, Subscription, ExpenseStore",VYAYA,Confirmed
+src/lib/stores/identityStore.ts,"DocType, ContactPoint, IdentityDoc, LinkMapping, RenewalReminder, isLinkableDoc, calcSealStrength, IdentityStore",PEHCHAAN,Confirmed
+src/lib/stores/incomeStore.ts,"IncomeType, Frequency, RiskLevel, RecordStatus, IncomeRecord, INCOME_TYPES, FREQUENCIES, TreasuryMilestone, formatRupee, IncomeStore",KOSH,Confirmed
+src/lib/stores/notificationStore.ts,"NotificationType, Notification, NotificationStore",SHARED,Confirmed
+src/lib/stores/onboardingStore.ts,"OnboardingData, OnboardingStore, deriveLifePhase",FOUNDATION,Confirmed
+src/lib/stores/rakshaStore.ts,useRakshaStore,RAKSHA,Confirmed
+src/lib/stores/sampattiStore.ts,"AssetCategory, Asset, useSampattiStore",SHARED,Confirmed
+src/lib/stores/themeStore.ts,"ThemeMode, ThemeStore",SHARED,Confirmed
+src/lib/stores/types.ts,"RajyaUser, KoshEntry, VyayaEntry, LeakageAudit, RajyaState",SHARED,Confirmed
+src/lib/subscriptionMetrics.js,N/A,SHARED,Confirmed
+src/lib/subscriptionMetrics.test.js,N/A,SHARED,Confirmed
+src/lib/subscriptionMetrics.ts,"SubscriptionMetricInput, SubscriptionMetrics, calculateSubscriptionMetrics",SHARED,Confirmed
+src/lib/supabase/client.ts,createClient,AUTH,Strong evidence
+src/lib/supabase/middleware.ts,updateSession,AUTH,Strong evidence
+src/lib/supabase/server.ts,createClient,AUTH,Strong evidence
+src/lib/themeStore.ts,"ThemeMode, ThemeStore",SHARED,Confirmed
+src/lib/types.ts,"RajyaUser, KoshEntry, VyayaEntry, LeakageAudit, RajyaState",SHARED,Confirmed
+src/lib/types/api.types.ts,"ApiResponse, PaginatedResponse, UserResponse, CreateProfileRequest, UpdateProfileRequest, TaxRecordResponse, GstRecordResponse, DinRecordResponse, KarSummaryResponse, CreateTaxRecordRequest, CreateGstRecordRequest, CreateDinRecordRequest, FamilyMemberResponse, CreateFamilyMemberRequest, UpdateFamilyMemberRequest, IdentityRecordResponse, CreateIdentityRecordRequest, UpdateIdentityRecordRequest, CredentialRecordResponse, CreateCredentialRecordRequest, UpdateCredentialRecordRequest, IncomeStreamResponse, CreateIncomeRequest, UpdateIncomeRequest, ExpenseEntryResponse, CreateExpenseRequest, UpdateExpenseRequest, BankAccountResponse, CreateBankAccountRequest, UpdateBankAccountRequest, InsurancePolicyResponse, CreateInsuranceRequest, UpdateInsuranceRequest",SHARED,Confirmed
+src/lib/types/rajya.types.ts,"RajyaUser, KoshEntry, VyayaEntry, LeakageAudit, RajyaState, LifePhase, AccessRole, Priority, PageGuideItem",SHARED,Confirmed
+src/lib/utils/cloudDriveSync.ts,CloudDriveSync,SHARED,Confirmed
+src/lib/utils/crypto.ts,"deriveKey, encryptString, decryptString, verifyPassphrase",SHARED,Confirmed
+src/lib/utils/fetcher.ts,fetcher,SHARED,Confirmed
+src/lib/utils/vaultExporter.ts,VaultExporter,SHARED,Confirmed
+src/lib/validators/contactValidator.ts,"normalizeIndianMobile, validateIndianMobile, validateControlledEmail",SHARED,Confirmed
+src/lib/validators/documentValidator.ts,"ValidationLevel, ValidationResult, DocumentValidator",PEHCHAAN,Strong evidence
+src/lib/vault.ts,"VaultFolder, VaultFile, Vault",GRANTHAGAAR,Strong evidence
+src/lib/vaultExporter.ts,VaultExporter,GRANTHAGAAR,Strong evidence
+src/locales/landing/.gitkeep,N/A,SHARED,Confirmed
+src/locales/landing/en.json,N/A,SHARED,Confirmed
+src/locales/landing/hi_mix.json,N/A,SHARED,Confirmed
+src/locales/landing/mr_mix.json,N/A,SHARED,Confirmed
+src/middleware.ts,"middleware, config",SHARED,Confirmed
+tatus,N/A,SHARED,Confirmed
+tsconfig.json,N/A,SHARED,Confirmed

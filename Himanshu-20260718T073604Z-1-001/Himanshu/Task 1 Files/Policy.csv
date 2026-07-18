@@ -1,0 +1,2 @@
+schemaname,tablename,policyname,permissive,roles,cmd,using_expression,check_expression
+storage,objects,Users can upload their own photos,PERMISSIVE,{public},ALL,(auth.role() = 'authenticated'::text),(auth.role() = 'authenticated'::text)

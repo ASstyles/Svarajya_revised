@@ -1,0 +1,28 @@
+Test ID,Module,Precondition,Steps,Dummy Data,Expected Result,Actual Result,Pass/Fail,Evidence,Related Bug ID
+TC-AUTH-01,AUTH,Anonymous user on landing page,"1. Click 'Continue with Google'
+2. Choose any verified Google Account",email: tester@svarajya.com,User session is established and user redirected to start screen.,Only whitelisted test accounts succeed. Others get auth error.,Fail,Bug 1 logs,BUG-01
+TC-AUTH-02,AUTH,User clicked recovery email link,"1. Open recovery link
+2. Attempt to input new password and save",password: NewPassword123!,Redirects to reset-password with access_token and updates password.,Displays 'Invalid token' error and redirects to /rajya without change.,Fail,Bug 2 screenshot,BUG-02
+TC-ONB-01,ONBOARDING,User on DOB onboarding step,"1. Select a date in the future (e.g. next year)
+2. Click next",DOB: 2027-01-01,Displays 'Date of birth cannot be in the future.',Displays 'This version supports users aged 18 and above.',Fail,Onboarding logs,BUG-04
+TC-ONB-02,ONBOARDING,User verifying phone number,"1. Enter mobile number
+2. Submit any code other than 1234",OTP: 9999,Rejects verification with error 'Invalid OTP code',"Accepts only '1234' as static code, does not send SMS",Fail,API response,BUG-05
+TC-FOUND-01,FOUNDATION,Adding a family member,"1. Enter a valid non-gmail address (e.g. yahoo)
+2. Submit",email: cousin@yahoo.com,Allows adding family member successfully.,Fails validation with invalid email format message.,Fail,Mitra page form,BUG-08
+TC-FOUND-02,FOUNDATION,Adding a family member,"1. Enter email that already exists in users DB
+2. Submit",email: adhipati@svarajya.com,Rejects with 'Email already registered as user.',Accepts duplicates without errors or warnings.,Fail,DB check,BUG-09
+TC-EDU-01,EDUCATION,User adding new qualification,"1. Toggle 'Education Loan Active' to True
+2. Save and refresh page","Degree: B.Tech, Loan: True",Qualification list displays active loan badge after refresh.,Active loan badge disappears on refresh.,Fail,Cache logs,BUG-12
+TC-EDU-02,EDUCATION,User editing existing qualification,1. Open edit qualification modal,id: edu-123,Education Loan toggle is visible and editable.,Toggle is completely missing from the UI layout.,Fail,Edit page code,BUG-14
+TC-KUNJI-01,DWAAR,Viewing portal details with encrypted password,1. Click 'Reveal Password',passphrase: MasterKey,"Prompts for master passphrase, decrypts and displays password.",Nothing happens when the reveal button is clicked.,Fail,Dwaar screen,BUG-16
+TC-RAKSHA-01,RAKSHA,Adding new policy,"1. Click Sum Assured field
+2. Enter 500000",Amount: 500000,"Shows ₹ 500,000 without leading zeros.",Shows 0500000; leading zero must be deleted manually.,Fail,Policies UI,BUG-18
+TC-RAKSHA-02,RAKSHA,Viewing uploaded policy document,1. Click on uploaded PDF filename,docId: cloud-777,Downloads or views file from Drive.,Google Drive returns 'File does not exist' error.,Fail,Drive error screen,BUG-21
+TC-KHATE-01,KHATE,User has a primary bank account,"1. Add a second bank account
+2. Toggle 'Primary' to True
+3. Save",Account B: Primary,"Account B becomes primary, Account A is automatically unset.",Both accounts display as primary simultaneously.,Fail,Bank Hub UI,BUG-22
+TC-VYAYA-01,VYAYA,Adding a recurring expense,"1. Toggle 'Is Recurring' to True
+2. Select frequency 'Monthly'
+3. Save","Amount: 1500, Freq: Monthly",Saves frequency to database `frequency` column.,Saves isRecurring as true but frequency column remains NULL.,Fail,DB record check,BUG-28
+TC-MITRA-01,MITRA,Will emergency contact details,"1. Enter alphabets in phone fields
+2. Save",Primary: 'abcdefghij',Rejects saving: 'Phone number must be a 10-digit number.',Allows saving non-numeric letters successfully.,Fail,Emergency page form,BUG-39

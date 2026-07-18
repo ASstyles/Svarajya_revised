@@ -1,0 +1,115 @@
+// Shared in-memory store for onboarding data across steps.
+
+export type OnboardingData = {
+    fullName: string;
+    dob: string;
+    lifePhase: string;
+    maritalStatus: string;
+    occupationType: string;
+    occupationOther: string;
+    email: string;
+    mobile?: string;
+    whatsappEnabled: boolean;
+    priority: string; // Save / Protect / Grow / Organise
+    familyMembers: Array<{
+        id: string;
+        name: string;
+        relationship: string;
+        dob: string;
+        dependent: boolean;
+        nomineeEligible: boolean;
+        accessRole: "Viewer" | "Executor" | "Emergency-only" | "None";
+    }>;
+};
+
+let _data: Partial<OnboardingData> = {};
+type FamilyMember = OnboardingData["familyMembers"][number];
+
+export const OnboardingStore = {
+    get: () => ({ ..._data }),
+    set: async (
+        partial: Partial<OnboardingData>,
+        options: { sync?: boolean } = { sync: true }
+    ) => {
+        _data = { ..._data, ...partial };
+        if (typeof window === 'undefined' || options.sync === false) {
+            return;
+        }
+
+        try {
+            // Map local 'fullName' to 'name' which Prisma and the API strictly require
+            const payload: any = {
+                ..._data,
+                name: _data.fullName ?? (_data as any).name,
+            };
+            delete payload.fullName;
+
+            // Map mobile to phone for API
+            if (_data.mobile !== undefined) {
+                payload.phone = _data.mobile;
+            }
+            delete payload.mobile;
+
+            await fetch('/api/profile', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
+        } catch (err: any) {
+            if (err.name === 'AbortError') return; // Expected on fast navigation
+            console.error('Failed to sync profile', err);
+        }
+    },
+    addFamilyMember: async (member: FamilyMember) => {
+        _data.familyMembers = [...(_data.familyMembers || []), member];
+        if (typeof window !== 'undefined') {
+            try {
+                const res = await fetch('/api/family', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(member)
+                });
+                if (res.ok) {
+                    const dbMember = await res.json();
+                    _data.familyMembers = _data.familyMembers!.map(m => m.id === member.id ? dbMember : m);
+                }
+            } catch (err) {
+                console.error("Failed to sync family member", err);
+            }
+        }
+    },
+    hydrate: async () => {
+        if (typeof window !== 'undefined') {
+            try {
+                const res = await fetch('/api/profile');
+                if (res.ok) {
+                    const dbProfile = await res.json();
+                    if (dbProfile && dbProfile.data) {
+                        // CRITICAL Fix: Map 'name' from API to 'fullName' in store
+                        const profileData = dbProfile.data;
+                        const normalizedProfile: any = {
+                            ..._data,
+                            ...profileData,
+                            fullName: profileData.name || _data.fullName,
+                        };
+                        delete normalizedProfile.name;
+                        _data = normalizedProfile;
+                    }
+                }
+            } catch (err) {
+                console.error("Failed to hydrate profile", err);
+            }
+        }
+    },
+    reset: () => { _data = {}; },
+};
+
+// Life Phase logic derived from DOB
+export function deriveLifePhase(dob: string): string {
+    if (!dob) return "Nirmaan";
+    const age = new Date().getFullYear() - new Date(dob).getFullYear();
+    if (age < 25) return "Yuva";
+    if (age < 40) return "Nirmaan";
+    if (age < 60) return "Sthirta";
+    return "Parampara";
+}
