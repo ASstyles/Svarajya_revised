@@ -1,0 +1,4 @@
+Source ID,Source Name,Source Type,Version / Date,Total Items Extracted,Access Status,Limitations
+SRC-001,DA Team Workbook,Excel Workbook,2026-07-22,215,Extracted,Live verification pending WD sign-off
+SRC-002,Svarajya Testing Report PDF,QA Stress Test,2026-07-14,62,Extracted,Media evidence unverified live
+SRC-003,Jira Issue Export,Jira CSV,2026-07-20,40,Extracted,Needs PM priority confirmation

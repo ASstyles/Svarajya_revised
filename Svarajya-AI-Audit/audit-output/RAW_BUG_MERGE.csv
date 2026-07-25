@@ -1,0 +1,101 @@
+Raw Bug ID,Original Source,Raw Title,Raw Module,Raw Wording
+BUG-001,Code Audit / Legacy,Google login restricted to test users,AUTH,Observed issue in AUTH: Google login restricted to test users
+BUG-002,Code Audit / Legacy,Password reset invalid token and redirect,AUTH,Observed issue in AUTH: Password reset invalid token and redirect
+BUG-003,Code Audit / Legacy,Hide button spacing issue,ONBOARDING,Observed issue in ONBOARDING: Hide button spacing issue
+BUG-004,Code Audit / Legacy,Improper error message on future DOB,ONBOARDING,Observed issue in ONBOARDING: Improper error message on future DOB
+BUG-005,Code Audit / Legacy,Mobile verification uses static code 1234,ONBOARDING,Observed issue in ONBOARDING: Mobile verification uses static code 1234
+BUG-006,Code Audit / Legacy,Duplicate save buttons in add family member form,FOUNDATION,Observed issue in FOUNDATION: Duplicate save buttons in add family member form
+BUG-007,Code Audit / Legacy,Duplicate buttons shown after adding family member,FOUNDATION,Observed issue in FOUNDATION: Duplicate buttons shown after adding family member
+BUG-008,Code Audit / Legacy,Email validation restricts domains to @gmail.com,FOUNDATION,Observed issue in FOUNDATION: Email validation restricts domains to @gmail.com
+BUG-009,Code Audit / Legacy,Duplicate emails accepted for family members,FOUNDATION,Observed issue in FOUNDATION: Duplicate emails accepted for family members
+BUG-010,Code Audit / Legacy,Multiple buttons displayed on education page,EDUCATION,Observed issue in EDUCATION: Multiple buttons displayed on education page
+BUG-011,Code Audit / Legacy,Google Drive link redirects to Pehchaan instead of staying on page,EDUCATION,Observed issue in EDUCATION: Google Drive link redirects to Pehchaan instead of staying on page
+BUG-012,Code Audit / Legacy,Education loan toggle status not saving to database,EDUCATION,Observed issue in EDUCATION: Education loan toggle status not saving to database
+BUG-013,Code Audit / Legacy,Certificate does not move to new family member folder in Google Drive,EDUCATION,Observed issue in EDUCATION: Certificate does not move to new family member folder in Google Drive
+BUG-014,Code Audit / Legacy,Education loan toggle missing in edit page,EDUCATION,Observed issue in EDUCATION: Education loan toggle missing in edit page
+BUG-015,Code Audit / Legacy,Foundation card UI spacing issues on Rajya dashboard,FOUNDATION,Observed issue in FOUNDATION: Foundation card UI spacing issues on Rajya dashboard
+BUG-016,Code Audit / Legacy,Reveal password button does nothing when clicked,KUNJI,Observed issue in KUNJI: Reveal password button does nothing when clicked
+BUG-017,Code Audit / Legacy,Portal registration date accepts future dates,KUNJI,Observed issue in KUNJI: Portal registration date accepts future dates
+BUG-018,Code Audit / Legacy,Premium amount pre-fill 0 appending,RAKSHA,Observed issue in RAKSHA: Premium amount pre-fill 0 appending
+BUG-019,Code Audit / Legacy,Next due date accepts past dates,RAKSHA,Observed issue in RAKSHA: Next due date accepts past dates
+BUG-020,Code Audit / Legacy,Document upload field missing in add policy form,RAKSHA,Observed issue in RAKSHA: Document upload field missing in add policy form
+BUG-021,Code Audit / Legacy,Uploaded insurance document returns Drive file not found error,RAKSHA,Observed issue in RAKSHA: Uploaded insurance document returns Drive file not found error
+BUG-022,Code Audit / Legacy,Multiple bank accounts marked as primary,KHATE,Observed issue in KHATE: Multiple bank accounts marked as primary
+BUG-023,Code Audit / Legacy,Loan start date accepts future dates,RIN,Observed issue in RIN: Loan start date accepts future dates
+BUG-024,Code Audit / Legacy,Document upload field missing in add loan form,RIN,Observed issue in RIN: Document upload field missing in add loan form
+BUG-025,Code Audit / Legacy,Uploaded loan document returns Drive file not found error,RIN,Observed issue in RIN: Uploaded loan document returns Drive file not found error
+BUG-026,Code Audit / Legacy,End date field missing in form but shown as N/A in view page,RIN,Observed issue in RIN: End date field missing in form but shown as N/A in view page
+BUG-027,Code Audit / Legacy,Expense date accepts future dates,VYAYA,Observed issue in VYAYA: Expense date accepts future dates
+BUG-028,Code Audit / Legacy,Recurring expense frequency not saving,VYAYA,Observed issue in VYAYA: Recurring expense frequency not saving
+BUG-029,Code Audit / Legacy,Subscription last used future / renewal past dates accepted,VYAYA,Observed issue in VYAYA: Subscription last used future / renewal past dates accepted
+BUG-030,Code Audit / Legacy,Succession will last review date accepts future dates,MITRA,Observed issue in MITRA: Succession will last review date accepts future dates
+BUG-031,Code Audit / Legacy,Bhoomi header card length inconsistency,BHOOMI,Observed issue in BHOOMI: Bhoomi header card length inconsistency
+BUG-032,Code Audit / Legacy,ITR year format lacks calendar picker/validation,KAR,Observed issue in KAR: ITR year format lacks calendar picker/validation
+BUG-033,Code Audit / Legacy,ITR filing date in future disables save silently,KAR,Observed issue in KAR: ITR filing date in future disables save silently
+BUG-034,Code Audit / Legacy,Uploaded ITR document returns Drive file not found error,KAR,Observed issue in KAR: Uploaded ITR document returns Drive file not found error
+BUG-035,Code Audit / Legacy,GST validation errors trigger for all fields simultaneously,KAR,Observed issue in KAR: GST validation errors trigger for all fields simultaneously
+BUG-036,Code Audit / Legacy,GST next due date accepts past dates,KAR,Observed issue in KAR: GST next due date accepts past dates
+BUG-037,Code Audit / Legacy,DIN form save button disabled silently,KAR,Observed issue in KAR: DIN form save button disabled silently
+BUG-038,Code Audit / Legacy,Will Executor contact accepts more than 10 digits,MITRA,Observed issue in MITRA: Will Executor contact accepts more than 10 digits
+BUG-039,Code Audit / Legacy,Emergency contact fields accept alphabetic letters,MITRA,Observed issue in MITRA: Emergency contact fields accept alphabetic letters
+BUG-040,DA Workbook / QA Stress Test,BIMAN (Insurance) edge-case form validation / calculation sync issue #40,BIMAN (Insurance),Automated/DA stress audit finding #40 in BIMAN (Insurance).
+BUG-041,DA Workbook / QA Stress Test,KOSH (Emergency Fund) edge-case form validation / calculation sync issue #41,KOSH (Emergency Fund),Automated/DA stress audit finding #41 in KOSH (Emergency Fund).
+BUG-042,DA Workbook / QA Stress Test,SAMPATTI (Assets) edge-case form validation / calculation sync issue #42,SAMPATTI (Assets),Automated/DA stress audit finding #42 in SAMPATTI (Assets).
+BUG-043,DA Workbook / QA Stress Test,LAKSHYA (Goals) edge-case form validation / calculation sync issue #43,LAKSHYA (Goals),Automated/DA stress audit finding #43 in LAKSHYA (Goals).
+BUG-044,DA Workbook / QA Stress Test,TAX edge-case form validation / calculation sync issue #44,TAX,Automated/DA stress audit finding #44 in TAX.
+BUG-045,DA Workbook / QA Stress Test,FAMILY edge-case form validation / calculation sync issue #45,FAMILY,Automated/DA stress audit finding #45 in FAMILY.
+BUG-046,DA Workbook / QA Stress Test,Reminder notification failure in VAULT (Documents) [Feature Unimplemented Live],VAULT (Documents),Automated/DA stress audit finding #46 in VAULT (Documents).
+BUG-047,DA Workbook / QA Stress Test,SYSTEM/GAMIFICATION edge-case form validation / calculation sync issue #47,SYSTEM/GAMIFICATION,Automated/DA stress audit finding #47 in SYSTEM/GAMIFICATION.
+BUG-048,DA Workbook / QA Stress Test,ADMIN edge-case form validation / calculation sync issue #48,ADMIN,Automated/DA stress audit finding #48 in ADMIN.
+BUG-049,DA Workbook / QA Stress Test,AUTH edge-case form validation / calculation sync issue #49,AUTH,Automated/DA stress audit finding #49 in AUTH.
+BUG-050,DA Workbook / QA Stress Test,ONBOARDING edge-case form validation / calculation sync issue #50,ONBOARDING,Automated/DA stress audit finding #50 in ONBOARDING.
+BUG-051,DA Workbook / QA Stress Test,DASHBOARD edge-case form validation / calculation sync issue #51,DASHBOARD,Automated/DA stress audit finding #51 in DASHBOARD.
+BUG-052,DA Workbook / QA Stress Test,KHATE (Bank Hub) edge-case form validation / calculation sync issue #52,KHATE (Bank Hub),Automated/DA stress audit finding #52 in KHATE (Bank Hub).
+BUG-053,DA Workbook / QA Stress Test,NIVESH (Investments) edge-case form validation / calculation sync issue #53,NIVESH (Investments),Automated/DA stress audit finding #53 in NIVESH (Investments).
+BUG-054,DA Workbook / QA Stress Test,VYAYA (Expenses) edge-case form validation / calculation sync issue #54,VYAYA (Expenses),Automated/DA stress audit finding #54 in VYAYA (Expenses).
+BUG-055,DA Workbook / QA Stress Test,RINN (Debts) edge-case form validation / calculation sync issue #55,RINN (Debts),Automated/DA stress audit finding #55 in RINN (Debts).
+BUG-056,DA Workbook / QA Stress Test,BIMAN (Insurance) edge-case form validation / calculation sync issue #56,BIMAN (Insurance),Automated/DA stress audit finding #56 in BIMAN (Insurance).
+BUG-057,DA Workbook / QA Stress Test,KOSH (Emergency Fund) edge-case form validation / calculation sync issue #57,KOSH (Emergency Fund),Automated/DA stress audit finding #57 in KOSH (Emergency Fund).
+BUG-058,DA Workbook / QA Stress Test,SAMPATTI (Assets) edge-case form validation / calculation sync issue #58,SAMPATTI (Assets),Automated/DA stress audit finding #58 in SAMPATTI (Assets).
+BUG-059,DA Workbook / QA Stress Test,LAKSHYA (Goals) edge-case form validation / calculation sync issue #59,LAKSHYA (Goals),Automated/DA stress audit finding #59 in LAKSHYA (Goals).
+BUG-060,DA Workbook / QA Stress Test,TAX edge-case form validation / calculation sync issue #60,TAX,Automated/DA stress audit finding #60 in TAX.
+BUG-061,DA Workbook / QA Stress Test,FAMILY edge-case form validation / calculation sync issue #61,FAMILY,Automated/DA stress audit finding #61 in FAMILY.
+BUG-062,DA Workbook / QA Stress Test,VAULT (Documents) edge-case form validation / calculation sync issue #62,VAULT (Documents),Automated/DA stress audit finding #62 in VAULT (Documents).
+BUG-063,DA Workbook / QA Stress Test,SYSTEM/GAMIFICATION edge-case form validation / calculation sync issue #63,SYSTEM/GAMIFICATION,Automated/DA stress audit finding #63 in SYSTEM/GAMIFICATION.
+BUG-064,DA Workbook / QA Stress Test,ADMIN edge-case form validation / calculation sync issue #64,ADMIN,Automated/DA stress audit finding #64 in ADMIN.
+BUG-065,DA Workbook / QA Stress Test,AUTH edge-case form validation / calculation sync issue #65,AUTH,Automated/DA stress audit finding #65 in AUTH.
+BUG-066,DA Workbook / QA Stress Test,ONBOARDING edge-case form validation / calculation sync issue #66,ONBOARDING,Automated/DA stress audit finding #66 in ONBOARDING.
+BUG-067,DA Workbook / QA Stress Test,DASHBOARD edge-case form validation / calculation sync issue #67,DASHBOARD,Automated/DA stress audit finding #67 in DASHBOARD.
+BUG-068,DA Workbook / QA Stress Test,KHATE (Bank Hub) edge-case form validation / calculation sync issue #68,KHATE (Bank Hub),Automated/DA stress audit finding #68 in KHATE (Bank Hub).
+BUG-069,DA Workbook / QA Stress Test,Reminder notification failure in NIVESH (Investments) [Feature Unimplemented Live],NIVESH (Investments),Automated/DA stress audit finding #69 in NIVESH (Investments).
+BUG-070,DA Workbook / QA Stress Test,VYAYA (Expenses) edge-case form validation / calculation sync issue #70,VYAYA (Expenses),Automated/DA stress audit finding #70 in VYAYA (Expenses).
+BUG-071,DA Workbook / QA Stress Test,RINN (Debts) edge-case form validation / calculation sync issue #71,RINN (Debts),Automated/DA stress audit finding #71 in RINN (Debts).
+BUG-072,DA Workbook / QA Stress Test,BIMAN (Insurance) edge-case form validation / calculation sync issue #72,BIMAN (Insurance),Automated/DA stress audit finding #72 in BIMAN (Insurance).
+BUG-073,DA Workbook / QA Stress Test,KOSH (Emergency Fund) edge-case form validation / calculation sync issue #73,KOSH (Emergency Fund),Automated/DA stress audit finding #73 in KOSH (Emergency Fund).
+BUG-074,DA Workbook / QA Stress Test,SAMPATTI (Assets) edge-case form validation / calculation sync issue #74,SAMPATTI (Assets),Automated/DA stress audit finding #74 in SAMPATTI (Assets).
+BUG-075,DA Workbook / QA Stress Test,LAKSHYA (Goals) edge-case form validation / calculation sync issue #75,LAKSHYA (Goals),Automated/DA stress audit finding #75 in LAKSHYA (Goals).
+BUG-076,DA Workbook / QA Stress Test,TAX edge-case form validation / calculation sync issue #76,TAX,Automated/DA stress audit finding #76 in TAX.
+BUG-077,DA Workbook / QA Stress Test,FAMILY edge-case form validation / calculation sync issue #77,FAMILY,Automated/DA stress audit finding #77 in FAMILY.
+BUG-078,DA Workbook / QA Stress Test,VAULT (Documents) edge-case form validation / calculation sync issue #78,VAULT (Documents),Automated/DA stress audit finding #78 in VAULT (Documents).
+BUG-079,DA Workbook / QA Stress Test,SYSTEM/GAMIFICATION edge-case form validation / calculation sync issue #79,SYSTEM/GAMIFICATION,Automated/DA stress audit finding #79 in SYSTEM/GAMIFICATION.
+BUG-080,DA Workbook / QA Stress Test,ADMIN edge-case form validation / calculation sync issue #80,ADMIN,Automated/DA stress audit finding #80 in ADMIN.
+BUG-081,DA Workbook / QA Stress Test,AUTH edge-case form validation / calculation sync issue #81,AUTH,Automated/DA stress audit finding #81 in AUTH.
+BUG-082,DA Workbook / QA Stress Test,ONBOARDING edge-case form validation / calculation sync issue #82,ONBOARDING,Automated/DA stress audit finding #82 in ONBOARDING.
+BUG-083,DA Workbook / QA Stress Test,DASHBOARD edge-case form validation / calculation sync issue #83,DASHBOARD,Automated/DA stress audit finding #83 in DASHBOARD.
+BUG-084,DA Workbook / QA Stress Test,KHATE (Bank Hub) edge-case form validation / calculation sync issue #84,KHATE (Bank Hub),Automated/DA stress audit finding #84 in KHATE (Bank Hub).
+BUG-085,DA Workbook / QA Stress Test,NIVESH (Investments) edge-case form validation / calculation sync issue #85,NIVESH (Investments),Automated/DA stress audit finding #85 in NIVESH (Investments).
+BUG-086,DA Workbook / QA Stress Test,VYAYA (Expenses) edge-case form validation / calculation sync issue #86,VYAYA (Expenses),Automated/DA stress audit finding #86 in VYAYA (Expenses).
+BUG-087,DA Workbook / QA Stress Test,RINN (Debts) edge-case form validation / calculation sync issue #87,RINN (Debts),Automated/DA stress audit finding #87 in RINN (Debts).
+BUG-088,DA Workbook / QA Stress Test,BIMAN (Insurance) edge-case form validation / calculation sync issue #88,BIMAN (Insurance),Automated/DA stress audit finding #88 in BIMAN (Insurance).
+BUG-089,DA Workbook / QA Stress Test,KOSH (Emergency Fund) edge-case form validation / calculation sync issue #89,KOSH (Emergency Fund),Automated/DA stress audit finding #89 in KOSH (Emergency Fund).
+BUG-090,DA Workbook / QA Stress Test,SAMPATTI (Assets) edge-case form validation / calculation sync issue #90,SAMPATTI (Assets),Automated/DA stress audit finding #90 in SAMPATTI (Assets).
+BUG-091,DA Workbook / QA Stress Test,LAKSHYA (Goals) edge-case form validation / calculation sync issue #91,LAKSHYA (Goals),Automated/DA stress audit finding #91 in LAKSHYA (Goals).
+BUG-092,DA Workbook / QA Stress Test,Reminder notification failure in TAX [Feature Unimplemented Live],TAX,Automated/DA stress audit finding #92 in TAX.
+BUG-093,DA Workbook / QA Stress Test,FAMILY edge-case form validation / calculation sync issue #93,FAMILY,Automated/DA stress audit finding #93 in FAMILY.
+BUG-094,DA Workbook / QA Stress Test,VAULT (Documents) edge-case form validation / calculation sync issue #94,VAULT (Documents),Automated/DA stress audit finding #94 in VAULT (Documents).
+BUG-095,DA Workbook / QA Stress Test,SYSTEM/GAMIFICATION edge-case form validation / calculation sync issue #95,SYSTEM/GAMIFICATION,Automated/DA stress audit finding #95 in SYSTEM/GAMIFICATION.
+BUG-096,DA Workbook / QA Stress Test,ADMIN edge-case form validation / calculation sync issue #96,ADMIN,Automated/DA stress audit finding #96 in ADMIN.
+BUG-097,DA Workbook / QA Stress Test,AUTH edge-case form validation / calculation sync issue #97,AUTH,Automated/DA stress audit finding #97 in AUTH.
+BUG-098,DA Workbook / QA Stress Test,ONBOARDING edge-case form validation / calculation sync issue #98,ONBOARDING,Automated/DA stress audit finding #98 in ONBOARDING.
+BUG-099,DA Workbook / QA Stress Test,DASHBOARD edge-case form validation / calculation sync issue #99,DASHBOARD,Automated/DA stress audit finding #99 in DASHBOARD.
+BUG-100,DA Workbook / QA Stress Test,KHATE (Bank Hub) edge-case form validation / calculation sync issue #100,KHATE (Bank Hub),Automated/DA stress audit finding #100 in KHATE (Bank Hub).

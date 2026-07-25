@@ -1,0 +1,479 @@
+Source File,Line / Approx Location,Pattern Found,Code Snippet,Initial Guess Table/Bucket/Function,Notes
+src/app/(auth)/intro-cinematic/page.tsx,Line 21,.from(,"{Array.from({ length: 40 }).map((_, i) => {",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/(auth)/intro-cinematic/page.tsx,Line 78,.from(,"{Array.from({ length: 15 }).map((_, i) => (",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/(auth)/reset-password/page.tsx,Line 7,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(auth)/reset-password/page.tsx,Line 7,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(auth)/reset-password/page.tsx,Line 11,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(auth)/reset-password/page.tsx,Line 11,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(auth)/reset-password/page.tsx,Line 128,supabase,const { error: sessionError } = await supabase.auth.setSession({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/reset-password/page.tsx,Line 128,supabase.auth,const { error: sessionError } = await supabase.auth.setSession({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/reset-password/page.tsx,Line 136,supabase,const { error: updateError } = await supabase.auth.updateUser({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/reset-password/page.tsx,Line 136,supabase.auth,const { error: updateError } = await supabase.auth.updateUser({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/reset-password/page.tsx,Line 143,supabase,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/reset-password/page.tsx,Line 143,supabase.auth,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 21,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 21,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 94,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 94,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 157,supabase,supabase.auth.signOut().then(() => {,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 157,supabase.auth,supabase.auth.signOut().then(() => {,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 168,.delete(,"newUrl.searchParams.delete(""verification_success"");",Unknown - review adjacent code,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 172,supabase,"}, [searchParams, supabase.auth]);",Supabase Auth,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 172,supabase.auth,"}, [searchParams, supabase.auth]);",Supabase Auth,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 186,.delete(,"newUrl.searchParams.delete(""error"");",Unknown - review adjacent code,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 207,.delete(,"newUrl.searchParams.delete(""success"");",Unknown - review adjacent code,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 228,supabase,const { data } = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 228,supabase.auth,const { data } = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 231,supabase,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 231,supabase.auth,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 241,supabase,"}, [supabase.auth, mode]);",Supabase Auth,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 241,supabase.auth,"}, [supabase.auth, mode]);",Supabase Auth,Occurrence retained for review
+src/app/(auth)/start/page.tsx,Line 426,supabase,await supabase.auth.signInWithPassword({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 426,supabase.auth,await supabase.auth.signInWithPassword({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 471,supabase,const { error: signInError } = await supabase.auth.signInWithPassword({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/start/page.tsx,Line 471,supabase.auth,const { error: signInError } = await supabase.auth.signInWithPassword({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/verify-email/VerifyEmailClient.tsx,Line 13,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(auth)/verify-email/VerifyEmailClient.tsx,Line 13,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(auth)/verify-email/VerifyEmailClient.tsx,Line 18,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(auth)/verify-email/VerifyEmailClient.tsx,Line 18,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(auth)/verify-email/VerifyEmailClient.tsx,Line 47,supabase,const { error: resendError } = await supabase.auth.resend({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(auth)/verify-email/VerifyEmailClient.tsx,Line 47,supabase.auth,const { error: resendError } = await supabase.auth.resend({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 8,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(dashboard)/foundation/page.tsx,Line 8,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(dashboard)/foundation/page.tsx,Line 53,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 53,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 114,supabase,const { data: { user } } = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 114,supabase.auth,const { data: { user } } = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 121,supabase,const { error: uploadError } = await supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 121,supabase.storage,const { error: uploadError } = await supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 122,.from(,".from(""profile-photos"")",Unknown - review adjacent code,Occurrence retained for review
+src/app/(dashboard)/foundation/page.tsx,Line 127,supabase,const { data: urlData } = supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 127,supabase.storage,const { data: urlData } = supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 128,.from(,".from(""profile-photos"")",Unknown - review adjacent code,Occurrence retained for review
+src/app/(dashboard)/foundation/page.tsx,Line 133,supabase,const { error: updateError } = await supabase.auth.updateUser({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 133,supabase.auth,const { error: updateError } = await supabase.auth.updateUser({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 150,supabase,"}, [supabase]);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/(dashboard)/foundation/page.tsx,Line 158,supabase,await supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 158,supabase.storage,await supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 159,.from(,".from(""profile-photos"")",Unknown - review adjacent code,Occurrence retained for review
+src/app/(dashboard)/foundation/page.tsx,Line 164,supabase,const { error: updateError } = await supabase.auth.updateUser({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 164,supabase.auth,const { error: updateError } = await supabase.auth.updateUser({,Supabase Auth,Executable Supabase usage included in final map
+src/app/(dashboard)/foundation/page.tsx,Line 179,supabase,"}, [photoUrl, supabase]);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/(dashboard)/kar/itr/[id]/edit/page.tsx,Line 18,.from(,"const YEAR_OPTIONS = Array.from({ length: 11 }, (_, i) => {",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/(dashboard)/kar/itr/new/page.tsx,Line 18,.from(,"const YEAR_OPTIONS = Array.from({ length: 11 }, (_, i) => {",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/(dashboard)/kar/page.tsx,Line 259,.from(,"{Array.from({ length: 7 }).map((_, idx) => (",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/(dashboard)/kosh/analytics/page.tsx,Line 253,.from(,"{Array.from({ length: p.max }).map((_, i) => (",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/(dashboard)/succession/emergency/page.tsx,Line 208,.delete(,current.delete(scope);,Unknown - review adjacent code,Occurrence retained for review
+src/app/(dashboard)/succession/emergency/page.tsx,Line 212,.from(,"setField('assetAccessScope', Array.from(current));",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/(landing)/forget-password/page.tsx,Line 5,createClient,import { createClient } from '@/lib/supabase/client';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(landing)/forget-password/page.tsx,Line 5,supabase,import { createClient } from '@/lib/supabase/client';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(landing)/forget-password/page.tsx,Line 15,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(landing)/forget-password/page.tsx,Line 15,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(landing)/forget-password/page.tsx,Line 42,supabase,const { error: resetError } = await supabase.auth.resetPasswordForEmail(,Supabase Auth,Executable Supabase usage included in final map
+src/app/(landing)/forget-password/page.tsx,Line 42,supabase.auth,const { error: resetError } = await supabase.auth.resetPasswordForEmail(,Supabase Auth,Executable Supabase usage included in final map
+src/app/(onboarding)/onboarding/firstwin/page.tsx,Line 8,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(onboarding)/onboarding/firstwin/page.tsx,Line 8,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/app/(onboarding)/onboarding/firstwin/page.tsx,Line 88,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(onboarding)/onboarding/firstwin/page.tsx,Line 88,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/(onboarding)/onboarding/firstwin/page.tsx,Line 89,supabase,await supabase.auth.updateUser({ data: { onboarding_completed: true } });,Supabase Auth,Executable Supabase usage included in final map
+src/app/(onboarding)/onboarding/firstwin/page.tsx,Line 89,supabase.auth,await supabase.auth.updateUser({ data: { onboarding_completed: true } });,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google-callback/route.ts,Line 5,createClient,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 5,supabase,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 5,supabase,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 7,createClient,const supabaseAdmin = createClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/google-callback/route.ts,Line 7,supabase,const supabaseAdmin = createClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/google-callback/route.ts,Line 8,NEXT_PUBLIC_SUPABASE_URL,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 8,supabase,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 9,supabase,"process.env.SUPABASE_SERVICE_ROLE_KEY!,",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 56,.from(,"stateData = JSON.parse(Buffer.from(state, 'base64').toString('utf-8'));",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/api/auth/google-callback/route.ts,Line 116,.update(,await prisma.user.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/auth/google-callback/route.ts,Line 178,supabase,// 1. Check if user exists in Supabase,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 179,supabase,"const { data: listUsers, error: listError } = await supabaseAdmin.auth.admin.listUsers();",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google-callback/route.ts,Line 179,supabase.auth,"const { data: listUsers, error: listError } = await supabaseAdmin.auth.admin.listUsers();",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google-callback/route.ts,Line 182,supabase,"console.error('Supabase list users error:', listError);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 188,supabase,let supabaseUser;,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 192,supabase,supabaseUser = existingSupaUser;,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 194,supabase,// Create user in Supabase,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 195,supabase,"const { data: newSupaUser, error: createError } = await supabaseAdmin.auth.admin.createUser({",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google-callback/route.ts,Line 195,supabase.auth,"const { data: newSupaUser, error: createError } = await supabaseAdmin.auth.admin.createUser({",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google-callback/route.ts,Line 202,supabase,"console.error('Supabase user creation error:', createError);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 206,supabase,supabaseUser = newSupaUser.user;,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 211,.upsert(,await prisma.user.upsert({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/auth/google-callback/route.ts,Line 212,supabase,"where: { id: supabaseUser.id },",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 220,supabase,"id: supabaseUser.id,",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/google-callback/route.ts,Line 233,supabase,"const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google-callback/route.ts,Line 233,supabase.auth,"const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google-status/route.ts,Line 2,createClient,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/google-status/route.ts,Line 2,supabase,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/google-status/route.ts,Line 7,createClient,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/google-status/route.ts,Line 7,supabase,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/google-status/route.ts,Line 8,supabase,const { data: { session } } = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google-status/route.ts,Line 8,supabase.auth,const { data: { session } } = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google/route.ts,Line 2,createClient,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/google/route.ts,Line 2,supabase,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/google/route.ts,Line 6,createClient,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/google/route.ts,Line 6,supabase,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/google/route.ts,Line 7,supabase,const { data: { session } } = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google/route.ts,Line 7,supabase.auth,const { data: { session } } = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/google/route.ts,Line 21,.from(,const state = Buffer.from(JSON.stringify(statePayload)).toString('base64');,JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/api/auth/link-google/route.ts,Line 2,createClient,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/link-google/route.ts,Line 2,supabase,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/link-google/route.ts,Line 6,createClient,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/link-google/route.ts,Line 6,supabase,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/link-google/route.ts,Line 7,supabase,const { data: { session } } = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/link-google/route.ts,Line 7,supabase.auth,const { data: { session } } = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/link-google/route.ts,Line 23,.from(,const state = Buffer.from(JSON.stringify({,JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/app/api/auth/send-confirmation/route.ts,Line 2,createClient,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/send-confirmation/route.ts,Line 2,supabase,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/send-confirmation/route.ts,Line 2,supabase,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/send-confirmation/route.ts,Line 9,createClient,const supabaseAdmin = createClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/send-confirmation/route.ts,Line 9,supabase,const supabaseAdmin = createClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/send-confirmation/route.ts,Line 10,NEXT_PUBLIC_SUPABASE_URL,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/app/api/auth/send-confirmation/route.ts,Line 10,supabase,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/app/api/auth/send-confirmation/route.ts,Line 11,supabase,process.env.SUPABASE_SERVICE_ROLE_KEY!,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/send-confirmation/route.ts,Line 34,supabase,// Generate link using Admin API (creates the user but prevents Supabase from sending its default email),Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/send-confirmation/route.ts,Line 35,supabase,"const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/send-confirmation/route.ts,Line 35,supabase.auth,"const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/send-confirmation/route.ts,Line 48,supabase,// We use the action_link generated by Supabase because it properly verifies the token,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/send-confirmation/route.ts,Line 49,supabase,// on the Supabase backend and then redirects to the callback route with the necessary session info.,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/send-otp/route.ts,Line 13,.update(,return createHash('sha256').update(`${code}:${userId}:${purpose}`).digest('hex');,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/auth/send-reset/route.ts,Line 2,createClient,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/send-reset/route.ts,Line 2,supabase,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/send-reset/route.ts,Line 2,supabase,import { createClient } from '@supabase/supabase-js';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/auth/send-reset/route.ts,Line 8,createClient,const supabaseAdmin = createClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/send-reset/route.ts,Line 8,supabase,const supabaseAdmin = createClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/auth/send-reset/route.ts,Line 9,NEXT_PUBLIC_SUPABASE_URL,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/app/api/auth/send-reset/route.ts,Line 9,supabase,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/app/api/auth/send-reset/route.ts,Line 10,supabase,process.env.SUPABASE_SERVICE_ROLE_KEY!,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/send-reset/route.ts,Line 21,supabase,"const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/send-reset/route.ts,Line 21,supabase.auth,"const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/auth/send-reset/route.ts,Line 30,supabase,// We use the action_link generated by Supabase.,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/send-reset/route.ts,Line 31,supabase,"// When the user clicks this, Supabase verifies the recovery token and generates",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/unlink-google/route.ts,Line 11,.update(,await prisma.user.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/auth/verify-otp/route.ts,Line 9,.update(,return createHash('sha256').update(`${code}:${userId}:${purpose}`).digest('hex');,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 4,supabase,// Supabase Database Webhook handler for auth.users,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 5,supabase,// Needs to be configured in Supabase Dashboard -> Database -> Webhooks,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 13,supabase,const webhookSecret = process.env.SUPABASE_WEBHOOK_SECRET;,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 28,supabase,"await userService.syncUserWithSupabase(id, email, name);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 47,.update(,"await userService.update(id, updateData);",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 52,supabase,"await userService.syncUserWithSupabase(id, email || '', name);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 58,supabase,// Delete user from Prisma if deleted from Supabase Auth,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 63,supabase,// Use prisma directly to avoid trying to delete from Supabase again,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/auth/webhook/route.ts,Line 65,.delete(,await prisma.user.delete({ where: { id } });,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/auth/webhook/route.ts,Line 75,supabase,"console.error('[Webhook] Error processing Supabase webhook:', error);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/bank/[id]/route.ts,Line 37,.update(,"const updated = await prisma.bankAccount.update({ where: { id }, data: updateData });",Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/bank/[id]/route.ts,Line 134,.delete(,await prisma.bankAccount.delete({ where: { id } });,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/bank/route.ts,Line 136,.upsert(,const wallet = await prisma.cashWallet.upsert({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/bank/route.ts,Line 156,.upsert(,await prisma.cashWallet.upsert({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/bank/route.ts,Line 185,.update(,"account = await bankService.update(data.id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/credentials/[id]/route.ts,Line 26,.delete(,await credentialService.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/credentials/route.ts,Line 87,.update(,"record = await credentialService.update(data.id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/din/records/[id]/route.ts,Line 54,.update(,const updated = await prisma.dinRecord.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/documents/route.ts,Line 61,.update(,await prisma.insurancePolicy.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/education/[id]/route.ts,Line 33,.update(,await prisma.documentMeta.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/education/[id]/route.ts,Line 96,.delete(,await educationService.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/education/[id]/route.ts,Line 192,.update(,"const updatedRecord = await educationService.update(id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/education/route.ts,Line 68,.delete(,educationCache.delete(authContext.userId);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/education/route.ts,Line 114,.delete(,educationCache.delete(authContext.userId);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/education/route.ts,Line 128,.delete(,await educationService.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/expenses/[id]/route.ts,Line 20,.update(,"const updated = await expenseService.update(id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/expenses/[id]/route.ts,Line 36,.delete(,await expenseService.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/expenses/route.ts,Line 89,.update(,"expense = await expenseService.update(data.id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/family/route.ts,Line 87,.delete(,familyCache.delete(authContext.userId);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/family/route.ts,Line 124,.update(,"member = await familyService.update(data.id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/family/route.ts,Line 181,.delete(,familyCache.delete(authContext.userId);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/family/route.ts,Line 237,.delete(,familyCache.delete(authContext.userId);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/family/route.ts,Line 252,.update(,"const member = await familyService.update(id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/google-drive/download/route.ts,Line 2,createClient,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/google-drive/download/route.ts,Line 2,supabase,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/google-drive/download/route.ts,Line 18,createClient,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/google-drive/download/route.ts,Line 18,supabase,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/google-drive/download/route.ts,Line 19,supabase,"const { data: { session }, error: sessionError } = await supabase.auth.getSession();",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/google-drive/download/route.ts,Line 19,supabase.auth,"const { data: { session }, error: sessionError } = await supabase.auth.getSession();",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/google-drive/upload/route.ts,Line 2,createClient,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/google-drive/upload/route.ts,Line 2,supabase,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/google-drive/upload/route.ts,Line 16,createClient,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/google-drive/upload/route.ts,Line 16,supabase,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/google-drive/upload/route.ts,Line 17,supabase,"const { data: { session }, error: sessionError } = await supabase.auth.getSession();",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/google-drive/upload/route.ts,Line 17,supabase.auth,"const { data: { session }, error: sessionError } = await supabase.auth.getSession();",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/google-drive/view/route.ts,Line 2,createClient,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/google-drive/view/route.ts,Line 2,supabase,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/google-drive/view/route.ts,Line 18,createClient,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/google-drive/view/route.ts,Line 18,supabase,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/google-drive/view/route.ts,Line 19,supabase,"const { data: { session }, error: sessionError } = await supabase.auth.getSession();",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/google-drive/view/route.ts,Line 19,supabase.auth,"const { data: { session }, error: sessionError } = await supabase.auth.getSession();",Supabase Auth,Executable Supabase usage included in final map
+src/app/api/gst/records/[id]/route.ts,Line 60,.update(,const updated = await prisma.gstRecord.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/identity/[id]/route.ts,Line 38,.update(,await prisma.documentMeta.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/identity/[id]/route.ts,Line 196,.update(,"const updatedRecord = await identityService.update(id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/identity/links/route.ts,Line 96,.delete(,await prisma.identityLink.delete({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/identity/reminders/route.ts,Line 67,.update(,reminder = await prisma.reminder.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/identity/route.ts,Line 38,.update(,await prisma.documentMeta.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/identity/route.ts,Line 148,.update(,"record = await identityService.update(data.id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/identity/settings/route.ts,Line 62,.update(,const updatedUser = await prisma.user.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/income/[id]/route.ts,Line 83,.update(,"const stream = await incomeService.update(id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/income/[id]/route.ts,Line 144,.delete(,await incomeService.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/income/route.ts,Line 92,.update(,"stream = await incomeService.update(data.id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/insurance/[id]/route.ts,Line 87,.update(,"const policy = await insuranceService.update(id, authContext.userId, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/insurance/[id]/route.ts,Line 164,.delete(,"const success = await insuranceService.delete(id, authContext.userId);",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/loans/[id]/route.ts,Line 59,.update(,"const updated = await loanService.update(id, {",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/loans/[id]/route.ts,Line 114,.delete(,await loanService.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/nominee/[id]/route.ts,Line 19,.delete(,await nomineeService.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/notifications/[id]/route.ts,Line 37,.delete(,const notification = await notificationService.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/profile/route.ts,Line 2,createClient,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/profile/route.ts,Line 2,supabase,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/app/api/profile/route.ts,Line 52,supabase,"await userService.syncUserWithSupabase(authContext.userId, authContext.email || '', '');",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/profile/route.ts,Line 147,.delete(,profileCache.delete(authContext.userId);,Unknown - review adjacent code,Occurrence retained for review
+src/app/api/profile/route.ts,Line 208,.update(,"user = await userService.update(authContext.userId, patch);",Unknown - review adjacent code,Occurrence retained for review
+src/app/api/profile/route.ts,Line 211,supabase,// Sync to Supabase Auth metadata (non-blocking),Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/profile/route.ts,Line 213,createClient,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/profile/route.ts,Line 213,supabase,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/app/api/profile/route.ts,Line 218,supabase,supabase.auth.updateUser({ data: updateData }).catch((err) => {,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/profile/route.ts,Line 218,supabase.auth,supabase.auth.updateUser({ data: updateData }).catch((err) => {,Supabase Auth,Executable Supabase usage included in final map
+src/app/api/profile/route.ts,Line 219,supabase,"console.error(""[Profile POST] Failed to sync to Supabase Auth:"", err);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/succession/emergency/route.ts,Line 46,.upsert(,const upsert = await prisma.successionEmergency.upsert({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/succession/nominees/[id]/route.ts,Line 30,.update(,"const updated = await prisma.successionNominee.update({ where: { id }, data: updateData });",Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/succession/nominees/[id]/route.ts,Line 48,.delete(,await prisma.successionNominee.delete({ where: { id } });,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/succession/will/route.ts,Line 26,.upsert(,const upsert = await prisma.successionWill.upsert({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/tax/records/[id]/route.ts,Line 54,.update(,const updated = await prisma.taxRecord.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/app/api/user/route.ts,Line 8,supabase,* Deletes the current authenticated user from both Supabase Auth and Prisma,Supabase reference; executable status traced separately,Occurrence retained for review
+src/app/api/user/route.ts,Line 21,.delete(,await userService.delete(authContext.userId);,Unknown - review adjacent code,Occurrence retained for review
+src/app/auth/google/success/page.tsx,Line 9,.from(,"actionLink = Buffer.from(encoded, 'base64').toString('utf-8');",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/components/auth/OAuthFragmentHandler.tsx,Line 5,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/auth/OAuthFragmentHandler.tsx,Line 5,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/auth/OAuthFragmentHandler.tsx,Line 9,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/auth/OAuthFragmentHandler.tsx,Line 9,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/auth/OAuthFragmentHandler.tsx,Line 37,supabase,const { error } = await supabase.auth.setSession({,Supabase Auth,Executable Supabase usage included in final map
+src/components/auth/OAuthFragmentHandler.tsx,Line 37,supabase.auth,const { error } = await supabase.auth.setSession({,Supabase Auth,Executable Supabase usage included in final map
+src/components/auth/OAuthFragmentHandler.tsx,Line 74,supabase,"}, [router, supabase.auth]);",Supabase Auth,Occurrence retained for review
+src/components/auth/OAuthFragmentHandler.tsx,Line 74,supabase.auth,"}, [router, supabase.auth]);",Supabase Auth,Occurrence retained for review
+src/components/games/SelectGridGame.tsx,Line 30,.delete(,newSelected.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/components/games/SelectGridGame.tsx,Line 76,.from(,onClick={() => onSave(Array.from(selected))},JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/components/layouts/BottomNav.tsx,Line 8,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/layouts/BottomNav.tsx,Line 8,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/layouts/BottomNav.tsx,Line 61,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/layouts/BottomNav.tsx,Line 61,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/layouts/BottomNav.tsx,Line 62,supabase,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/components/layouts/BottomNav.tsx,Line 62,supabase.auth,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/components/layouts/DesktopSidebar.tsx,Line 9,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/layouts/DesktopSidebar.tsx,Line 9,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/layouts/DesktopSidebar.tsx,Line 87,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/layouts/DesktopSidebar.tsx,Line 87,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/layouts/DesktopSidebar.tsx,Line 88,supabase,const { data: { user: freshUser } } = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/components/layouts/DesktopSidebar.tsx,Line 88,supabase.auth,const { data: { user: freshUser } } = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/components/layouts/DesktopSidebar.tsx,Line 118,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/layouts/DesktopSidebar.tsx,Line 118,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/layouts/DesktopSidebar.tsx,Line 119,supabase,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/components/layouts/DesktopSidebar.tsx,Line 119,supabase.auth,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/components/module/SelectGridGame.tsx,Line 30,.delete(,newSelected.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/components/module/SelectGridGame.tsx,Line 83,.from(,onClick={() => onSave(Array.from(selected))},JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/components/providers/AuthProvider.tsx,Line 4,createClient,import { createClient } from '@/lib/supabase/client',Supabase client initialization/import/reference,Occurrence retained for review
+src/components/providers/AuthProvider.tsx,Line 4,supabase,import { createClient } from '@/lib/supabase/client',Supabase client initialization/import/reference,Occurrence retained for review
+src/components/providers/AuthProvider.tsx,Line 5,supabase,"import type { User, Session } from '@supabase/supabase-js'",Supabase reference; executable status traced separately,Occurrence retained for review
+src/components/providers/AuthProvider.tsx,Line 5,supabase,"import type { User, Session } from '@supabase/supabase-js'",Supabase reference; executable status traced separately,Occurrence retained for review
+src/components/providers/AuthProvider.tsx,Line 25,createClient,const supabase = createClient(),Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/providers/AuthProvider.tsx,Line 25,supabase,const supabase = createClient(),Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/providers/AuthProvider.tsx,Line 29,supabase,supabase.auth.getSession().then(({ data: { session } }) => {,Supabase Auth,Executable Supabase usage included in final map
+src/components/providers/AuthProvider.tsx,Line 29,supabase.auth,supabase.auth.getSession().then(({ data: { session } }) => {,Supabase Auth,Executable Supabase usage included in final map
+src/components/providers/AuthProvider.tsx,Line 36,supabase,const { data: { subscription } } = supabase.auth.onAuthStateChange(,Supabase Auth,Executable Supabase usage included in final map
+src/components/providers/AuthProvider.tsx,Line 36,supabase.auth,const { data: { subscription } } = supabase.auth.onAuthStateChange(,Supabase Auth,Executable Supabase usage included in final map
+src/components/providers/AuthProvider.tsx,Line 45,supabase,"}, [supabase.auth])",Supabase Auth,Occurrence retained for review
+src/components/providers/AuthProvider.tsx,Line 45,supabase.auth,"}, [supabase.auth])",Supabase Auth,Occurrence retained for review
+src/components/providers/AuthProvider.tsx,Line 48,supabase,await supabase.auth.signOut(),Supabase Auth,Executable Supabase usage included in final map
+src/components/providers/AuthProvider.tsx,Line 48,supabase.auth,await supabase.auth.signOut(),Supabase Auth,Executable Supabase usage included in final map
+src/components/shared/AuthSync.tsx,Line 5,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/shared/AuthSync.tsx,Line 5,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/shared/AuthSync.tsx,Line 70,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/shared/AuthSync.tsx,Line 70,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/shared/AuthSync.tsx,Line 73,supabase,} = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/components/shared/AuthSync.tsx,Line 73,supabase.auth,} = await supabase.auth.getSession();,Supabase Auth,Executable Supabase usage included in final map
+src/components/shared/AuthSync.tsx,Line 79,supabase,// Seed name + email into store immediately from Supabase metadata,Supabase reference; executable status traced separately,Occurrence retained for review
+src/components/shared/GlobalTopRightMenu.tsx,Line 7,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/shared/GlobalTopRightMenu.tsx,Line 7,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/shared/GlobalTopRightMenu.tsx,Line 37,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/shared/GlobalTopRightMenu.tsx,Line 37,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/shared/GlobalTopRightMenu.tsx,Line 38,supabase,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/components/shared/GlobalTopRightMenu.tsx,Line 38,supabase.auth,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/components/shared/UserAvatar.tsx,Line 4,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/shared/UserAvatar.tsx,Line 4,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/shared/UserAvatar.tsx,Line 43,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/shared/UserAvatar.tsx,Line 43,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/shared/UserAvatar.tsx,Line 44,supabase,const { data: { user } } = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/components/shared/UserAvatar.tsx,Line 44,supabase.auth,const { data: { user } } = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/components/ui/GlobalTopRightMenu.tsx,Line 7,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/ui/GlobalTopRightMenu.tsx,Line 7,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/ui/GlobalTopRightMenu.tsx,Line 31,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/ui/GlobalTopRightMenu.tsx,Line 31,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/ui/GlobalTopRightMenu.tsx,Line 32,supabase,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/components/ui/GlobalTopRightMenu.tsx,Line 32,supabase.auth,await supabase.auth.signOut();,Supabase Auth,Executable Supabase usage included in final map
+src/components/ui/UserAvatar.tsx,Line 5,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/ui/UserAvatar.tsx,Line 5,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 8,createClient,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 8,supabase,"import { createClient } from ""@/lib/supabase/client"";",Supabase client initialization/import/reference,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 18,supabase,storageType?: 'supabase' | 'googledrive' | 'local';,Supabase reference; executable status traced separately,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 58,createClient,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/vault/FileUploader.tsx,Line 58,supabase,const supabase = createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/components/vault/FileUploader.tsx,Line 120,supabase,// 4. Handle Supabase upload separately (if requested),Supabase reference; executable status traced separately,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 121,supabase,if (storageType === 'supabase') {,Supabase reference; executable status traced separately,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 123,supabase,const { data: { user } } = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/components/vault/FileUploader.tsx,Line 123,supabase.auth,const { data: { user } } = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/components/vault/FileUploader.tsx,Line 130,supabase,const { error: uploadError } = await supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/components/vault/FileUploader.tsx,Line 130,supabase.storage,const { error: uploadError } = await supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/components/vault/FileUploader.tsx,Line 131,.from(,.from(folder),Unknown - review adjacent code,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 136,supabase,const { data: urlData } = supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/components/vault/FileUploader.tsx,Line 136,supabase.storage,const { data: urlData } = supabase.storage,Supabase Storage - bucket is traced in final map,Executable Supabase usage included in final map
+src/components/vault/FileUploader.tsx,Line 137,.from(,.from(folder),Unknown - review adjacent code,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 141,supabase,"await Vault.updateFile(id, { cloudId: finalCloudId, storageType: 'supabase' });",Supabase reference; executable status traced separately,Occurrence retained for review
+src/components/vault/FileUploader.tsx,Line 145,supabase,"console.warn(""Supabase upload failed, local OPFS copy retained:"", supaErr);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/cloudDriveSync.ts,Line 15,supabase,* @param accessToken Provider access token from Supabase OAuth,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/googleAuth.ts,Line 60,.update(,await prisma.user.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/googleDriveUtils.ts,Line 189,.update(,await prisma.documentMeta.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/identityStore.ts,Line 2,supabase,// Mirrors OnboardingStore pattern. Will be replaced by Supabase in production.,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/middleware/auth.middleware.ts,Line 2,createClient,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/middleware/auth.middleware.ts,Line 2,supabase,import { createClient } from '@/lib/supabase/server';,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/middleware/auth.middleware.ts,Line 27,supabase,authId: string; // Supabase auth ID,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/middleware/auth.middleware.ts,Line 43,supabase,* Verifies Supabase session and ensures user exists in database,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/middleware/auth.middleware.ts,Line 54,supabase,// Get Supabase session,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/middleware/auth.middleware.ts,Line 55,createClient,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/middleware/auth.middleware.ts,Line 55,supabase,const supabase = await createClient();,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/middleware/auth.middleware.ts,Line 58,supabase,} = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/lib/middleware/auth.middleware.ts,Line 58,supabase.auth,} = await supabase.auth.getUser();,Supabase Auth,Executable Supabase usage included in final map
+src/lib/middleware/auth.middleware.ts,Line 89,supabase,console.log(`[Auth Middleware] Synced missing user from Supabase: ${authUser.id}`);,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/onboardingStore.ts,Line 2,supabase,// In Phase 2 this will be replaced by writing to Supabase on completion.,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/bankService.ts,Line 12,.from(,"const cipher = crypto.createCipheriv(ALGORITHM, Buffer.from(ENCRYPTION_KEY), iv);",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/lib/services/bankService.ts,Line 13,.update(,let encrypted = cipher.update(text);,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/bankService.ts,Line 22,.from(,"const iv = Buffer.from(textParts[0], 'hex');",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/lib/services/bankService.ts,Line 23,.from(,"const encryptedText = Buffer.from(textParts[1], 'hex');",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/lib/services/bankService.ts,Line 24,.from(,"const decipher = crypto.createDecipheriv(ALGORITHM, Buffer.from(ENCRYPTION_KEY), iv);",JavaScript/Node utility - not Supabase,Excluded from final Supabase operation map; retained because .from( matched
+src/lib/services/bankService.ts,Line 25,.update(,let decrypted = decipher.update(encryptedText);,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/bankService.ts,Line 184,.update(,return await prisma.bankAccount.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/bankService.ts,Line 247,.update(,return await prisma.bankAccount.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/baseService.ts,Line 81,.update(,return await this.model.update({,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/baseService.ts,Line 96,.delete(,return await this.model.delete({,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/bhoomiService.ts,Line 133,.update(,return await prisma.propertyAsset.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/bhoomiService.ts,Line 158,.delete(,await prisma.propertyAsset.delete({ where: { id } });,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/budgetService.ts,Line 40,.update(,"return await this.update(existing.id, data);",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/documentService.ts,Line 97,.delete(,"await db.delete(""vault"", id);",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/educationService.ts,Line 84,.update(,return await prisma.education.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/educationService.ts,Line 99,.delete(,return await prisma.education.delete({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/familyService.ts,Line 79,.delete(,familyCache.delete(`family:${userid}`);,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/familyService.ts,Line 100,.delete(,familyCache.delete(`family:${member.userId}`);,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/familyService.ts,Line 103,.update(,return await prisma.familyMember.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/familyService.ts,Line 121,.delete(,familyCache.delete(`family:${userid}`);,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/familyService.ts,Line 138,.delete(,await prisma.familyMember.delete({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/identityService.ts,Line 116,.update(,return await prisma.identityRecord.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/identityService.ts,Line 131,.delete(,return await prisma.identityRecord.delete({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/insuranceService.ts,Line 136,.update(,"reminder = await reminderService.update(policy.reminderId, userId, {",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/insuranceService.ts,Line 151,.update(,await prisma.insurancePolicy.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/insuranceService.ts,Line 170,.update(,await tx.insurancePolicy.update({,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/insuranceService.ts,Line 222,.delete(,await prisma.insurancePolicy.delete({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/nomineeService.ts,Line 59,.update(,return await prisma.nomineeMapping.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/notificationService.ts,Line 640,.update(,const notification = await prisma.notification.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/reminderService.ts,Line 47,.update(,return prisma.reminder.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/reminderService.ts,Line 58,.delete(,await prisma.reminder.delete({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/subscriptionService.ts,Line 121,.update(,return await prisma.subscription.update({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/subscriptionService.ts,Line 143,.delete(,return await prisma.subscription.delete({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/services/userService.ts,Line 86,.update(,"return await this.update(id, data as UpdateUserInput);",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 101,.update(,"const updatedUser = await super.update(id, data);",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 103,supabase,// Sync to Supabase Auth,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 104,supabase,await this.syncToSupabaseAuth(updatedUser);,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 137,supabase,* Sync user from Supabase to Prisma,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 139,supabase,"async syncUserWithSupabase(userId: string, email: string, name?: string): Promise<User> {",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 151,supabase,"console.log('[UserService] Synced missing user from Supabase:', userId);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 155,supabase,"console.error('[UserService] Error syncing user with Supabase:', error);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 161,supabase,* Sync user updates to Supabase Auth,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 163,supabase,private async syncToSupabaseAuth(user: User): Promise<void> {,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 165,NEXT_PUBLIC_SUPABASE_URL,const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;,Supabase public client configuration name only,Occurrence retained for review
+src/lib/services/userService.ts,Line 165,supabase,const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;,Supabase public client configuration name only,Occurrence retained for review
+src/lib/services/userService.ts,Line 165,supabase,const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;,Supabase public client configuration name only,Occurrence retained for review
+src/lib/services/userService.ts,Line 166,supabase,const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 166,supabase,const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 168,supabase,if (!supabaseUrl || !supabaseServiceKey) {,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 168,supabase,if (!supabaseUrl || !supabaseServiceKey) {,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 169,NEXT_PUBLIC_SUPABASE_URL,"console.warn(""[REDACTED_LITERAL]"");",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 169,supabase,"console.warn(""[REDACTED_LITERAL]"");",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 169,supabase,"console.warn(""[REDACTED_LITERAL]"");",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 169,supabase,"console.warn(""[REDACTED_LITERAL]"");",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 173,createClient,const { createClient } = await import('@supabase/supabase-js');,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/services/userService.ts,Line 173,supabase,const { createClient } = await import('@supabase/supabase-js');,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/services/userService.ts,Line 173,supabase,const { createClient } = await import('@supabase/supabase-js');,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/services/userService.ts,Line 174,createClient,"const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {",Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 174,supabase,"const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {",Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 174,supabase,"const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {",Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 174,supabase,"const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {",Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 191,supabase,...((await supabaseAdmin.auth.admin.getUserById(user.id)).data.user?.user_metadata || {}),Supabase Auth,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 191,supabase.auth,...((await supabaseAdmin.auth.admin.getUserById(user.id)).data.user?.user_metadata || {}),Supabase Auth,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 196,supabase,"const { error } = await supabaseAdmin.auth.admin.updateUserById(user.id, updateData);",Supabase Auth,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 196,supabase.auth,"const { error } = await supabaseAdmin.auth.admin.updateUserById(user.id, updateData);",Supabase Auth,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 198,supabase,"console.error(`[UserService] Error syncing user ${user.id} to Supabase Auth:`, error);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 200,supabase,console.log(`[UserService] Synced user ${user.id} updates to Supabase Auth`);,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 204,supabase,"console.error('[UserService] Error syncing to Supabase Auth:', error);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 209,supabase,* Delete user from Prisma and Supabase Auth,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 213,supabase,// First try to delete from Supabase Auth if service role key is available,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 214,NEXT_PUBLIC_SUPABASE_URL,const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;,Supabase public client configuration name only,Occurrence retained for review
+src/lib/services/userService.ts,Line 214,supabase,const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;,Supabase public client configuration name only,Occurrence retained for review
+src/lib/services/userService.ts,Line 214,supabase,const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;,Supabase public client configuration name only,Occurrence retained for review
+src/lib/services/userService.ts,Line 215,supabase,const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 215,supabase,const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 217,supabase,if (supabaseUrl && supabaseServiceKey) {,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 217,supabase,if (supabaseUrl && supabaseServiceKey) {,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 218,createClient,// Use dynamically imported createClient or fetch directly to avoid top-level issues if not needed,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/services/userService.ts,Line 219,createClient,const { createClient } = await import('@supabase/supabase-js');,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/services/userService.ts,Line 219,supabase,const { createClient } = await import('@supabase/supabase-js');,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/services/userService.ts,Line 219,supabase,const { createClient } = await import('@supabase/supabase-js');,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/services/userService.ts,Line 220,createClient,"const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {",Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 220,supabase,"const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {",Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 220,supabase,"const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {",Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 220,supabase,"const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {",Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 227,supabase,const { error } = await supabaseAdmin.auth.admin.deleteUser(id);,Supabase Auth,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 227,supabase.auth,const { error } = await supabaseAdmin.auth.admin.deleteUser(id);,Supabase Auth,Executable Supabase usage included in final map
+src/lib/services/userService.ts,Line 229,supabase,"console.error(`[UserService] Error deleting user ${id} from Supabase Auth:`, error);",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 231,supabase,console.log(`[UserService] Deleted user ${id} from Supabase Auth`);,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/services/userService.ts,Line 234,NEXT_PUBLIC_SUPABASE_URL,"console.warn(""[REDACTED_LITERAL]"");",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 234,supabase,"console.warn(""[REDACTED_LITERAL]"");",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 234,supabase,"console.warn(""[REDACTED_LITERAL]"");",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 234,supabase,"console.warn(""[REDACTED_LITERAL]"");",Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/userService.ts,Line 238,.delete(,return await super.delete(id);,Unknown - review adjacent code,Occurrence retained for review
+src/lib/services/willService.ts,Line 41,.upsert(,return await prisma.willStatus.upsert({,Prisma operation - not a Supabase client call,Excluded from final Supabase operation map; retained because the required generic pattern matched
+src/lib/stores/identityStore.ts,Line 2,supabase,// Mirrors OnboardingStore pattern. Will be replaced by Supabase in production.,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/stores/notificationStore.ts,Line 150,.delete(,return () => _listeners.delete(listener);,Unknown - review adjacent code,Occurrence retained for review
+src/lib/stores/types.ts,Line 1,supabase,"// In Phase 1-4 MVP, this serves as the type definition for both local IndexedDB and future Supabase sync.",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/supabase/client.ts,Line 1,createBrowserClient,import { createBrowserClient } from '@supabase/ssr',Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/client.ts,Line 1,supabase,import { createBrowserClient } from '@supabase/ssr',Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/client.ts,Line 3,createClient,export function createClient() {,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/client.ts,Line 4,createBrowserClient,return createBrowserClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/supabase/client.ts,Line 5,NEXT_PUBLIC_SUPABASE_URL,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/client.ts,Line 5,supabase,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/client.ts,Line 6,NEXT_PUBLIC_SUPABASE_ANON_KEY,process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/client.ts,Line 6,supabase,process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 1,createServerClient,import { createServerClient } from '@supabase/ssr',Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 1,supabase,import { createServerClient } from '@supabase/ssr',Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 5,supabase,let supabaseResponse = NextResponse.next({,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 9,createServerClient,const supabase = createServerClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/supabase/middleware.ts,Line 9,supabase,const supabase = createServerClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/supabase/middleware.ts,Line 10,NEXT_PUBLIC_SUPABASE_URL,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 10,supabase,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 11,NEXT_PUBLIC_SUPABASE_ANON_KEY,"process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 11,supabase,"process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 19,supabase,supabaseResponse = NextResponse.next({,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 23,supabase,"supabaseResponse.cookies.set(name, value, options)",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 30,createServerClient,// IMPORTANT: Avoid writing any logic between createServerClient and,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/middleware.ts,Line 31,supabase,// supabase.auth.getUser(). A simple mistake could make it very hard to debug,Supabase Auth,Executable Supabase usage included in final map
+src/lib/supabase/middleware.ts,Line 31,supabase.auth,// supabase.auth.getUser(). A simple mistake could make it very hard to debug,Supabase Auth,Executable Supabase usage included in final map
+src/lib/supabase/middleware.ts,Line 35,supabase,} = await supabase.auth.getUser(),Supabase Auth,Executable Supabase usage included in final map
+src/lib/supabase/middleware.ts,Line 35,supabase.auth,} = await supabase.auth.getUser(),Supabase Auth,Executable Supabase usage included in final map
+src/lib/supabase/middleware.ts,Line 81,supabase,return supabaseResponse,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/supabase/server.ts,Line 1,createServerClient,"import { createServerClient, type CookieOptions } from '@supabase/ssr'",Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/server.ts,Line 1,supabase,"import { createServerClient, type CookieOptions } from '@supabase/ssr'",Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/server.ts,Line 4,createClient,export async function createClient() {,Supabase client initialization/import/reference,Occurrence retained for review
+src/lib/supabase/server.ts,Line 7,createServerClient,return createServerClient(,Supabase client initialization/import/reference,Executable Supabase usage included in final map
+src/lib/supabase/server.ts,Line 8,NEXT_PUBLIC_SUPABASE_URL,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/server.ts,Line 8,supabase,"process.env.NEXT_PUBLIC_SUPABASE_URL!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/server.ts,Line 9,NEXT_PUBLIC_SUPABASE_ANON_KEY,"process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/supabase/server.ts,Line 9,supabase,"process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,",Supabase public client configuration name only,Occurrence retained for review
+src/lib/types.ts,Line 1,supabase,"// In Phase 1-4 MVP, this serves as the type definition for both local IndexedDB and future Supabase sync.",Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/types/rajya.types.ts,Line 6,supabase,id: string; // Supabase auth.users.id,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/utils/cloudDriveSync.ts,Line 15,supabase,* @param accessToken Provider access token from Supabase OAuth,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/vault.ts,Line 25,supabase,cloudId?: string; // Reference to Google Drive or Supabase file ID,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/vault.ts,Line 26,supabase,storageType?: 'local' | 'googledrive' | 'supabase'; // primary storage type,Supabase reference; executable status traced separately,Occurrence retained for review
+src/lib/vault.ts,Line 196,.delete(,"await db.delete(""vault"", id);",Unknown - review adjacent code,Occurrence retained for review
+src/middleware.ts,Line 2,supabase,import { updateSession } from '@/lib/supabase/middleware',Supabase reference; executable status traced separately,Occurrence retained for review

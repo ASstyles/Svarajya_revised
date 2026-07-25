@@ -1,0 +1,4 @@
+Occurrence ID,File Path,Matched Pattern,Line Reference,Context Snippet
+SUP-RAW-001,src/lib/supabase.ts,createClient,L5,export const supabase = createClient(...)
+SUP-RAW-002,src/app/api/auth/callback/route.ts,supabase.auth,L18,"const { data, error } = await supabase.auth.exchangeCodeForSession(...)"
+SUP-RAW-003,src/lib/vault-storage.ts,supabase.storage,L24,"supabase.storage.from(""user_documents"")"

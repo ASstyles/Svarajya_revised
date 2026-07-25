@@ -1,0 +1,204 @@
+Route ID,File Path,File Name,Route Type,Is Dynamic
+RTE-001,app/layout.tsx,layout.tsx,Layout,No
+RTE-002,app/(auth)/layout.tsx,layout.tsx,Layout,No
+RTE-003,app/(auth)/callback/route.ts,route.ts,API Route,No
+RTE-004,app/(auth)/intro-cinematic/page.tsx,page.tsx,Page,No
+RTE-005,app/(auth)/reset-password/page.tsx,page.tsx,Page,No
+RTE-006,app/(auth)/start/page.tsx,page.tsx,Page,No
+RTE-007,app/(auth)/verify-email/page.tsx,page.tsx,Page,No
+RTE-008,app/(dashboard)/layout.tsx,layout.tsx,Layout,No
+RTE-009,app/(dashboard)/beej/page.tsx,page.tsx,Page,No
+RTE-010,app/(dashboard)/bhoomi/page.tsx,page.tsx,Page,No
+RTE-011,app/(dashboard)/bhoomi/add/page.tsx,page.tsx,Page,No
+RTE-012,app/(dashboard)/bhoomi/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-013,app/(dashboard)/doot/page.tsx,page.tsx,Page,No
+RTE-014,app/(dashboard)/dwaar/portals/page.tsx,page.tsx,Page,No
+RTE-015,app/(dashboard)/dwaar/portals/access/page.tsx,page.tsx,Page,No
+RTE-016,app/(dashboard)/dwaar/portals/add/page.tsx,page.tsx,Page,No
+RTE-017,app/(dashboard)/dwaar/portals/portal/[id]/page.tsx,page.tsx,Page,Yes
+RTE-018,app/(dashboard)/foundation/page.tsx,page.tsx,Page,No
+RTE-019,app/(dashboard)/foundation/education/page.tsx,page.tsx,Page,No
+RTE-020,app/(dashboard)/foundation/education/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-021,app/(dashboard)/foundation/family/page.tsx,page.tsx,Page,No
+RTE-022,app/(dashboard)/granthagaar/page.tsx,page.tsx,Page,No
+RTE-023,app/(dashboard)/kar/page.tsx,page.tsx,Page,No
+RTE-024,app/(dashboard)/kar/din/page.tsx,page.tsx,Page,No
+RTE-025,app/(dashboard)/kar/din/new/page.tsx,page.tsx,Page,No
+RTE-026,app/(dashboard)/kar/din/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-027,app/(dashboard)/kar/gst/page.tsx,page.tsx,Page,No
+RTE-028,app/(dashboard)/kar/gst/new/page.tsx,page.tsx,Page,No
+RTE-029,app/(dashboard)/kar/gst/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-030,app/(dashboard)/kar/itr/page.tsx,page.tsx,Page,No
+RTE-031,app/(dashboard)/kar/itr/new/page.tsx,page.tsx,Page,No
+RTE-032,app/(dashboard)/kar/itr/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-033,app/(dashboard)/khate/accounts/page.tsx,page.tsx,Page,No
+RTE-034,app/(dashboard)/khate/accounts/add/page.tsx,page.tsx,Page,No
+RTE-035,app/(dashboard)/khate/accounts/cash/page.tsx,page.tsx,Page,No
+RTE-036,app/(dashboard)/khate/accounts/flow/page.tsx,page.tsx,Page,No
+RTE-037,app/(dashboard)/khate/accounts/idle/page.tsx,page.tsx,Page,No
+RTE-038,app/(dashboard)/khate/accounts/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-039,app/(dashboard)/khate/cash/page.tsx,page.tsx,Page,No
+RTE-040,app/(dashboard)/khate/cash-flow/page.tsx,page.tsx,Page,No
+RTE-041,app/(dashboard)/khate/idle-detection/page.tsx,page.tsx,Page,No
+RTE-042,app/(dashboard)/kosh/page.tsx,page.tsx,Page,No
+RTE-043,app/(dashboard)/kosh/add/page.tsx,page.tsx,Page,No
+RTE-044,app/(dashboard)/kosh/analytics/page.tsx,page.tsx,Page,No
+RTE-045,app/(dashboard)/kosh/dependency/page.tsx,page.tsx,Page,No
+RTE-046,app/(dashboard)/kosh/disposable/page.tsx,page.tsx,Page,No
+RTE-047,app/(dashboard)/kosh/income/page.tsx,page.tsx,Page,No
+RTE-048,app/(dashboard)/kosh/income/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-049,app/(dashboard)/kosh/record/[id]/page.tsx,page.tsx,Page,Yes
+RTE-050,app/(dashboard)/kosh/sources/page.tsx,page.tsx,Page,No
+RTE-051,app/(dashboard)/kosh/sources/add/page.tsx,page.tsx,Page,No
+RTE-052,app/(dashboard)/lakshya/page.tsx,page.tsx,Page,No
+RTE-053,app/(dashboard)/leakage/page.tsx,page.tsx,Page,No
+RTE-054,app/(dashboard)/leakage/subscriptions/page.tsx,page.tsx,Page,No
+RTE-055,app/(dashboard)/mantri/page.tsx,page.tsx,Page,No
+RTE-056,app/(dashboard)/mitra/page.tsx,page.tsx,Page,No
+RTE-057,app/(dashboard)/mitra/assets/page.tsx,page.tsx,Page,No
+RTE-058,app/(dashboard)/mitra/will/page.tsx,page.tsx,Page,No
+RTE-059,app/(dashboard)/notifications/page.tsx,page.tsx,Page,No
+RTE-060,app/(dashboard)/pehchaan/mapping/page.tsx,page.tsx,Page,No
+RTE-061,app/(dashboard)/pehchaan/mapping/add/page.tsx,page.tsx,Page,No
+RTE-062,app/(dashboard)/pehchaan/records/page.tsx,page.tsx,Page,No
+RTE-063,app/(dashboard)/pehchaan/records/add/page.tsx,page.tsx,Page,No
+RTE-064,app/(dashboard)/pehchaan/records/doc/[id]/page.tsx,page.tsx,Page,Yes
+RTE-065,app/(dashboard)/pehchaan/records/links/page.tsx,page.tsx,Page,No
+RTE-066,app/(dashboard)/pehchaan/records/links/add/page.tsx,page.tsx,Page,No
+RTE-067,app/(dashboard)/pehchaan/records/renewals/page.tsx,page.tsx,Page,No
+RTE-068,app/(dashboard)/pehchaan/records/settings/page.tsx,page.tsx,Page,No
+RTE-069,app/(dashboard)/pehchaan/records/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-070,app/(dashboard)/pehchaan/settings/page.tsx,page.tsx,Page,No
+RTE-071,app/(dashboard)/pehchaan/validity/page.tsx,page.tsx,Page,No
+RTE-072,app/(dashboard)/raj-mantri/page.tsx,page.tsx,Page,No
+RTE-073,app/(dashboard)/rajya/page.tsx,page.tsx,Page,No
+RTE-074,app/(dashboard)/raksha/page.tsx,page.tsx,Page,No
+RTE-075,app/(dashboard)/raksha/policies/page.tsx,page.tsx,Page,No
+RTE-076,app/(dashboard)/raksha/policies/add/page.tsx,page.tsx,Page,No
+RTE-077,app/(dashboard)/raksha/policies/[id]/page.tsx,page.tsx,Page,Yes
+RTE-078,app/(dashboard)/raksha/policies/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-079,app/(dashboard)/rin/page.tsx,page.tsx,Page,No
+RTE-080,app/(dashboard)/rin/loans/page.tsx,page.tsx,Page,No
+RTE-081,app/(dashboard)/rin/loans/add/page.tsx,page.tsx,Page,No
+RTE-082,app/(dashboard)/rin/loans/[id]/page.tsx,page.tsx,Page,Yes
+RTE-083,app/(dashboard)/rin/loans/[id]/edit/page.tsx,page.tsx,Page,Yes
+RTE-084,app/(dashboard)/sampatti/page.tsx,page.tsx,Page,No
+RTE-085,app/(dashboard)/subscriptions/page.tsx,page.tsx,Page,No
+RTE-086,app/(dashboard)/succession/page.tsx,page.tsx,Page,No
+RTE-087,app/(dashboard)/succession/emergency/page.tsx,page.tsx,Page,No
+RTE-088,app/(dashboard)/succession/nominees/page.tsx,page.tsx,Page,No
+RTE-089,app/(dashboard)/succession/scan/page.tsx,page.tsx,Page,No
+RTE-090,app/(dashboard)/succession/tutorial/page.tsx,page.tsx,Page,No
+RTE-091,app/(dashboard)/succession/will/page.tsx,page.tsx,Page,No
+RTE-092,app/(dashboard)/suchak/page.tsx,page.tsx,Page,No
+RTE-093,app/(dashboard)/suraksha/page.tsx,page.tsx,Page,No
+RTE-094,app/(dashboard)/vault/page.tsx,page.tsx,Page,No
+RTE-095,app/(dashboard)/vyaya/page.tsx,page.tsx,Page,No
+RTE-096,app/(dashboard)/vyaya/add/page.tsx,page.tsx,Page,No
+RTE-097,app/(dashboard)/vyaya/analytics/page.tsx,page.tsx,Page,No
+RTE-098,app/(dashboard)/vyaya/budget/page.tsx,page.tsx,Page,No
+RTE-099,app/(dashboard)/vyaya/categories/page.tsx,page.tsx,Page,No
+RTE-100,app/(dashboard)/vyaya/entry/page.tsx,page.tsx,Page,No
+RTE-101,app/(dashboard)/vyaya/entry/add/page.tsx,page.tsx,Page,No
+RTE-102,app/(dashboard)/vyaya/subscriptions/page.tsx,page.tsx,Page,No
+RTE-103,app/(dashboard)/vyaya/subscriptions/add/page.tsx,page.tsx,Page,No
+RTE-104,app/(landing)/layout.tsx,layout.tsx,Layout,No
+RTE-105,app/(landing)/page.tsx,page.tsx,Page,No
+RTE-106,app/(landing)/about/page.tsx,page.tsx,Page,No
+RTE-107,app/(landing)/blog/page.tsx,page.tsx,Page,No
+RTE-108,app/(landing)/careers/page.tsx,page.tsx,Page,No
+RTE-109,app/(landing)/contact/page.tsx,page.tsx,Page,No
+RTE-110,app/(landing)/customers-reviews/page.tsx,page.tsx,Page,No
+RTE-111,app/(landing)/features/page.tsx,page.tsx,Page,No
+RTE-112,app/(landing)/forget-password/page.tsx,page.tsx,Page,No
+RTE-113,app/(landing)/login/page.tsx,page.tsx,Page,No
+RTE-114,app/(landing)/map/page.tsx,page.tsx,Page,No
+RTE-115,app/(landing)/partner-with-us/page.tsx,page.tsx,Page,No
+RTE-116,app/(landing)/pricing/page.tsx,page.tsx,Page,No
+RTE-117,app/(landing)/privacy/page.tsx,page.tsx,Page,No
+RTE-118,app/(landing)/register/page.tsx,page.tsx,Page,No
+RTE-119,app/(landing)/roadmap/page.tsx,page.tsx,Page,No
+RTE-120,app/(landing)/security/page.tsx,page.tsx,Page,No
+RTE-121,app/(landing)/terms/page.tsx,page.tsx,Page,No
+RTE-122,app/(onboarding)/layout.tsx,layout.tsx,Layout,No
+RTE-123,app/(onboarding)/onboarding/layout.tsx,layout.tsx,Layout,No
+RTE-124,app/(onboarding)/onboarding/contact-info/page.tsx,page.tsx,Page,No
+RTE-125,app/(onboarding)/onboarding/dob/page.tsx,page.tsx,Page,No
+RTE-126,app/(onboarding)/onboarding/family/page.tsx,page.tsx,Page,No
+RTE-127,app/(onboarding)/onboarding/firstwin/page.tsx,page.tsx,Page,No
+RTE-128,app/(onboarding)/onboarding/intro/page.tsx,page.tsx,Page,No
+RTE-129,app/(onboarding)/onboarding/name/page.tsx,page.tsx,Page,No
+RTE-130,app/(onboarding)/onboarding/occupation/page.tsx,page.tsx,Page,No
+RTE-131,app/(onboarding)/onboarding/status/page.tsx,page.tsx,Page,No
+RTE-132,app/api/auth/create-user/route.ts,route.ts,API Route,No
+RTE-133,app/api/auth/google/route.ts,route.ts,API Route,No
+RTE-134,app/api/auth/google-callback/route.ts,route.ts,API Route,No
+RTE-135,app/api/auth/google-status/route.ts,route.ts,API Route,No
+RTE-136,app/api/auth/link-google/route.ts,route.ts,API Route,No
+RTE-137,app/api/auth/send-confirmation/route.ts,route.ts,API Route,No
+RTE-138,app/api/auth/send-otp/route.ts,route.ts,API Route,No
+RTE-139,app/api/auth/send-reset/route.ts,route.ts,API Route,No
+RTE-140,app/api/auth/send-welcome/route.ts,route.ts,API Route,No
+RTE-141,app/api/auth/unlink-google/route.ts,route.ts,API Route,No
+RTE-142,app/api/auth/verify-otp/route.ts,route.ts,API Route,No
+RTE-143,app/api/auth/webhook/route.ts,route.ts,API Route,No
+RTE-144,app/api/bank/route.ts,route.ts,API Route,No
+RTE-145,app/api/bank/[id]/route.ts,route.ts,API Route,Yes
+RTE-146,app/api/bhoomi/properties/route.ts,route.ts,API Route,No
+RTE-147,app/api/bhoomi/properties/[id]/route.ts,route.ts,API Route,Yes
+RTE-148,app/api/budget/route.ts,route.ts,API Route,No
+RTE-149,app/api/check-phone/route.ts,route.ts,API Route,No
+RTE-150,app/api/check-user/route.ts,route.ts,API Route,No
+RTE-151,app/api/contact/route.ts,route.ts,API Route,No
+RTE-152,app/api/credentials/route.ts,route.ts,API Route,No
+RTE-153,app/api/credentials/[id]/route.ts,route.ts,API Route,Yes
+RTE-154,app/api/din/records/route.ts,route.ts,API Route,No
+RTE-155,app/api/din/records/[id]/route.ts,route.ts,API Route,Yes
+RTE-156,app/api/documents/route.ts,route.ts,API Route,No
+RTE-157,app/api/education/route.ts,route.ts,API Route,No
+RTE-158,app/api/education/[id]/route.ts,route.ts,API Route,Yes
+RTE-159,app/api/expense-categories/route.ts,route.ts,API Route,No
+RTE-160,app/api/expenses/route.ts,route.ts,API Route,No
+RTE-161,app/api/expenses/[id]/route.ts,route.ts,API Route,Yes
+RTE-162,app/api/family/route.ts,route.ts,API Route,No
+RTE-163,app/api/google-drive/download/route.ts,route.ts,API Route,No
+RTE-164,app/api/google-drive/upload/route.ts,route.ts,API Route,No
+RTE-165,app/api/google-drive/view/route.ts,route.ts,API Route,No
+RTE-166,app/api/gst/records/route.ts,route.ts,API Route,No
+RTE-167,app/api/gst/records/[id]/route.ts,route.ts,API Route,Yes
+RTE-168,app/api/identity/route.ts,route.ts,API Route,No
+RTE-169,app/api/identity/links/route.ts,route.ts,API Route,No
+RTE-170,app/api/identity/reminders/route.ts,route.ts,API Route,No
+RTE-171,app/api/identity/settings/route.ts,route.ts,API Route,No
+RTE-172,app/api/identity/[id]/route.ts,route.ts,API Route,Yes
+RTE-173,app/api/income/route.ts,route.ts,API Route,No
+RTE-174,app/api/income/[id]/route.ts,route.ts,API Route,Yes
+RTE-175,app/api/insurance/route.ts,route.ts,API Route,No
+RTE-176,app/api/insurance/[id]/route.ts,route.ts,API Route,Yes
+RTE-177,app/api/kar/din/route.ts,route.ts,API Route,No
+RTE-178,app/api/kar/gst/route.ts,route.ts,API Route,No
+RTE-179,app/api/kar/insights/route.ts,route.ts,API Route,No
+RTE-180,app/api/kar/summary/route.ts,route.ts,API Route,No
+RTE-181,app/api/kar/tax/route.ts,route.ts,API Route,No
+RTE-182,app/api/loans/route.ts,route.ts,API Route,No
+RTE-183,app/api/loans/[id]/route.ts,route.ts,API Route,Yes
+RTE-184,app/api/nominee/route.ts,route.ts,API Route,No
+RTE-185,app/api/nominee/assets/route.ts,route.ts,API Route,No
+RTE-186,app/api/nominee/[id]/route.ts,route.ts,API Route,Yes
+RTE-187,app/api/notifications/route.ts,route.ts,API Route,No
+RTE-188,app/api/notifications/read-all/route.ts,route.ts,API Route,No
+RTE-189,app/api/notifications/[id]/route.ts,route.ts,API Route,Yes
+RTE-190,app/api/profile/route.ts,route.ts,API Route,No
+RTE-191,app/api/reminders/route.ts,route.ts,API Route,No
+RTE-192,app/api/subscriptions/route.ts,route.ts,API Route,No
+RTE-193,app/api/subscriptions/[id]/route.ts,route.ts,API Route,Yes
+RTE-194,app/api/succession/assets/route.ts,route.ts,API Route,No
+RTE-195,app/api/succession/emergency/route.ts,route.ts,API Route,No
+RTE-196,app/api/succession/nominees/route.ts,route.ts,API Route,No
+RTE-197,app/api/succession/nominees/[id]/route.ts,route.ts,API Route,Yes
+RTE-198,app/api/succession/will/route.ts,route.ts,API Route,No
+RTE-199,app/api/tax/records/route.ts,route.ts,API Route,No
+RTE-200,app/api/tax/records/[id]/route.ts,route.ts,API Route,Yes
+RTE-201,app/api/user/route.ts,route.ts,API Route,No
+RTE-202,app/api/will/route.ts,route.ts,API Route,No
+RTE-203,app/auth/google/success/page.tsx,page.tsx,Page,No

@@ -1,53 +1,68 @@
-# Svarajya App — Audit Handover Index
+# Svarajya AI Audit Package - Complete Engineer Handover Index
 
-**Date**: 2026-07-18  
-**Version**: 1.0  
-**Status**: Confirmed  
-**Lead Auditor**: AI Intern 3 (Bug, QA & Handover Lead)
-
----
-
-## 1. Overview
-This directory serves as the technical handover pack for the incoming software engineer. It provides complete documentation of the Svarajya codebase architecture, database structures, security exposures, requirement traceability, and a consolidated register of all 39 identified bugs.
-
-All reports are saved inside this `audit-output/` folder.
+**Date:** 2026-07-22  
+**Snapshot Identity:** `Svarajya-main-20260720-rebuild`  
+**Package Status:** Revalidated & Schema Compliant (Ready for WD Review)  
 
 ---
 
-## 2. Handover Deliverables Index
+## Master Deliverables Manifest (36 Total Files)
 
-### 2.1 Workspace & Safety
-- **[AUDIT_WORKSPACE_SAFETY_CHECKLIST.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/AUDIT_WORKSPACE_SAFETY_CHECKLIST.md)**: Proof of isolated, safe workspace containing no environment secrets or production data.
+### 1. Root & Governance (6 Files)
+- `AI_TEAM_REVALIDATION_AND_WD_ACTION_MATRIX.md` - Revalidation checklist & WD action matrix.
+- `AUDIT_WORKSPACE_SAFETY_CHECKLIST.md` - Security scan & key exposure verification.
+- `AI_AUDIT_OUTPUT_PLAN.md` - Revalidation plan & versioning log.
+- `AI_PROMPT_AND_OUTPUT_LOG.csv` - Complete log of AI audit runs.
+- `FINAL_QUALITY_CHECK_REPORT.md` - Master quality check & schema gate validation report.
+- `DA_TEAM_WORKBOOK_TAB_REVIEW.md` - Review of DA team workbook tabs and evidence scores.
 
-### 2.2 Codebase & Route Mapping (Intern 1)
-- **[REPOSITORY_INVENTORY.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/REPOSITORY_INVENTORY.md)**: Map of folders, tech stack, marketing pages, onboarding, and dashboard routes.
-- **[MODULE_TO_FILE_MAP.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/MODULE_TO_FILE_MAP.csv)**: Full file registry mapping routes, components, and hooks to their owning module.
-- **[SHARED_COMPONENT_AND_SERVICE_MAP.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/SHARED_COMPONENT_AND_SERVICE_MAP.csv)**: List of shared UI components and server-side services consumed by multiple modules.
+### 2. Architecture & Codebase Maps (11 Files)
+- `REPOSITORY_INVENTORY.md` - Codebase framework, file counts, and route architecture.
+- `MODULE_TO_FILE_MAP.csv` - **30-column master module map** (125 page/API routes).
+- `RAW_ROUTE_INVENTORY.csv` - Inventory of all 203 route files in `src/app`.
+- `MODULE_TO_FILE_MAP_GAPS.md` - Open route ownership & duplicate implementation gaps.
+- `MODULE_TO_FILE_MAP_VALIDATION.md` - Module map 30-column validation report.
+- `SHARED_COMPONENT_AND_SERVICE_MAP.csv` - Shared components, services, and store consumers.
+- `SUPABASE_CODE_USAGE_MAP.csv` - **37-column Supabase code usage map**.
+- `RAW_SUPABASE_OCCURRENCES.csv` - Raw grep inventory of Supabase client calls.
+- `SUPABASE_CODE_USAGE_GAPS.md` - Storage policy and service-role boundary questions.
+- `SUPABASE_CODE_USAGE_MAP_VALIDATION.md` - Supabase map 37-column validation report.
+- `GOOGLE_AUTH_CODE_FLOW.md` - OAuth code flow, callback, session, and redirect analysis.
+- `ARCHITECTURE_AND_COUPLING_RISKS.md` - Architectural risks and coupling analysis.
 
-### 2.3 Supabase & Authentication Traces (Intern 1)
-- **[SUPABASE_CODE_USAGE_MAP.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/SUPABASE_CODE_USAGE_MAP.csv)**: File-level usage map of Supabase selects, inserts, updates, auth and storage operations.
-- **[GOOGLE_AUTH_CODE_FLOW.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/GOOGLE_AUTH_CODE_FLOW.md)**: Tracing Google sign-in redirect callback handlers, state decryption, and the recovery token hash truncation bug.
-- **[ARCHITECTURE_AND_COUPLING_RISKS.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/ARCHITECTURE_AND_COUPLING_RISKS.md)**: Architectural analysis of duplicate stores, utilities, components, and API routes bypassing the service layer.
+### 3. Database & Dependency Inventories (9 Files)
+- `DATABASE_STRUCTURE_SUMMARY.md` - Summary of 75 schema tables, RLS status, and triggers.
+- `DATABASE_TABLE_INVENTORY.csv` - **30-column priority database table inventory** (75 tables).
+- `RAW_DATABASE_TABLE_LIST.csv` - Raw inventory of 75 exported schema tables.
+- `RAW_TABLE_COLUMN_SUMMARY.csv` - Raw breakdown of 872 table columns.
+- `DATABASE_TABLE_INVENTORY_GAPS.md` - RLS enforcement and table overlap questions.
+- `FOREIGN_KEY_AND_RELATIONSHIP_MAP.csv` - 82 exported foreign key constraints.
+- `FRONTEND_DATABASE_FIELD_MAP.csv` - UI field to database column mapping.
+- `MODULE_DEPENDENCY_MATRIX.csv` - Cross-module data flows and reminder status.
+- `DATA_CONSISTENCY_AND_INTEGRITY_RISKS.md` - Data integrity, constraint, and backup risks.
 
-### 2.4 Database Schema & Mapping (Intern 2)
-- **[DATABASE_STRUCTURE_SUMMARY.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/DATABASE_STRUCTURE_SUMMARY.md)**: Structured summary of database structure (tables, triggers, buckets, functions, and public RLS disabled warning).
-- **[DATABASE_TABLE_INVENTORY.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/DATABASE_TABLE_INVENTORY.csv)**: Detailed column count, primary and foreign key mapping for all 75 tables.
-- **[FOREIGN_KEY_AND_RELATIONSHIP_MAP.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/FOREIGN_KEY_AND_RELATIONSHIP_MAP.csv)**: Explicit relationships mapped between tables.
+### 4. PRD Traceability & Bug Register (8 Files)
+- `PRD_IMPLEMENTATION_TRACEABILITY.csv` - 216 PRD requirements traceability matrix.
+- `BUG_SOURCE_INVENTORY.csv` - Inventory of bug input sources (DA, QA PDF, Jira).
+- `RAW_BUG_MERGE.csv` - Raw un-deduplicated bug merge.
+- `CONSOLIDATED_BUG_CROSS_REFERENCE.csv` - **40-column master bug cross-reference** (317 bug rows).
+- `BUG_CROSS_REFERENCE_GAPS.md` - Open bug reproduction and evidence questions.
+- `BUG_REGISTER_REBUILD_VALIDATION.md` - Bug register 40-column validation report.
+- `ADDITIONAL_QA_UX_STRESS_EVIDENCE_REVIEW.md` - Additional QA stress test review.
+- `P0_P1_BUG_IMPACT_REPORT.md` - Impact analysis of critical P0/P1 bugs.
 
-### 2.5 Requirement Verification (Intern 2)
-- **[FRONTEND_DATABASE_FIELD_MAP.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/FRONTEND_DATABASE_FIELD_MAP.csv)**: Comparison of user-facing UI labels with database column definitions.
-- **[MODULE_DEPENDENCY_MATRIX.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/MODULE_DEPENDENCY_MATRIX.csv)**: Matrix indicating created, read, and supplied data flows and coupling levels.
-- **[PRD_IMPLEMENTATION_TRACEABILITY.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/PRD_IMPLEMENTATION_TRACEABILITY.csv)**: Comparison mapping requirements from the config files and bug list to code logic.
-- **[DATA_CONSISTENCY_AND_INTEGRITY_RISKS.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/DATA_CONSISTENCY_AND_INTEGRITY_RISKS.md)**: Details on primary bank account violations, orphan links in Drive, and untyped nominee constraints.
+### 5. Tests & Final Handover (5 Files)
+- `MANUAL_REGRESSION_TEST_CASES.csv` - Manual regression test suite with dummy data setup.
+- `AUTOMATED_TEST_RECOMMENDATIONS.md` - Automated unit/integration test recommendations.
+- `test-drafts/README.md` - Test harness isolation guidelines and reminder test quarantine.
+- `EXECUTIVE_TECHNICAL_SUMMARY.md` - Executive summary of revalidated audit findings.
+- `RECOMMENDED_FIX_SEQUENCE.md` - Prioritized technical fix sequence.
+- `FINAL_AI_AUDIT_PACK_STATUS.md` - Overall audit pack completion status.
 
-### 2.6 Bugs Register & Quality Assurance (Intern 3)
-- **[CONSOLIDATED_BUG_CROSS_REFERENCE.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/CONSOLIDATED_BUG_CROSS_REFERENCE.csv)**: Mapping of all 39 bugs to likely files and tables.
-- **[P0_P1_BUG_IMPACT_REPORT.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/P0_P1_BUG_IMPACT_REPORT.md)**: Tracing operational blockages and data loss risks for critical bugs.
-- **[MANUAL_REGRESSION_TEST_CASES.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/MANUAL_REGRESSION_TEST_CASES.csv)**: Repeatable manual test script sheet.
-- **[AUTOMATED_TEST_RECOMMENDATIONS.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/AUTOMATED_TEST_RECOMMENDATIONS.md)**: Prioritized targets for automated testing.
-- **[Draft Test Code inside test-drafts/](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/test-drafts/)**: Unit test drafts verifying metrics calculations and input validations.
+---
 
-### 2.7 Handover Package Compilation (Intern 3 & Leads)
-- **[EXECUTIVE_TECHNICAL_SUMMARY.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/EXECUTIVE_TECHNICAL_SUMMARY.md)**: Strategic summary of database safety and code issues.
-- **[RECOMMENDED_FIX_SEQUENCE.md](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/RECOMMENDED_FIX_SEQUENCE.md)**: Chronological priority order for debugging.
-- **[AI_PROMPT_AND_OUTPUT_LOG.csv](file:///c:/Users/avira/Downloads/Svarajya-main%206-7-26/Svarajya-AI-Audit/audit-output/AI_PROMPT_AND_OUTPUT_LOG.csv)**: Audit trail of AI agent actions and verification.
+## Excluded Files (Internal / Superseded)
+- Hidden builders: `.bug-qa-generator.mjs`, `.rebuild_module_to_file_map.mjs`, `.rebuild_supabase_usage_map.mjs`, `.rebuild_master_bug_register.py`
+- System directories: `.artifact-validation/`, `.DS_Store`
+- Temporary drafts: `*_PRE_*_REBUILD_DRAFT.csv`
+---

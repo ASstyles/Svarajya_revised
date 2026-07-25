@@ -1,0 +1,873 @@
+Table Schema,Table Name,Position,Column Name,Data Type,Is Nullable,Default Value
+public,_prisma_migrations,1,id,character varying,NO,null
+public,_prisma_migrations,2,checksum,character varying,NO,null
+public,_prisma_migrations,3,finished_at,timestamp with time zone,YES,null
+public,_prisma_migrations,4,migration_name,character varying,NO,null
+public,_prisma_migrations,5,logs,text,YES,null
+public,_prisma_migrations,6,rolled_back_at,timestamp with time zone,YES,null
+public,_prisma_migrations,7,started_at,timestamp with time zone,NO,now()
+public,_prisma_migrations,8,applied_steps_count,integer,NO,0
+public,activity_events,1,id,text,NO,null
+public,activity_events,2,userId,text,NO,null
+public,activity_events,3,eventType,text,NO,null
+public,activity_events,4,eventData,jsonb,YES,null
+public,activity_events,5,deviceType,text,YES,null
+public,activity_events,6,timestamp,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,admin_audit_logs,1,id,text,NO,null
+public,admin_audit_logs,2,adminUserId,text,NO,null
+public,admin_audit_logs,3,actionType,USER-DEFINED,NO,null
+public,admin_audit_logs,4,entityType,text,NO,null
+public,admin_audit_logs,5,entityId,text,YES,null
+public,admin_audit_logs,6,oldValue,jsonb,YES,null
+public,admin_audit_logs,7,newValue,jsonb,YES,null
+public,admin_audit_logs,8,ipAddress,text,NO,null
+public,admin_audit_logs,9,userAgent,text,YES,null
+public,admin_audit_logs,10,timestamp,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,admin_sessions,1,id,text,NO,null
+public,admin_sessions,2,adminUserId,text,NO,null
+public,admin_sessions,3,token,text,NO,null
+public,admin_sessions,4,refreshToken,text,NO,null
+public,admin_sessions,5,ipAddress,text,NO,null
+public,admin_sessions,6,userAgent,text,YES,null
+public,admin_sessions,7,expiresAt,timestamp without time zone,NO,null
+public,admin_sessions,8,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,admin_sessions,9,lastActivityAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,admin_users,1,id,text,NO,null
+public,admin_users,2,email,text,NO,null
+public,admin_users,3,password,text,NO,null
+public,admin_users,4,name,text,NO,null
+public,admin_users,5,role,USER-DEFINED,NO,null
+public,admin_users,6,status,USER-DEFINED,NO,"'ACTIVE'::""AdminStatus"""
+public,admin_users,7,twoFactorSecret,text,YES,null
+public,admin_users,8,twoFactorEnabled,boolean,NO,false
+public,admin_users,9,lastLoginAt,timestamp without time zone,YES,null
+public,admin_users,10,lastLoginIp,text,YES,null
+public,admin_users,11,failedLoginCount,integer,NO,0
+public,admin_users,12,lockedUntil,timestamp without time zone,YES,null
+public,admin_users,13,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,admin_users,14,updatedAt,timestamp without time zone,NO,null
+public,admin_users,15,createdBy,text,YES,null
+public,admin_users,16,deletedAt,timestamp without time zone,YES,null
+public,admin_users,17,inviteExpiresAt,timestamp without time zone,YES,null
+public,admin_users,18,inviteToken,text,YES,null
+public,admin_users,19,previousPassword,text,YES,null
+public,admin_users,20,twoFactorRecoveryCodes,text,YES,null
+public,admin_users,21,mobile,text,YES,null
+public,admin_users,22,twoFactorOtpExpiresAt,timestamp without time zone,YES,null
+public,asset_inventory,1,id,text,NO,null
+public,asset_inventory,2,userId,text,NO,null
+public,asset_inventory,3,itemType,text,NO,null
+public,asset_inventory,4,description,text,NO,null
+public,asset_inventory,5,purchaseValue,double precision,YES,null
+public,asset_inventory,6,currentValue,double precision,YES,null
+public,asset_inventory,7,ownerId,text,YES,null
+public,asset_inventory,8,insuredFlag,boolean,NO,false
+public,asset_inventory,9,linkedPolicyId,text,YES,null
+public,asset_inventory,10,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,asset_inventory,11,updatedAt,timestamp without time zone,NO,null
+public,balance_history,1,id,text,NO,null
+public,balance_history,2,bankAccountId,text,NO,null
+public,balance_history,3,balance,double precision,NO,null
+public,balance_history,4,recordedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,balance_history,5,note,text,YES,null
+public,bank_accounts,1,id,text,NO,null
+public,bank_accounts,2,userId,text,NO,null
+public,bank_accounts,3,bankName,text,NO,null
+public,bank_accounts,4,accountType,text,NO,null
+public,bank_accounts,5,accountNumber,text,YES,null
+public,bank_accounts,6,ifsc,text,YES,null
+public,bank_accounts,7,holders,jsonb,YES,null
+public,bank_accounts,8,openingBalance,double precision,YES,null
+public,bank_accounts,9,currentBalance,double precision,YES,null
+public,bank_accounts,10,status,text,NO,'ACTIVE'::text
+public,bank_accounts,11,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,bank_accounts,12,updatedAt,timestamp without time zone,NO,null
+public,bank_accounts,13,accountLast4,text,NO,null
+public,bank_accounts,14,isPrimary,boolean,NO,false
+public,bank_accounts,15,latestBalanceAsOf,timestamp without time zone,YES,null
+public,bank_accounts,16,nickname,text,YES,null
+public,bank_accounts,17,notes,text,YES,null
+public,broadcasts,1,id,text,NO,null
+public,broadcasts,2,createdBy,text,NO,null
+public,broadcasts,3,title,text,NO,null
+public,broadcasts,4,body,text,NO,null
+public,broadcasts,5,ctaText,text,YES,null
+public,broadcasts,6,ctaUrl,text,YES,null
+public,broadcasts,7,targetScope,jsonb,NO,null
+public,broadcasts,8,channel,USER-DEFINED,NO,null
+public,broadcasts,9,scheduledFor,timestamp without time zone,YES,null
+public,broadcasts,10,expiresAt,timestamp without time zone,YES,null
+public,broadcasts,11,sentAt,timestamp without time zone,YES,null
+public,broadcasts,12,status,USER-DEFINED,NO,"'DRAFT'::""BroadcastStatus"""
+public,broadcasts,13,sentCount,integer,NO,0
+public,broadcasts,14,deliveredCount,integer,NO,0
+public,broadcasts,15,openedCount,integer,NO,0
+public,broadcasts,16,clickedCount,integer,NO,0
+public,broadcasts,17,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,budget_plans,1,id,text,NO,null
+public,budget_plans,2,userId,text,NO,null
+public,budget_plans,3,totalMonthly,double precision,NO,null
+public,budget_plans,4,categories,jsonb,NO,null
+public,budget_plans,5,overspendRules,jsonb,YES,null
+public,budget_plans,6,isActive,boolean,NO,true
+public,budget_plans,7,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,budget_plans,8,updatedAt,timestamp without time zone,NO,null
+public,calculation_parameter_history,1,id,text,NO,null
+public,calculation_parameter_history,2,parameterId,text,NO,null
+public,calculation_parameter_history,3,parameterKey,text,NO,null
+public,calculation_parameter_history,4,oldValue,double precision,NO,null
+public,calculation_parameter_history,5,newValue,double precision,NO,null
+public,calculation_parameter_history,6,changedBy,text,NO,null
+public,calculation_parameter_history,7,reason,text,YES,null
+public,calculation_parameter_history,8,changedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,calculation_parameters,1,id,text,NO,null
+public,calculation_parameters,2,key,text,NO,null
+public,calculation_parameters,3,value,double precision,NO,null
+public,calculation_parameters,4,defaultValue,double precision,NO,null
+public,calculation_parameters,5,description,text,YES,null
+public,calculation_parameters,6,category,text,YES,null
+public,calculation_parameters,7,version,integer,NO,1
+public,calculation_parameters,8,updatedAt,timestamp without time zone,NO,null
+public,calculation_parameters,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,cash_wallets,1,id,text,NO,null
+public,cash_wallets,2,userId,text,NO,null
+public,cash_wallets,3,cashInHand,double precision,NO,0
+public,cash_wallets,4,emergencyCash,double precision,NO,0
+public,cash_wallets,5,pettyCash,double precision,NO,0
+public,cash_wallets,6,updatedAt,timestamp without time zone,NO,null
+public,cash_wallets,7,idleThresholdAmount,double precision,NO,0
+public,cohorts,1,id,text,NO,null
+public,cohorts,2,name,text,NO,null
+public,cohorts,3,description,text,YES,null
+public,cohorts,4,startDate,timestamp without time zone,NO,null
+public,cohorts,5,endDate,timestamp without time zone,YES,null
+public,cohorts,6,assignedModules,jsonb,NO,null
+public,cohorts,7,weeklyTasks,jsonb,YES,null
+public,cohorts,8,announcementText,text,YES,null
+public,cohorts,9,visibilityFlag,boolean,NO,true
+public,cohorts,10,maxCapacity,integer,YES,null
+public,cohorts,11,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,cohorts,12,updatedAt,timestamp without time zone,NO,null
+public,consent_records,1,id,text,NO,null
+public,consent_records,2,userId,text,NO,null
+public,consent_records,3,consentType,text,NO,null
+public,consent_records,4,consentGiven,boolean,NO,null
+public,consent_records,5,consentedAt,timestamp without time zone,YES,null
+public,consent_records,6,revokedAt,timestamp without time zone,YES,null
+public,consent_records,7,version,text,YES,null
+public,consent_records,8,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,consent_records,9,updatedAt,timestamp without time zone,NO,null
+public,contact_messages,1,id,text,NO,null
+public,contact_messages,2,name,text,NO,null
+public,contact_messages,3,email,text,NO,null
+public,contact_messages,4,message,text,NO,null
+public,contact_messages,5,status,text,NO,'UNREAD'::text
+public,contact_messages,6,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,contact_messages,7,updatedAt,timestamp without time zone,NO,null
+public,credential_records,1,id,text,NO,null
+public,credential_records,2,userId,text,NO,null
+public,credential_records,3,portalType,text,NO,null
+public,credential_records,4,portalName,text,NO,null
+public,credential_records,5,portalUrl,text,YES,null
+public,credential_records,6,loginId,text,YES,null
+public,credential_records,7,registeredEmail,text,YES,null
+public,credential_records,8,registeredMobile,text,YES,null
+public,credential_records,9,storageMode,text,NO,'REFERENCE'::text
+public,credential_records,10,encryptedPassword,text,YES,null
+public,credential_records,11,linkedMemberId,text,YES,null
+public,credential_records,12,registrationDate,date,YES,null
+public,credential_records,13,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,credential_records,14,updatedAt,timestamp without time zone,NO,null
+public,credential_records,15,nomineeAwareness,boolean,YES,true
+public,credential_records,16,twoFAStatus,text,YES,'unknown'::text
+public,credential_records,17,twoFAType,text,YES,'none'::text
+public,credential_records,18,linked_id,text,YES,null
+public,daily_analytics,1,id,text,NO,null
+public,daily_analytics,2,date,date,NO,null
+public,daily_analytics,3,newRegistrations,integer,NO,0
+public,daily_analytics,4,activeUsers,integer,NO,0
+public,daily_analytics,5,dau,integer,NO,0
+public,daily_analytics,6,sessionsTotal,integer,NO,0
+public,daily_analytics,7,avgSessionDuration,double precision,YES,null
+public,daily_analytics,8,modulesCompleted,integer,NO,0
+public,daily_analytics,9,chaptersCompleted,integer,NO,0
+public,daily_analytics,10,docsUploaded,integer,NO,0
+public,daily_analytics,11,supportTicketsCreated,integer,NO,0
+public,daily_analytics,12,calculatedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,data_access_logs,1,id,text,NO,null
+public,data_access_logs,2,adminUserId,text,NO,null
+public,data_access_logs,3,userId,text,NO,null
+public,data_access_logs,4,actionPerformed,text,NO,null
+public,data_access_logs,5,dataScope,text,NO,null
+public,data_access_logs,6,justification,text,YES,null
+public,data_access_logs,7,ipAddress,text,NO,null
+public,data_access_logs,8,timestamp,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,din_records,1,id,text,NO,null
+public,din_records,2,userId,text,NO,null
+public,din_records,3,dinNumber,text,NO,null
+public,din_records,4,companyName,text,YES,null
+public,din_records,5,issueDate,date,YES,null
+public,din_records,6,expiryDate,date,YES,null
+public,din_records,7,dinKycStatus,text,YES,null
+public,din_records,8,dscExpiryDate,date,YES,null
+public,din_records,9,mcaFilingStatus,text,YES,null
+public,din_records,10,directorSince,date,YES,null
+public,din_records,11,status,text,NO,'VALID'::text
+public,din_records,12,documentUrl,text,YES,null
+public,din_records,13,notes,text,YES,null
+public,din_records,14,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,din_records,15,updatedAt,timestamp without time zone,NO,null
+public,document_meta,1,id,text,NO,null
+public,document_meta,2,userId,text,NO,null
+public,document_meta,3,docType,text,NO,null
+public,document_meta,4,linkedPersonId,text,YES,null
+public,document_meta,5,linkedEntityId,text,YES,null
+public,document_meta,6,fileName,text,NO,null
+public,document_meta,7,fileHash,text,YES,null
+public,document_meta,8,localPathRef,text,YES,null
+public,document_meta,9,cloudBackupConsent,boolean,NO,false
+public,document_meta,10,cloudStorageUrl,text,YES,null
+public,document_meta,11,expiryDate,date,YES,null
+public,document_meta,12,versionTag,text,YES,null
+public,document_meta,13,versionHistory,jsonb,YES,null
+public,document_meta,14,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,document_meta,15,updatedAt,timestamp without time zone,NO,null
+public,document_meta,16,cloudId,text,YES,null
+public,document_meta,17,localId,text,YES,null
+public,document_meta,18,storageType,text,YES,'local'::text
+public,document_meta,19,linkedFamilyMemberId,text,YES,null
+public,education,1,id,text,NO,null
+public,education,2,userId,text,NO,null
+public,education,3,degree,text,NO,null
+public,education,4,institute,text,NO,null
+public,education,5,yearCompleted,integer,YES,null
+public,education,6,specialization,text,YES,null
+public,education,7,linkedLoanId,text,YES,null
+public,education,8,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,education,9,certificateUrl,text,YES,null
+public,education,10,familyMemberId,text,YES,null
+public,email_verification_codes,1,id,text,NO,null
+public,email_verification_codes,2,userId,text,NO,null
+public,email_verification_codes,3,code,text,NO,null
+public,email_verification_codes,4,purpose,text,NO,null
+public,email_verification_codes,5,expiresAt,timestamp without time zone,NO,null
+public,email_verification_codes,6,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,expense_categories,1,id,text,NO,null
+public,expense_categories,2,userId,text,NO,null
+public,expense_categories,3,name,text,NO,null
+public,expense_categories,4,emoji,text,YES,null
+public,expense_categories,5,isActive,boolean,NO,true
+public,expense_categories,6,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,expense_entries,1,id,text,NO,null
+public,expense_entries,2,userId,text,NO,null
+public,expense_entries,3,date,date,NO,CURRENT_TIMESTAMP
+public,expense_entries,4,amount,double precision,NO,null
+public,expense_entries,5,category,text,NO,null
+public,expense_entries,6,mode,text,YES,null
+public,expense_entries,7,accountId,text,YES,null
+public,expense_entries,8,description,text,YES,null
+public,expense_entries,9,isRecurring,boolean,NO,false
+public,expense_entries,10,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,expense_entries,11,frequency,text,YES,null
+public,expense_entries,12,familyMemberId,text,YES,null
+public,expense_entries,13,paidFromAccountId,text,YES,null
+public,family_members,1,id,text,NO,null
+public,family_members,2,userId,text,NO,null
+public,family_members,3,name,text,NO,null
+public,family_members,4,relation,text,NO,null
+public,family_members,5,dob,date,YES,null
+public,family_members,6,isDependent,boolean,NO,false
+public,family_members,7,nomineeEligible,boolean,NO,true
+public,family_members,8,accessLevel,text,NO,'VIEW'::text
+public,family_members,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,family_members,10,updatedAt,timestamp without time zone,NO,null
+public,family_members,11,email,text,YES,null
+public,family_members,12,phone,text,YES,null
+public,faqs,1,id,text,NO,null
+public,faqs,2,category,text,NO,null
+public,faqs,3,question,text,NO,null
+public,faqs,4,answer,text,NO,null
+public,faqs,5,language,text,NO,'en'::text
+public,faqs,6,displayOrder,integer,NO,null
+public,faqs,7,linkedEntity,text,YES,null
+public,faqs,8,viewCount,integer,NO,0
+public,faqs,9,helpfulCount,integer,NO,0
+public,faqs,10,notHelpfulCount,integer,NO,0
+public,faqs,11,visibilityFlag,boolean,NO,true
+public,faqs,12,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,faqs,13,updatedAt,timestamp without time zone,NO,null
+public,feature_flags,1,id,text,NO,null
+public,feature_flags,2,name,text,NO,null
+public,feature_flags,3,description,text,YES,null
+public,feature_flags,4,enabled,boolean,NO,false
+public,feature_flags,5,personaScope,jsonb,YES,null
+public,feature_flags,6,cohortScope,text,YES,null
+public,feature_flags,7,geoScope,jsonb,YES,null
+public,feature_flags,8,startDate,timestamp without time zone,YES,null
+public,feature_flags,9,endDate,timestamp without time zone,YES,null
+public,feature_flags,10,dependsOnFlagId,text,YES,null
+public,feature_flags,11,createdBy,text,NO,null
+public,feature_flags,12,updatedBy,text,YES,null
+public,feature_flags,13,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,feature_flags,14,updatedAt,timestamp without time zone,NO,null
+public,field_mappings,1,id,text,NO,null
+public,field_mappings,2,databaseTable,text,NO,null
+public,field_mappings,3,databaseField,text,NO,null
+public,field_mappings,4,validationRule,jsonb,YES,null
+public,field_mappings,5,calculationDeps,jsonb,YES,null
+public,field_mappings,6,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,field_mappings,7,updatedAt,timestamp without time zone,NO,null
+public,game_runs,1,id,text,NO,null
+public,game_runs,2,userId,text,NO,null
+public,game_runs,3,submoduleId,text,NO,null
+public,game_runs,4,gameTemplate,text,NO,null
+public,game_runs,5,attemptNumber,integer,NO,1
+public,game_runs,6,startedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,game_runs,7,completedAt,timestamp without time zone,YES,null
+public,game_runs,8,pointsEarned,integer,NO,0
+public,game_runs,9,status,text,NO,'IN_PROGRESS'::text
+public,gamification_state,1,id,text,NO,null
+public,gamification_state,2,userId,text,NO,null
+public,gamification_state,3,totalPoints,integer,NO,0
+public,gamification_state,4,badgesEarned,jsonb,YES,null
+public,gamification_state,5,currentStreak,integer,NO,0
+public,gamification_state,6,longestStreak,integer,NO,0
+public,gamification_state,7,rank,text,NO,'BEGINNER'::text
+public,gamification_state,8,lastActivityDate,date,YES,null
+public,gamification_state,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,gamification_state,10,updatedAt,timestamp without time zone,NO,null
+public,goals,1,id,text,NO,null
+public,goals,2,userId,text,NO,null
+public,goals,3,name,text,NO,null
+public,goals,4,targetAmount,double precision,NO,null
+public,goals,5,targetDate,date,NO,null
+public,goals,6,currentSaved,double precision,NO,0
+public,goals,7,requiredMonthlySavings,double precision,YES,null
+public,goals,8,priority,text,NO,'MEDIUM'::text
+public,goals,9,status,text,NO,'IN_PROGRESS'::text
+public,goals,10,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,goals,11,updatedAt,timestamp without time zone,NO,null
+public,gst_records,1,id,text,NO,null
+public,gst_records,2,userId,text,NO,null
+public,gst_records,3,gstin,text,NO,null
+public,gst_records,4,businessName,text,YES,null
+public,gst_records,5,registrationType,text,YES,null
+public,gst_records,6,filingFrequency,text,YES,null
+public,gst_records,7,lastFilingDate,date,YES,null
+public,gst_records,8,nextDueDate,date,YES,null
+public,gst_records,9,gstr1Filed,boolean,YES,null
+public,gst_records,10,gstr3bFiled,boolean,YES,null
+public,gst_records,11,annualReturnFiled,boolean,YES,null
+public,gst_records,12,status,text,NO,'ACTIVE'::text
+public,gst_records,13,documentUrl,text,YES,null
+public,gst_records,14,notes,text,YES,null
+public,gst_records,15,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,gst_records,16,updatedAt,timestamp without time zone,NO,null
+public,identity_links,1,id,text,NO,null
+public,identity_links,2,userId,text,NO,null
+public,identity_links,3,identityId,text,NO,null
+public,identity_links,4,linkedType,text,NO,null
+public,identity_links,5,linkedValue,text,NO,null
+public,identity_links,6,serviceName,text,YES,null
+public,identity_links,7,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,identity_records,1,id,text,NO,null
+public,identity_records,2,userId,text,NO,null
+public,identity_records,3,idType,text,NO,null
+public,identity_records,4,numberMasked,text,NO,null
+public,identity_records,5,numberFull,text,YES,null
+public,identity_records,6,expiryDate,date,YES,null
+public,identity_records,7,issuedDate,date,YES,null
+public,identity_records,8,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,identity_records,9,updatedAt,timestamp without time zone,NO,null
+public,identity_records,10,dobOnDoc,date,YES,null
+public,identity_records,11,nameOnDoc,text,YES,null
+public,identity_records,12,placeOfIssue,text,YES,null
+public,identity_records,13,vaultFileId,text,YES,null
+public,identity_records,14,familyMemberId,text,YES,null
+public,iks_assets,1,id,text,NO,null
+public,iks_assets,2,assetType,USER-DEFINED,NO,null
+public,iks_assets,3,fileUrl,text,NO,null
+public,iks_assets,4,fileName,text,NO,null
+public,iks_assets,5,moduleScope,text,YES,null
+public,iks_assets,6,language,text,YES,null
+public,iks_assets,7,version,integer,NO,1
+public,iks_assets,8,visibilityFlag,boolean,NO,true
+public,iks_assets,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,iks_assets,10,updatedAt,timestamp without time zone,NO,null
+public,income_streams,1,id,text,NO,null
+public,income_streams,2,userId,text,NO,null
+public,income_streams,3,type,text,NO,null
+public,income_streams,4,source,text,YES,null
+public,income_streams,5,frequency,text,NO,'MONTHLY'::text
+public,income_streams,6,amountGross,double precision,NO,null
+public,income_streams,7,deductions,double precision,NO,0
+public,income_streams,8,amountNet,double precision,NO,null
+public,income_streams,9,creditedAccountId,text,YES,null
+public,income_streams,10,isPrimary,boolean,NO,false
+public,income_streams,11,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,income_streams,12,updatedAt,timestamp without time zone,NO,null
+public,income_streams,13,allocationMonths,integer,YES,null
+public,income_streams,14,description,text,YES,null
+public,income_streams,15,expectedGrowthPct,integer,YES,null
+public,income_streams,16,historicalIncome,jsonb,YES,null
+public,income_streams,17,notes,text,YES,null
+public,income_streams,18,riskLevel,text,YES,null
+public,income_streams,19,tdsAmount,double precision,YES,null
+public,income_streams,20,familyMemberId,text,YES,null
+public,income_streams,21,lastReviewedAt,timestamp without time zone,YES,null
+public,insurance_coverage,1,id,text,NO,null
+public,insurance_coverage,2,policyId,text,NO,null
+public,insurance_coverage,3,memberId,text,NO,null
+public,insurance_policies,1,id,text,NO,null
+public,insurance_policies,2,userId,text,NO,null
+public,insurance_policies,3,type,text,NO,null
+public,insurance_policies,4,policyNumber,text,NO,null
+public,insurance_policies,5,insurerName,text,YES,null
+public,insurance_policies,6,sumAssured,double precision,NO,null
+public,insurance_policies,7,premium,double precision,NO,null
+public,insurance_policies,8,premiumFrequency,text,NO,'ANNUAL'::text
+public,insurance_policies,9,dueDate,date,NO,null
+public,insurance_policies,10,maturityDate,date,YES,null
+public,insurance_policies,11,nomineeId,text,YES,null
+public,insurance_policies,12,agentContact,text,YES,null
+public,insurance_policies,13,status,text,NO,'ACTIVE'::text
+public,insurance_policies,14,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,insurance_policies,15,updatedAt,timestamp without time zone,NO,null
+public,insurance_policies,16,documentId,text,YES,null
+public,insurance_policies,17,reminderId,text,YES,null
+public,investment_holdings,1,id,text,NO,null
+public,investment_holdings,2,userId,text,NO,null
+public,investment_holdings,3,type,text,NO,null
+public,investment_holdings,4,name,text,YES,null
+public,investment_holdings,5,investedAmount,double precision,NO,null
+public,investment_holdings,6,currentValue,double precision,YES,null
+public,investment_holdings,7,maturityDate,date,YES,null
+public,investment_holdings,8,lockInPeriod,integer,YES,null
+public,investment_holdings,9,riskLevel,text,YES,null
+public,investment_holdings,10,linkedGoalId,text,YES,null
+public,investment_holdings,11,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,investment_holdings,12,updatedAt,timestamp without time zone,NO,null
+public,loan_accounts,1,id,text,NO,null
+public,loan_accounts,2,userId,text,NO,null
+public,loan_accounts,3,type,text,NO,null
+public,loan_accounts,4,lenderName,text,YES,null
+public,loan_accounts,5,principal,double precision,NO,null
+public,loan_accounts,6,outstandingAmount,double precision,NO,null
+public,loan_accounts,7,emi,double precision,NO,null
+public,loan_accounts,8,interestRate,double precision,NO,null
+public,loan_accounts,9,tenure,integer,NO,null
+public,loan_accounts,10,startDate,date,NO,null
+public,loan_accounts,11,endDate,date,YES,null
+public,loan_accounts,12,linkedPropertyId,text,YES,null
+public,loan_accounts,13,status,text,NO,'ACTIVE'::text
+public,loan_accounts,14,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,loan_accounts,15,updatedAt,timestamp without time zone,NO,null
+public,loan_accounts,16,documentId,text,YES,null
+public,loan_accounts,17,coBorrowerId,text,YES,null
+public,loan_accounts,18,paidFromAccountId,text,YES,null
+public,module_access_permissions,1,id,text,NO,null
+public,module_access_permissions,2,adminUserId,text,NO,null
+public,module_access_permissions,3,moduleCode,text,NO,null
+public,module_access_permissions,4,granted,boolean,NO,true
+public,module_access_permissions,5,grantedBy,text,YES,null
+public,module_access_permissions,6,grantedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,modules,1,id,text,NO,null
+public,modules,2,code,text,NO,null
+public,modules,3,name,text,NO,null
+public,modules,4,nameHindi,text,YES,null
+public,modules,5,zoneType,USER-DEFINED,NO,null
+public,modules,6,iconRef,text,YES,null
+public,modules,7,description,text,YES,null
+public,modules,8,displayOrder,integer,NO,null
+public,modules,9,isMvp,boolean,NO,false
+public,modules,10,visibilityStatus,USER-DEFINED,NO,"'DRAFT'::""ContentStatus"""
+public,modules,11,featureFlagId,text,YES,null
+public,modules,12,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,modules,13,updatedAt,timestamp without time zone,NO,null
+public,modules,14,updatedBy,text,YES,null
+public,monthly_analytics,1,id,text,NO,null
+public,monthly_analytics,2,month,date,NO,null
+public,monthly_analytics,3,mau,integer,NO,0
+public,monthly_analytics,4,retention30Day,double precision,YES,null
+public,monthly_analytics,5,retention60Day,double precision,YES,null
+public,monthly_analytics,6,retention90Day,double precision,YES,null
+public,monthly_analytics,7,avgStabilityScore,double precision,YES,null
+public,monthly_analytics,8,productHealthScore,double precision,YES,null
+public,monthly_analytics,9,calculatedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,nominee_mapping,1,id,text,NO,null
+public,nominee_mapping,2,userId,text,NO,null
+public,nominee_mapping,3,assetRef,text,NO,null
+public,nominee_mapping,4,assetType,text,NO,null
+public,nominee_mapping,5,nomineeId,text,NO,null
+public,nominee_mapping,6,sharePercent,double precision,NO,100
+public,nominee_mapping,7,proofDocLinked,boolean,NO,false
+public,nominee_mapping,8,confirmed,boolean,NO,false
+public,nominee_mapping,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,nominee_mapping,10,updatedAt,timestamp without time zone,NO,null
+public,notification_templates,1,id,text,NO,null
+public,notification_templates,2,name,text,NO,null
+public,notification_templates,3,channel,USER-DEFINED,NO,null
+public,notification_templates,4,language,text,NO,'en'::text
+public,notification_templates,5,subject,text,YES,null
+public,notification_templates,6,bodyTemplate,text,NO,null
+public,notification_templates,7,triggerEvent,text,NO,null
+public,notification_templates,8,personaScope,jsonb,YES,null
+public,notification_templates,9,visibilityStatus,USER-DEFINED,NO,"'DRAFT'::""ContentStatus"""
+public,notification_templates,10,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,notification_templates,11,updatedAt,timestamp without time zone,NO,null
+public,notifications,1,id,text,NO,null
+public,notifications,2,userId,text,NO,null
+public,notifications,3,templateId,text,YES,null
+public,notifications,4,channel,USER-DEFINED,NO,null
+public,notifications,5,subject,text,YES,null
+public,notifications,6,body,text,NO,null
+public,notifications,7,sentAt,timestamp without time zone,YES,null
+public,notifications,8,deliveredAt,timestamp without time zone,YES,null
+public,notifications,9,openedAt,timestamp without time zone,YES,null
+public,notifications,10,clickedAt,timestamp without time zone,YES,null
+public,notifications,11,status,USER-DEFINED,NO,"'PENDING'::""NotifStatus"""
+public,notifications,12,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,notifications,13,link,text,YES,null
+public,property_assets,1,id,text,NO,null
+public,property_assets,2,userId,text,NO,null
+public,property_assets,3,type,text,NO,null
+public,property_assets,4,address,text,YES,null
+public,property_assets,5,purchaseDate,date,YES,null
+public,property_assets,6,purchaseAmount,double precision,YES,null
+public,property_assets,7,currentValue,double precision,YES,null
+public,property_assets,8,ownContribution,double precision,YES,null
+public,property_assets,9,linkedLoanId,text,YES,null
+public,property_assets,10,rentalIncome,double precision,YES,null
+public,property_assets,11,annualCosts,double precision,YES,null
+public,property_assets,12,propertyTax,double precision,YES,null
+public,property_assets,13,vacancyMonths,integer,NO,0
+public,property_assets,14,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,property_assets,15,updatedAt,timestamp without time zone,NO,null
+public,property_assets,16,coOwners,jsonb,YES,null
+public,property_assets,17,ownershipType,text,NO,null
+public,property_assets,18,secretFieldId,text,YES,null
+public,property_assets,19,vaultFileIds,jsonb,YES,null
+public,questions,1,id,text,NO,null
+public,questions,2,submoduleId,text,NO,null
+public,questions,3,questionType,USER-DEFINED,NO,null
+public,questions,4,questionText,text,NO,null
+public,questions,5,explanationText,text,YES,null
+public,questions,6,language,text,NO,'en'::text
+public,questions,7,fieldMappingId,text,YES,null
+public,questions,8,scoringWeight,integer,NO,1
+public,questions,9,required,boolean,NO,true
+public,questions,10,personaScope,jsonb,YES,null
+public,questions,11,visibilityStatus,USER-DEFINED,NO,"'DRAFT'::""ContentStatus"""
+public,questions,12,displayOrder,integer,NO,null
+public,questions,13,version,integer,NO,1
+public,questions,14,createdBy,text,NO,null
+public,questions,15,updatedBy,text,YES,null
+public,questions,16,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,questions,17,updatedAt,timestamp without time zone,NO,null
+public,quiz_answers,1,id,text,NO,null
+public,quiz_answers,2,userId,text,NO,null
+public,quiz_answers,3,questionId,text,NO,null
+public,quiz_answers,4,answerValue,jsonb,NO,null
+public,quiz_answers,5,attemptNumber,integer,NO,1
+public,quiz_answers,6,answeredAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,rajya_scores,1,id,text,NO,null
+public,rajya_scores,2,userId,text,NO,null
+public,rajya_scores,3,overallScore,double precision,NO,null
+public,rajya_scores,4,rank,text,NO,null
+public,rajya_scores,5,rakshaScore,double precision,YES,null
+public,rajya_scores,6,durgScore,double precision,YES,null
+public,rajya_scores,7,rinScore,double precision,YES,null
+public,rajya_scores,8,vyayaScore,double precision,YES,null
+public,rajya_scores,9,mitraScore,double precision,YES,null
+public,rajya_scores,10,koshScore,double precision,YES,null
+public,rajya_scores,11,goalsScore,double precision,YES,null
+public,rajya_scores,12,riskFlags,jsonb,YES,null
+public,rajya_scores,13,nextActions,jsonb,YES,null
+public,rajya_scores,14,calculatedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,rajya_scores,15,previousScore,double precision,YES,null
+public,rajya_scores,16,trend,text,YES,null
+public,reminders,1,id,text,NO,null
+public,reminders,2,userId,text,NO,null
+public,reminders,3,type,text,NO,null
+public,reminders,4,targetDate,date,NO,null
+public,reminders,5,leadTime,integer,NO,7
+public,reminders,6,channel,text,NO,'IN_APP'::text
+public,reminders,7,priority,text,NO,'MEDIUM'::text
+public,reminders,8,linkedEntityId,text,YES,null
+public,reminders,9,message,text,YES,null
+public,reminders,10,sentAt,timestamp without time zone,YES,null
+public,reminders,11,status,text,NO,'PENDING'::text
+public,reminders,12,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,scheduled_reports,1,id,text,NO,null
+public,scheduled_reports,2,createdBy,text,NO,null
+public,scheduled_reports,3,reportType,USER-DEFINED,NO,null
+public,scheduled_reports,4,frequency,USER-DEFINED,NO,null
+public,scheduled_reports,5,recipients,jsonb,NO,null
+public,scheduled_reports,6,format,text,NO,'PDF'::text
+public,scheduled_reports,7,lastRunAt,timestamp without time zone,YES,null
+public,scheduled_reports,8,nextRunAt,timestamp without time zone,NO,null
+public,scheduled_reports,9,isActive,boolean,NO,true
+public,scheduled_reports,10,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,submodules,1,id,text,NO,null
+public,submodules,2,moduleId,text,NO,null
+public,submodules,3,code,text,NO,null
+public,submodules,4,name,text,NO,null
+public,submodules,5,nameHindi,text,YES,null
+public,submodules,6,adhyayaTitle,text,YES,null
+public,submodules,7,tutorialCount,integer,NO,0
+public,submodules,8,gameTemplateType,text,YES,null
+public,submodules,9,gameCount,integer,NO,0
+public,submodules,10,fieldCount,integer,NO,0
+public,submodules,11,completionRules,jsonb,YES,null
+public,submodules,12,displayOrder,integer,NO,null
+public,submodules,13,visibilityStatus,USER-DEFINED,NO,"'DRAFT'::""ContentStatus"""
+public,submodules,14,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,submodules,15,updatedAt,timestamp without time zone,NO,null
+public,subscription_analytics,1,id,text,NO,null
+public,subscription_analytics,2,userId,text,NO,null
+public,subscription_analytics,3,totalSubscriptions,integer,NO,0
+public,subscription_analytics,4,monthlySpend,double precision,NO,0
+public,subscription_analytics,5,yearlySpend,double precision,NO,0
+public,subscription_analytics,6,activeSubscriptions,integer,NO,0
+public,subscription_analytics,7,unusedSubscriptions,integer,NO,0
+public,subscription_analytics,8,cancelledThisYear,integer,NO,0
+public,subscription_analytics,9,leakageScore,double precision,YES,null
+public,subscription_analytics,10,updatedAt,timestamp without time zone,NO,null
+public,subscriptions,1,id,text,NO,null
+public,subscriptions,2,userId,text,NO,null
+public,subscriptions,3,name,text,NO,null
+public,subscriptions,4,category,text,NO,null
+public,subscriptions,5,amount,double precision,NO,null
+public,subscriptions,6,renewalDate,date,NO,null
+public,subscriptions,7,lastUsedDate,date,YES,null
+public,subscriptions,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,subscriptions,10,updatedAt,timestamp without time zone,NO,null
+public,subscriptions,11,autoDebit,boolean,NO,false
+public,subscriptions,12,billingCycle,USER-DEFINED,NO,"'MONTHLY'::""BillingCycle"""
+public,subscriptions,13,cancelReminder,boolean,NO,true
+public,subscriptions,14,customCategoryId,text,YES,null
+public,subscriptions,15,endDate,date,YES,null
+public,subscriptions,16,isEssential,boolean,YES,null
+public,subscriptions,17,linkedBankAccountId,text,YES,null
+public,subscriptions,18,notes,text,YES,null
+public,subscriptions,19,paymentMethod,text,YES,null
+public,subscriptions,20,provider,text,YES,null
+public,subscriptions,21,startDate,date,YES,null
+public,subscriptions,22,status,USER-DEFINED,NO,"'ACTIVE'::""SubscriptionStatus"""
+public,subscriptions,23,usageFrequency,USER-DEFINED,YES,null
+public,succession_emergency,1,id,text,NO,null
+public,succession_emergency,2,userId,text,NO,null
+public,succession_emergency,3,emergencyContactName,text,YES,null
+public,succession_emergency,4,emergencyContactPhone,text,YES,null
+public,succession_emergency,5,secondaryContactName,text,YES,null
+public,succession_emergency,6,secondaryContactPhone,text,YES,null
+public,succession_emergency,7,verificationMethod,text,YES,null
+public,succession_emergency,8,activationWaitingPeriod,integer,NO,24
+public,succession_emergency,9,assetAccessScope,jsonb,YES,null
+public,succession_emergency,10,lastUpdated,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,succession_nominees,1,id,text,NO,null
+public,succession_nominees,2,userId,text,NO,null
+public,succession_nominees,3,assetType,text,NO,null
+public,succession_nominees,4,assetId,text,NO,null
+public,succession_nominees,5,nomineeId,text,NO,null
+public,succession_nominees,6,nomineeName,text,NO,null
+public,succession_nominees,7,relationship,text,NO,null
+public,succession_nominees,8,sharePercentage,double precision,NO,100
+public,succession_nominees,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,succession_nominees,10,updatedAt,timestamp without time zone,NO,null
+public,succession_wills,1,id,text,NO,null
+public,succession_wills,2,userId,text,NO,null
+public,succession_wills,3,willExists,boolean,NO,false
+public,succession_wills,4,dateOfWill,date,YES,null
+public,succession_wills,5,registered,boolean,NO,false
+public,succession_wills,6,executorName,text,YES,null
+public,succession_wills,7,executorContact,text,YES,null
+public,succession_wills,8,witnessNames,jsonb,YES,null
+public,succession_wills,9,storageLocation,text,YES,null
+public,succession_wills,10,digitalCopyUrl,text,YES,null
+public,succession_wills,11,cloudConsent,boolean,NO,false
+public,succession_wills,12,secretHint,text,YES,null
+public,succession_wills,13,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,succession_wills,14,updatedAt,timestamp without time zone,NO,null
+public,support_tickets,1,id,text,NO,null
+public,support_tickets,2,userId,text,NO,null
+public,support_tickets,3,category,USER-DEFINED,NO,null
+public,support_tickets,4,subject,text,NO,null
+public,support_tickets,5,description,text,NO,null
+public,support_tickets,6,status,USER-DEFINED,NO,"'OPEN'::""TicketStatus"""
+public,support_tickets,7,priority,USER-DEFINED,NO,"'MEDIUM'::""TicketPriority"""
+public,support_tickets,8,assignedTo,text,YES,null
+public,support_tickets,9,deviceInfo,jsonb,YES,null
+public,support_tickets,10,appVersion,text,YES,null
+public,support_tickets,11,screenshots,jsonb,YES,null
+public,support_tickets,12,internalNotes,text,YES,null
+public,support_tickets,13,resolvedAt,timestamp without time zone,YES,null
+public,support_tickets,14,userSatisfaction,integer,YES,null
+public,support_tickets,15,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,support_tickets,16,updatedAt,timestamp without time zone,NO,null
+public,system_parameters,1,id,text,NO,null
+public,system_parameters,2,key,text,NO,null
+public,system_parameters,3,value,text,NO,null
+public,system_parameters,4,valueType,USER-DEFINED,NO,"'STRING'::""ParamType"""
+public,system_parameters,5,description,text,YES,null
+public,system_parameters,6,category,text,YES,null
+public,system_parameters,7,version,integer,NO,1
+public,system_parameters,8,updatedBy,text,YES,null
+public,system_parameters,9,updatedAt,timestamp without time zone,NO,null
+public,system_parameters,10,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,system_settings,1,id,text,NO,null
+public,system_settings,2,key,text,NO,null
+public,system_settings,3,value,text,NO,null
+public,system_settings,4,description,text,YES,null
+public,system_settings,5,updatedAt,timestamp without time zone,NO,null
+public,tax_records,1,id,text,NO,null
+public,tax_records,2,userId,text,NO,null
+public,tax_records,3,assessmentYear,text,NO,null
+public,tax_records,4,financialYear,text,NO,null
+public,tax_records,5,filingType,text,YES,'ITR'::text
+public,tax_records,6,status,text,NO,'DRAFT'::text
+public,tax_records,7,grossIncome,double precision,YES,null
+public,tax_records,8,taxableIncome,double precision,YES,null
+public,tax_records,9,taxPaid,double precision,YES,null
+public,tax_records,10,taxDue,double precision,YES,null
+public,tax_records,11,filingDate,date,YES,null
+public,tax_records,12,acknowledgementNumber,text,YES,null
+public,tax_records,13,documentUrl,text,YES,null
+public,tax_records,14,notes,text,YES,null
+public,tax_records,15,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,tax_records,16,updatedAt,timestamp without time zone,NO,null
+public,ticket_responses,1,id,text,NO,null
+public,ticket_responses,2,ticketId,text,NO,null
+public,ticket_responses,3,responderId,text,YES,null
+public,ticket_responses,4,responderType,text,NO,null
+public,ticket_responses,5,message,text,NO,null
+public,ticket_responses,6,isInternal,boolean,NO,false
+public,ticket_responses,7,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,tutorial_analytics,1,id,text,NO,null
+public,tutorial_analytics,2,tutorialId,text,NO,null
+public,tutorial_analytics,3,date,date,NO,CURRENT_TIMESTAMP
+public,tutorial_analytics,4,startedCount,integer,NO,0
+public,tutorial_analytics,5,completedCount,integer,NO,0
+public,tutorial_analytics,6,avgWatchDuration,double precision,YES,null
+public,tutorial_analytics,7,dropOffPoint,integer,YES,null
+public,tutorial_completions,1,id,text,NO,null
+public,tutorial_completions,2,userId,text,NO,null
+public,tutorial_completions,3,tutorialId,text,NO,null
+public,tutorial_completions,4,watchedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,tutorial_completions,5,watchDuration,integer,YES,null
+public,tutorial_completions,6,completed,boolean,NO,false
+public,tutorials,1,id,text,NO,null
+public,tutorials,2,submoduleId,text,NO,null
+public,tutorials,3,language,text,NO,'en'::text
+public,tutorials,4,title,text,NO,null
+public,tutorials,5,description,text,YES,null
+public,tutorials,6,youtubeUrl,text,YES,null
+public,tutorials,7,youtubeId,text,YES,null
+public,tutorials,8,durationSeconds,integer,YES,null
+public,tutorials,9,transcriptText,text,YES,null
+public,tutorials,10,mustWatch,boolean,NO,false
+public,tutorials,11,visibilityStatus,USER-DEFINED,NO,"'DRAFT'::""ContentStatus"""
+public,tutorials,12,personaScope,jsonb,YES,null
+public,tutorials,13,cohortScope,text,YES,null
+public,tutorials,14,publishStartDate,timestamp without time zone,YES,null
+public,tutorials,15,publishEndDate,timestamp without time zone,YES,null
+public,tutorials,16,displayOrder,integer,NO,null
+public,tutorials,17,version,integer,NO,1
+public,tutorials,18,changeNotes,text,YES,null
+public,tutorials,19,createdBy,text,NO,null
+public,tutorials,20,updatedBy,text,YES,null
+public,tutorials,21,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,tutorials,22,updatedAt,timestamp without time zone,NO,null
+public,user_chapter_progress,1,id,text,NO,null
+public,user_chapter_progress,2,userId,text,NO,null
+public,user_chapter_progress,3,submoduleId,text,NO,null
+public,user_chapter_progress,4,tutorialsWatched,jsonb,YES,null
+public,user_chapter_progress,5,gameStartedAt,timestamp without time zone,YES,null
+public,user_chapter_progress,6,gameCompletedAt,timestamp without time zone,YES,null
+public,user_chapter_progress,7,sealConfirmedAt,timestamp without time zone,YES,null
+public,user_chapter_progress,8,status,text,NO,'LOCKED'::text
+public,user_chapter_progress,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,user_chapter_progress,10,updatedAt,timestamp without time zone,NO,null
+public,user_cohorts,1,id,text,NO,null
+public,user_cohorts,2,userId,text,NO,null
+public,user_cohorts,3,cohortId,text,NO,null
+public,user_cohorts,4,joinedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,user_cohorts,5,leftAt,timestamp without time zone,YES,null
+public,user_feedback,1,id,text,NO,null
+public,user_feedback,2,userId,text,NO,null
+public,user_feedback,3,feedbackType,USER-DEFINED,NO,null
+public,user_feedback,4,entityType,text,YES,null
+public,user_feedback,5,entityId,text,YES,null
+public,user_feedback,6,rating,integer,YES,null
+public,user_feedback,7,sentiment,text,YES,null
+public,user_feedback,8,comment,text,YES,null
+public,user_feedback,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,user_module_progress,1,id,text,NO,null
+public,user_module_progress,2,userId,text,NO,null
+public,user_module_progress,3,moduleId,text,NO,null
+public,user_module_progress,4,startedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,user_module_progress,5,completedAt,timestamp without time zone,YES,null
+public,user_module_progress,6,status,text,NO,'IN_PROGRESS'::text
+public,user_sessions,1,id,text,NO,null
+public,user_sessions,2,userId,text,NO,null
+public,user_sessions,3,token,text,NO,null
+public,user_sessions,4,refreshToken,text,NO,null
+public,user_sessions,5,deviceType,text,YES,null
+public,user_sessions,6,ipAddress,text,YES,null
+public,user_sessions,7,userAgent,text,YES,null
+public,user_sessions,8,expiresAt,timestamp without time zone,NO,null
+public,user_sessions,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,user_sessions,10,lastActivityAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,users,1,id,text,NO,null
+public,users,2,email,text,YES,null
+public,users,3,phone,text,YES,null
+public,users,4,passwordHash,text,YES,null
+public,users,5,name,text,YES,null
+public,users,6,dob,date,YES,null
+public,users,7,gender,text,YES,null
+public,users,8,panMasked,text,YES,null
+public,users,9,aadhaarMasked,text,YES,null
+public,users,10,primaryMobile,text,YES,null
+public,users,11,primaryEmail,text,YES,null
+public,users,12,recoveryEmail,text,YES,null
+public,users,13,address,text,YES,null
+public,users,14,maritalStatus,text,YES,null
+public,users,15,occupationType,text,YES,null
+public,users,16,employerCompany,text,YES,null
+public,users,17,profileType,USER-DEFINED,NO,null
+public,users,18,status,USER-DEFINED,NO,"'ACTIVE'::""UserStatus"""
+public,users,19,language,text,NO,'en'::text
+public,users,20,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,users,21,updatedAt,timestamp without time zone,NO,null
+public,users,22,lastActiveAt,timestamp without time zone,YES,null
+public,users,23,deviceInfo,jsonb,YES,null
+public,users,24,googleAccessToken,text,YES,null
+public,users,25,googleLinked,boolean,NO,false
+public,users,26,googleRefreshToken,text,YES,null
+public,users,27,googleTokenExpiry,timestamp without time zone,YES,null
+public,users,28,is_first_login,boolean,NO,true
+public,users,29,secondaryMobile,text,YES,null
+public,users,30,settings,jsonb,YES,null
+public,users,31,twoFactorRecoveryCodes,text,YES,null
+public,users,32,twoFactorSecret,text,YES,null
+public,users,33,authProvider,text,YES,'EMAIL'::text
+public,weekly_analytics,1,id,text,NO,null
+public,weekly_analytics,2,weekStart,date,NO,null
+public,weekly_analytics,3,weekEnd,date,NO,null
+public,weekly_analytics,4,wau,integer,NO,0
+public,weekly_analytics,5,retention7Day,double precision,YES,null
+public,weekly_analytics,6,retention14Day,double precision,YES,null
+public,weekly_analytics,7,retention30Day,double precision,YES,null
+public,weekly_analytics,8,topModule,text,YES,null
+public,weekly_analytics,9,topDropOffPoint,text,YES,null
+public,weekly_analytics,10,calculatedAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,will_status,1,id,text,NO,null
+public,will_status,2,userId,text,NO,null
+public,will_status,3,existsFlag,boolean,NO,false
+public,will_status,4,location,text,YES,null
+public,will_status,5,executorName,text,YES,null
+public,will_status,6,executorContact,text,YES,null
+public,will_status,7,instructions,text,YES,null
+public,will_status,8,lastReviewDate,date,YES,null
+public,will_status,9,createdAt,timestamp without time zone,NO,CURRENT_TIMESTAMP
+public,will_status,10,updatedAt,timestamp without time zone,NO,null
